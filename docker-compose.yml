@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  notepro:
+    container_name: note_web_application
+    build: ./docker
+    volumes:
+      - .:/usr/docs
+    ports:
+      - "9091:9091"
+    entrypoint: ["mkdocs", "serve", "--dev-addr=0.0.0.0:9091"]
