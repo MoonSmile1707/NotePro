@@ -11,10 +11,11 @@ RUN pip install -r requirements.txt
 #set up for deploy
 RUN mkdir -p /usr/docs
 WORKDIR /usr/docs
+ADD local.env .env
 
 # add port
 EXPOSE 9091
 
 # set up for development
-# ENTRYPOINT ["mkdocs"]
-# CMD ["serve", "--dev-addr=0.0.0.0:9091"]
+ENTRYPOINT ["mkdocs"]
+CMD ["serve", "--dev-addr=0.0.0.0:9091"]

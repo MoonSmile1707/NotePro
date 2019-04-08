@@ -1,10 +1,16 @@
-version: "3.3"
+version: "3.5"
 services:
   notepro:
     container_name: note_web_application
     build: ./docker
     volumes:
       - .:/usr/docs
+    # networks:
+    #   - default
     ports:
       - "9091:9091"
     entrypoint: ["mkdocs", "serve", "--dev-addr=0.0.0.0:9091"]
+# networks:
+#   default:
+#     attachable: true
+#     driver: overlay
