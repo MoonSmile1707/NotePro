@@ -4,10 +4,13 @@
 
 ## List View Items
 
-- **[Time Planning](#time-planning)** <br/>
-- **[Ranking Social Network](#ranking-social-network)** <br/>
-- **[Ranking Coding Website](#ranking-coding-website)** <br/>
-- **[Ranking Learning Knowledge](#ranking-learning-knowledge)** <br/>
+- [Plans for a wonderful day (version 1)](#plans-for-a-wonderful-day-version-1)
+  - [List View Items](#list-view-items)
+  - [Time planning](#time-planning)
+  - [Ranking Social Network](#ranking-social-network)
+  - [Ranking Coding Website](#ranking-coding-website)
+  - [Ranking Learning Knowledge](#ranking-learning-knowledge)
+  - [Story about improving skill](#story-about-improving-skill)
 
 <hr/>
 
@@ -59,5 +62,14 @@
 - [Geeks For Geeks](https://www.geeksforgeeks.org/)
 - [.NET Foundation](https://presentations.dotnetfoundation.org/)
 - [Microsoft Courses](https://developer.microsoft.com/en-us/collective/learning/courses)
+
+<hr/>
+
+## Story about improving skill
+
+- Learning deep for improving code. Learning document and coding some lines cool
+- After reading a story, create template of markdown file, and give link to content (pin link and not commit). Go home reading some stories again and note sumay to my docs. Commit and push docs to github and vsts.
+- Improve power of my docs, help it run automatic and async with more enviroment.
+- Manage task at [Odoo's task](https://moonsmile1.odoo.com/).
 
 <hr/>
