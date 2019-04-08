@@ -1,6 +1,8 @@
 site_name: Note Pro
 nav:
   - Home: index.md
+  - Daily Plans:
+    - Version 1: daily-plans/plans-version-1.md
   - KnowLedge:
       - DevOps:
           - Circle CI:
