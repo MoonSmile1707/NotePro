@@ -1,4 +1,23 @@
+# configuration 
 site_name: Note Pro
+# repo
+remote_name: origin
+repo_url: https://github.com/MoonSmile1707/NotePro
+edit_uri: blob/master/docs/
+# search engine viewer
+site_description: "Note Anything and Note Future."
+site_author: "Moon Smile"
+# serch engine
+google_analytics: ['UA-36723568-3', 'mkdocs.org']
+# network
+dev_addr: '0.0.0.0:9091'
+# set languages
+lang:
+    - en
+    - fr
+# copy at footer
+copyright: 'Moon Smile 2019'
+# navigative page
 nav:
   - Home: index.md
   - Daily Plans:
@@ -10,6 +29,16 @@ nav:
       - Web Development:
           - Ruby On Rails:
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
+# configuration theme
+# extra_css:
+# extra_javascript:
+# extra_templates:
+
 theme:
   name: mkdocs
   custom_dir: notepro_theme
+# extension
+markdown_extensions:
+    - toc:
+        permalink: true
+        separator: '_'
