@@ -2,7 +2,7 @@ FROM python:3.6.8-alpine3.9
 
 USER root
 # install git-core
-RUN apk add git git-lfs fast-import --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/
+RUN apk add git git-lfs --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/
 
 #set up for build
 RUN mkdir /usr/env
