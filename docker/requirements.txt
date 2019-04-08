@@ -1,2 +1,3 @@
+mkdocs-material
 click-man
-mkdocs==0.17.2
+mkdocs

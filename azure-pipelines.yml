@@ -4,14 +4,15 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- master
+  - master
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: "Ubuntu-16.04"
 
 variables:
-  imageName: 'your-container-image-name:$(build.buildId)'
+  imageName: "your-container-image-name:$(build.buildId)"
 
 steps:
-- script: cd docker && docker build -f Dockerfile -t $(imageName) .
-  displayName: 'docker build'
+  - script: cd docker && docker build -f Dockerfile -t $(imageName) .
+    displayName: "docker build"
+  - script: git push -u origin master

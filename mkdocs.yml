@@ -1,18 +1,13 @@
 site_name: Note Pro
 nav:
   - Home: index.md
-  - About: about.md
+  - KnowLedge:
+      - DevOps:
+          - Circle CI:
+              - Writing YAML: knowledge/dev-ops/circle-ci/writing-yaml.md
+      - Web Development:
+          - Ruby On Rails:
+              - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
 theme:
-  name: readthedocs
+  name: mkdocs
   custom_dir: notepro_theme
-  # name: readthedocs
-  # highlightjs: true
-  # hljs_languages:
-  #   - yaml
-  #   - rust
-
-markdown_extensions:
-  - toc:
-      separator: "_"
-      permalink: "#"
-      baselevel: 1

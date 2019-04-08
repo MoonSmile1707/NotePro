@@ -1,10 +1,3 @@
----
-title: MoonSmile
-sumary: Note Anything
-author: Nguyen Minh Tuan
-date: 27-10-2018
-some_url: "moonsmile1707.github.io/NotePro"
----
 # Welcome to Note Pro
 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
