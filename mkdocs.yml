@@ -1,4 +1,4 @@
-# configuration 
+# configuration
 site_name: Note Pro
 # repo
 remote_name: origin
@@ -8,20 +8,20 @@ edit_uri: blob/master/docs/
 site_description: "Note Anything and Note Future."
 site_author: "Moon Smile"
 # serch engine
-google_analytics: ['UA-36723568-3', 'mkdocs.org']
+google_analytics: ["UA-36723568-3", "mkdocs.org"]
 # network
-dev_addr: '0.0.0.0:9091'
+dev_addr: "0.0.0.0:9091"
 # set languages
 lang:
-    - en
-    - fr
+  - en
+  - fr
 # copy at footer
-copyright: 'Moon Smile 2019'
+copyright: "Moon Smile 2019"
 # navigative page
 nav:
   - Home: index.md
   - Daily Plans:
-    - Version 1: daily-plans/plans-version-1.md
+      - Version 1: daily-plans/plans-version-1.md
   - KnowLedge:
       - DevOps:
           - Circle CI:
@@ -39,6 +39,6 @@ theme:
   custom_dir: notepro_theme
 # extension
 markdown_extensions:
-    - toc:
-        permalink: true
-        separator: '_'
+  - toc:
+      # permalink: true
+      # separator: '_'
