@@ -29,6 +29,13 @@ nav:
       - Web Development:
           - Ruby On Rails:
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
+      - Stories:
+        - Blockchain:
+          - Matic Developer Support Program: knowledge/stories/blockchain-blog/matic-developer-support-program.md
+          - What Is Matic Network: knowledge/stories/blockchain-blog/what-is-matic-network.md
+          - Plasma: knowledge/stories/blockchain-blog/plasma.md
+        - Thinking In Art:
+          - You Could Have Today Intead You Choose Tomorrow: knowledge/stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow.md
 # configuration theme
 # extra_css:
 # extra_javascript:
