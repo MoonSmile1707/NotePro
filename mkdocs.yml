@@ -37,6 +37,10 @@ nav:
               - Plasma: knowledge/stories/blockchain-blog/plasma.md
           - Thinking In Art:
               - You Could Have Today Intead You Choose Tomorrow: knowledge/stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow.md
+      - Mobile Development: 
+        - Xamarin:
+          - Controls Reference: knowledge/mobile-development/xamarin/controls-reference.md
+          - Customizing ListView cell Appearence: knowledge/mobile-development/xamarin/customizing-listview-cell-appearance.md
 # configuration theme
 # extra_css:
 # extra_javascript:
