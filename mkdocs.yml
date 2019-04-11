@@ -8,6 +8,7 @@ nav:
       - Web Development:
           - Ruby On Rails:
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
+              - Active Record Callbacks: knowledge/web-development/ruby-on-rails/rails-active-record-callbacks.md
 theme:
   name: mkdocs
   custom_dir: notepro_theme
