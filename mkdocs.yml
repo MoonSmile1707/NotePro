@@ -41,6 +41,9 @@ nav:
         - Xamarin:
           - Controls Reference: knowledge/mobile-development/xamarin/controls-reference.md
           - Customizing ListView cell Appearence: knowledge/mobile-development/xamarin/customizing-listview-cell-appearance.md
+          - Data Pages: knowledge/mobile-development/xamarin/data-pages.md
+          - Data Pages Controls: knowledge/mobile-development/xamarin/data-pages-controls.md
+          - Themes: knowledge/mobile-development/xamarin/xamarin-forms-theme.md
 # configuration theme
 # extra_css:
 # extra_javascript:
