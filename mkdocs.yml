@@ -21,7 +21,8 @@ copyright: "Moon Smile 2019"
 nav:
   - Home: index.md
   - Daily Plans:
-      - Version 1: daily-plans/plans-version-1.md
+      - Version 1: daily-plans/plans-version-1.1.md
+      - Soft Skills for Learning: daily-plans/soft-skills-for-learning.md
   - KnowLedge:
       - DevOps:
           - Circle CI:
@@ -45,8 +46,8 @@ nav:
               - Data Pages Controls: knowledge/mobile-development/xamarin/data-pages-controls.md
               - Triggers: knowledge/mobile-development/xamarin/triggers.md
               - Themes: knowledge/mobile-development/xamarin/xamarin-forms-theme.md
-              - Template: 
-                - Overview: knowledge/mobile-development/xamarin/templates/overview.md
+              - Template:
+                  - Overview: knowledge/mobile-development/xamarin/templates/overview.md
 # configuration theme
 # extra_css:
 # extra_javascript:
