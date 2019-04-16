@@ -39,7 +39,8 @@ nav:
           - Thinking In Art:
               - You Could Have Today Intead You Choose Tomorrow: knowledge/stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow.md
       - Mobile Development:
-          - Xamarin:
+          - Overview: knowledge/mobile-development/overview.md
+          - Xamarin: 
               - Controls Reference: knowledge/mobile-development/xamarin/controls-reference.md
               - Customizing ListView cell Appearence: knowledge/mobile-development/xamarin/customizing-listview-cell-appearance.md
               - Data Pages: knowledge/mobile-development/xamarin/data-pages.md
