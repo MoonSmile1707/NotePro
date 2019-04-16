@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Xamarin.Forms Control Templates - Note Pro</title>
+        <link href="../../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../web-development/ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../../../web-development/ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../../customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../../data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../../data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../../triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../../xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/mobile-development/xamarin/templates/control-templates.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#xamarinforms-control-templates">Xamarin.Forms Control Templates</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#creating-a-controltemplate">Creating a ControlTemplate</a></li>
+            <li><a href="#binding-from-a-controltemplate">Binding from a ControlTemplate</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="xamarinforms-control-templates">Xamarin.Forms Control Templates</h1>
+<hr/>
+
+<h2 id="introduction">Introduction</h2>
+<p>Xamarin.Forms control templates provide the ability to easily theme and re-theme application pages at runtime. This article provides an introduction to control templates.</p>
+<p>Controls have different properties, such as <code>BackgroundColor</code> and <code>TextColor</code>, that can define aspects of the control's appearance. These properties can be set using <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/index">styles</a>, which can be chaned at runtime to implement basic theming. However, styles don't maintain a clean separation between the appearance of a page and its content, and the changes that can be made by setting such properties are limited.</p>
+<p>Control templates provide a clean separation between the appearance of a page and its content, therefore enabling the creation of pages that can easily be themed.</p>
+<h2 id="creating-a-controltemplate">Creating a ControlTemplate</h2>
+<p>Control templates can be defined at the application level or at the page level. This article demonstrates how to create and consume control templates.</p>
+<p>A <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a></p>
+<p>specifies the appearence of a page or view, and contains a root layout, and within the layout, the controls that implement the template. Typically, a <code>ControlTemplate</code> will utilize a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpresenter"><code>ContentPresenter</code></a> to mark where the content to be displayed bu the page or view will appear. The page or view that consumes the <code>ControlTemplate</code> will then define content to be displayed by the <code>ContentPredenter</code>. The following diageam illustrates a <code>ControlTemplate</code> for a page that contains a number of controls, including a <code>ContentPresenter</code> marked by a blue rectangle:</p>
+<p><img alt="Control Template" src="../../../../../img-root/control-template.png" /></p>
+<p>A [<code>ControlTemplate</code>] can be applied to the following types by setting their <code>ControlTemplate</code> properties:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpage"><code>ContentPage</code></a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentview"><code>ContentView</code></a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.templatedpage"><code>TemplatedPage</code></a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.templatedview"><code>TemplatedView</code></a></li>
+</ul>
+<p>When a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a> is created and assigned to these types, any existing appearance is replaced with the appearance defined in the <code>ControlTemplate</code>. in addtion, as well as setting appearance by using the <code>ControlTemplate</code> property, control templats can also be applied by using styles to further expand theme ability.</p>
+<p>Control templates can be created in XAML and in C#:</p>
+<ul>
+<li>Control templates created in XAML are defined in a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.resourcedictionary"><code>ResourceDictionary</code></a> that's assigned to the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.resources#Xamarin_Forms_VisualElement_Resources"><code>Resource</code></a> collection of a page, or more typically to the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.application.resources#Xamarin_Forms_Application_Resources"><code>Resources</code></a> collection of the application.</li>
+<li>Control templates created in C# are typically defined in the page's class, or in a class that can be globally accessed.</li>
+</ul>
+<p>Choosing where to define a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a> instance impacts where it can be used:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a> instances defined at the page-level can only be applied to the page.</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a> instances defined at the application-level can be applied to page throughout the application.</li>
+</ul>
+<h3 id="creating-a-controltemplate-in-xaml">Creating a ControlTemplate in XAML</h3>
+<p>To define a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a> at the application level, a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.resourcedictionary"><code>ResourceDictionary</code></a> must be added to the <code>App</code> class. By default, all Xamarin.Forms application created from a template use the <strong>App</strong> class to implement the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.application"><code>Application</code></a> subclass. To declare a <code>ControlTemplate</code> at the application level, in the application's <code>ResourceDictionary</code> using XAM, the default <strong>App</strong> class must be replaced with a XAML <strong>App</strong> class and associated code-behind, as shown in the following code example:</p>
+<pre><code class="xml">&lt;Application xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot; xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot; x:Class=&quot;SimpleTheme.App&quot;&gt;
+    &lt;Application.Resources&gt;
+        &lt;ResourceDictionary&gt;
+            &lt;ControlTemplate x:Key=&quot;TealTemplate&quot;&gt;
+                &lt;Grid&gt;
+                    ...
+                    &lt;BoxView ... /&gt;
+                    &lt;Label Text=&quot;Control Template Demo App&quot;
+                           TextColor=&quot;White&quot;
+                           VerticalOptions=&quot;Center&quot; ... /&gt;
+                    &lt;ContentPresenter ... /&gt;
+                    &lt;BoxView Color=&quot;Teal&quot; ... /&gt;
+                    &lt;Label Text=&quot;(c) Xamarin 2016&quot;
+                           TextColor=&quot;White&quot;
+                           VerticalOptions=&quot;Center&quot; ... /&gt;
+                &lt;/Grid&gt;
+            &lt;/ControlTemplate&gt;
+            &lt;ControlTemplate x:Key=&quot;AquaTemplate&quot;&gt;
+                ...
+            &lt;/ControlTemplate&gt;
+        &lt;/ResourceDictionary&gt;
+    &lt;/Application.Resources&gt;
+&lt;/Application&gt;
+</code></pre>
+
+<p>Each <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a> instance is created as a reusable object in a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.resourcedictionary"><code>ResourceDictionary</code></a>. This ia achieved by giving each declaration a unique <code>x:Key</code> attribute, which provides it with a descriptive key in the <code>ResourceDictionary</code>.</p>
+<p>The following code example shows the associated <code>App</code> code-behind:</p>
+<pre><code class="csharp">public partial class App : Application
+{
+  public App ()
+  {
+    InitializeComponent ();
+    MainPage = new HomePage ();
+  }
+}
+</code></pre>
+
+<p>As well as setting the <code>MainPage</code> property, the code-behind must also call the <code>InitializeComponent</code> method to load and parse the associated XAML.</p>
+<p>The following code example shows a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpage"><code>ContentPage</code></a> applying the <code>TealTemplate</code> to the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentview"><code>ContentView</code></a>:</p>
+<pre><code class="xml">&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot; xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot; x:Class=&quot;SimpleTheme.HomePage&quot;&gt;
+    &lt;ContentView x:Name=&quot;contentView&quot; Padding=&quot;0,20,0,0&quot;
+                 ControlTemplate=&quot;{StaticResource TealTemplate}&quot;&gt;
+        &lt;StackLayout VerticalOptions=&quot;CenterAndExpand&quot;&gt;
+            &lt;Label Text=&quot;Welcome to the app!&quot; HorizontalOptions=&quot;Center&quot; /&gt;
+            &lt;Button Text=&quot;Change Theme&quot; Clicked=&quot;OnButtonClicked&quot; /&gt;
+        &lt;/StackLayout&gt;
+    &lt;/ContentView&gt;
+&lt;/ContentPage&gt;
+</code></pre>
+
+<p>The <code>TealTemplate</code> is assigned to the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.templatedview.controltemplate#Xamarin_Forms_TemplatedView_ControlTemplate"><code>ContentView.ControlTemplate</code></a> property by using the <code>StaticResource</code> markup extension. The <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentview.content#Xamarin_Forms_ContentView_Content"><code>ContentView.Content</code></a> property is set to a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.stacklayout"><code>StackLayout</code></a> that defines the content to be displayed on the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpage"><code>ContentPage</code></a>. This content will be displayed by the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpresenter"><code>ContentPresenter</code></a> contained in the <code>TealTemplate</code>. This results in the appearance shown in the following screenshots:</p>
+<p><img alt="teal-theme.png" src="../../../../../img-root/teal-theme.png" /></p>
+<h4 id="re-theming-an-application-at-runtime">Re-theming an Application at Runtime</h4>
+<p>Clicking the <strong>Change Theme</strong> button executes the <code>OnButtonClicked</code> method, which is shown in the following code example:</p>
+<pre><code class="csharp">void OnButtonClicked (object sender, EventArgs e)
+{
+  originalTemplate = !originalTemplate;
+  contentView.ControlTemplate = (originalTemplate) ? tealTemplate : aquaTemplate;
+}
+</code></pre>
+
+<h2 id="binding-from-a-controltemplate">Binding from a ControlTemplate</h2>
+<p>Template bindings allow controls in a control temlate to data bind to pubic properties, enabling property calues on controls in the conteol template to be easily changed. This
+article demonstrates using template bindings to perform data binding from a control template.</p>
+<p>A <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.templatebinding"><code>TemplateBinding</code></a> is used to bind a control's property in a control template to a bindable property on the parent of the <em>target</em> view that owns the control template. For example, rather than defining the text displayed by <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.label"><code>Lable</code></a> instances inside the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a>, you can use a template binding to bind the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.label.text#Xamarin_Forms_Label_Text"><code>Label.Text</code></a> property to bindable properties that define the text to be displayed.</p>
+<p>Note that using a <code>TemplateBinding</code> outside of a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a> is not supported.</p>
+<h3 id="creating-a-templatebinding-in-xaml">Creating a TemplateBinding in XAML</h3>
+<p>In XAML, a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.templatebinding"><code>TemplateBinding</code></a> is created using the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.templatebindingextension"><code>TemplateBinding</code></a> markup extension, as demonstrated in the following code example:</p>
+<pre><code class="xml">&lt;ControlTemplate x:Key=&quot;TealTemplate&quot;&gt;
+  &lt;Grid&gt;
+    ...
+    &lt;Label Text=&quot;{TemplateBinding Parent.HeaderText}&quot; ... /&gt;
+    ...
+    &lt;Label Text=&quot;{TemplateBinding Parent.FooterText}&quot; ... /&gt;
+  &lt;/Grid&gt;
+&lt;/ControlTemplate&gt;
+</code></pre>
+
+<p>Rather than set the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.label.text#Xamarin_Forms_Label_Text"><code>Label.Text</code></a> properties to static text, the properties can use template bindings to bind to bindable properties on the parent of the <em>target</em> view that owns the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a>. However, not that the template bindings bind to <code>Parent.HeaderText</code> and <code>Parent.FooterText</code>, rather <code>HeaderText</code> and <code>FooterText</code>. This is because in this example, the bindable properties are defined on the grandparent of the target view, rather than the paren, as demonstrated in the following code example:</p>
+<pre><code class="xml">&lt;ContentPage ...&gt;
+    &lt;ContentView ... ControlTemplate=&quot;{StaticResource TealTemplate}&quot;&gt;
+          ...
+    &lt;/ContentView&gt;
+&lt;/ContentPage&gt;
+</code></pre>
+
+<p>The template binding uses the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.element.parent#Xamarin_Forms_Element_Parent"><code>Parent</code></a> property to return the parent element of the <code>ContentView</code> instance, which is the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpage"><code>ContentPage</code></a> instance. Therefore, using a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.templatebinding"><code>TemplateBinding</code></a> in the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.controltemplate"><code>ControlTemplate</code></a> to bind to <code>Parent.HeaderText</code> and <code>Parent.FooterText</code> locates the bindable properties that are defined on the <code>ContentPage</code>, as demonstrated in the following code example:</p>
+<pre><code class="csharp">public static readonly BindableProperty HeaderTextProperty =
+  BindableProperty.Create (&quot;HeaderText&quot;, typeof(string), typeof(HomePage), &quot;Control Template Demo App&quot;);
+public static readonly BindableProperty FooterTextProperty =
+  BindableProperty.Create (&quot;FooterText&quot;, typeof(string), typeof(HomePage), &quot;(c) Xamarin 2016&quot;);
+
+public string HeaderText {
+  get { return (string)GetValue (HeaderTextProperty); }
+}
+
+public string FooterText {
+  get { return (string)GetValue (FooterTextProperty); }
+}
+</code></pre>
+
+<hr/>
+
+<p>Get more information at <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/templates/control-templates/">here</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

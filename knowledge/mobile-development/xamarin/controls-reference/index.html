@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Controls Reference - Note Pro</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../web-development/ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../../web-development/ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../templates/overview/">Overview</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../customizing-listview-cell-appearance/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/mobile-development/xamarin/controls-reference.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#controls-reference">Controls Reference</a></li>
+            <li><a href="#cells">Cells</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="controls-reference">Controls Reference</h1>
+<hr/>
+
+<p><em>A Description of all the visual elements used to construct a Xamarin.Forms application</em>.</p>
+<p>The visual interface of a Xamarin.Forms application is constructed of objects that map to the native controls of each target platform. This allows platform-specific applications for iOS, Android, and the Universal Windows Platform to use Xamarin.Forms code contained in a <a href="https://docs.microsoft.com/en-us/xamarin/cross-platform/app-fundamentals/net-standard">.NET Standard library</a> or a <a href="https://docs.microsoft.com/en-us/xamarin/cross-platform/app-fundamentals/shared-projects">Shared Project</a>.</p>
+<p>The four main control groups used to create the user interface of a Xamarin.Forms application are shown in these four articles:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/pages">Pages</a></li>
+<li><a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts">Layouts</a></li>
+<li><a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/views">Views</a></li>
+<li><a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/cells">Cells</a></li>
+</ul>
+<p>A Xamarin.Forms page generally occupies the entire screen. The page usually contains a layout, which contains views and possibly other layouts. Cells are specialied components used in connection with <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/views#tableView"><code>TableView</code></a> and <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/views#listView"><code>ListView</code></a>.</p>
+<p>In the four articles on <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/pages">Pages</a>, <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts">Layouts</a>, <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/views">Views</a> and <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/cells">Cells</a>, each type of control is described with links to its API documentation, an article describing its use (if one exists), and one or more sample programs(if they exist). Each type of control is also accompanied by a screenshot showing a page from the <a href="https://developer.xamarin.com/samples/FormsGallery/">FormsGallery</a> sample running on iOS, Android, and UWP devices. Below each screenshot are links to the source code fot the C# page, the quivalent Xaml page, and (when appropriate) the C# code-behind file for the Xaml page.</p>
+<hr/>
+
+<p>A cell is a specialized element used for items in a table and describes how each item in a list should be rendered. The <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.cell">Cell</a> class derives from <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.element">Element</a>, from which <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.element">VisualElement</a> also derives. A cell is not itself a visual element; it is instead a template for creating a visual element.</p>
+<h2 id="cells">Cells</h2>
+<p>Xamarin.Forms supports the following cell types:</p>
+<h3 id="textcell">TextCell</h3>
+<p>A <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.textcell"><code>TextCell</code></a> displays one or two text strings. Set the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.textcell.text#Xamarin_Forms_TextCell_Text"><code>Text</code></a> property and, optionally, the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.textcell.detail#Xamarin_Forms_TextCell_Detail">Detail</a> property to these text strings.
+<img alt="Text Cell" src="../img/textcell.png" /></p>
+<h3 id="imagecell">ImageCell</h3>
+<p>The <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.imagecell"><code>ImageCell</code></a> displays the same information as <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/cells#textCell"><code>TextCell</code></a> but includes a bitmap that you set with the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.image.source#Xamarin_Forms_Image_Source"><code>Source</code></a> property.
+<img alt="Image Cell" src="../img/imagecell.png" /></p>
+<h3 id="switchcell">SwitchCell</h3>
+<p>The <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switchcell"><code>SwitchCell</code></a> contains text set with the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switchcell"><code>Text</code></a>' property and on/off switch initiallly set with the Boolean <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switchcell.on#Xamarin_Forms_SwitchCell_On">On</a> property. Handle the Onchanged event to be notified when the On property changes.
+<img alt="SwitchCell" src="../img/switchcell.png" /></p>
+<h3 id="entrycell">EntryCell</h3>
+<p>The <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entrycell"><code>EntryCell</code></a> defines a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entrycell.label#Xamarin_Forms_EntryCell_Label"><code>Label</code></a> property that identifies the cell and a single line of editable text in the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entrycell.text#Xamarin_Forms_EntryCell_Text"><code>Text</code></a> property. Handle the <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entrycell.completed"><code>Completed</code></a> event to be notified when the user has completed the text entry.
+<img alt="EntryCell" src="../img/entrycell.png" /></p>
+<hr/>
+
+<p>Get more information at <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/index">here</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

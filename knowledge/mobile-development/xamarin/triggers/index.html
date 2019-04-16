@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Triggers - Note Pro</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../web-development/ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../../web-development/ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li class="active">
+    <a href="./">Triggers</a>
+</li>
+            
+<li >
+    <a href="../xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../templates/overview/">Overview</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../data-pages-controls/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../xamarin-forms-theme/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/mobile-development/xamarin/triggers.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#xamarinforms-trigger">Xamarin.Forms Trigger</a></li>
+            <li><a href="#property-triggers">Property Triggers</a></li>
+            <li><a href="#data-triggers">Data Triggers</a></li>
+            <li><a href="#event-triggers">Event Triggers</a></li>
+            <li><a href="#multi-triggers">Multi Triggers</a></li>
+            <li><a href="#enteractions-and-exitactions">EnterActions and ExitActions</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="xamarinforms-trigger">Xamarin.Forms Trigger</h1>
+<hr/>
+
+<p>Triggers allow yu to express actionsn declaratively in XAML that change the appearance of controls based on events or property changes.</p>
+<p>You can assign a trigger directly to a control, or add it to a page-level or app-level resource dictionary to be appied to multiple controls.</p>
+<p>There are four types of trigger:</p>
+<ul>
+<li><a href="#xamarinforms-trigger">Xamarin.Forms Trigger</a></li>
+<li><a href="#property-triggers">Property Triggers</a><ul>
+<li><a href="#applying-a-trigger-using-a-style">Applying a Trigger using a Style</a></li>
+</ul>
+</li>
+<li><a href="#data-triggers">Data Triggers</a></li>
+<li><a href="#event-triggers">Event Triggers</a></li>
+<li><a href="#multi-triggers">Multi Triggers</a><ul>
+<li><a href="#building-a-%22require-all%22-multi-trigger">Building a "require all" multi trigger</a></li>
+</ul>
+</li>
+<li><a href="#enteractions-and-exitactions">EnterActions and ExitActions</a></li>
+</ul>
+<hr>
+
+<h2 id="property-triggers">Property Triggers</h2>
+<p>A simple trigger can be expresses purely in XAML, adding a <code>Trigger</code> element to control's trigger collection. This example shows a trigger that changes an <code>Entry</code> background color whenit receives forcus:</p>
+<pre><code class="xml">&lt;Entry Placeholder=&quot;enter name&quot;&gt;
+    &lt;Entry.Triggers&gt;
+        &lt;Trigger TargetType=&quot;Entry&quot;
+             Property=&quot;IsFocused&quot; Value=&quot;True&quot;&gt;
+            &lt;Setter Property=&quot;BackgroundColor&quot; Value=&quot;Yellow&quot; /&gt;
+        &lt;/Trigger&gt;
+    &lt;/Entry.Triggers&gt;
+&lt;/Entry&gt;
+</code></pre>
+
+<p>The import parts of the trigger's declaration are:</p>
+<ul>
+<li><strong>TargetType</strong> - the control type that th trigger applies to.</li>
+<li><strong>Property</strong> - the property on the control that is monitored.</li>
+<li><strong>Value</strong> - the value, when it occurs for the monitored property, that causes the trigger to activate.</li>
+<li><strong>Setter</strong> - a collection of <code>Setter</code> elements cab be added and when the trigger condition is met. You must specify the <code>Property</code> and <code>Value</code> to set.</li>
+<li><strong>ExterActions and ExitAction (not shown)</strong> - are written in code and can be used addition to (or instead of) <code>Setter</code> elements. They are <a href="">described blow</a>.</li>
+</ul>
+<h3 id="applying-a-trigger-using-a-style">Applying a Trigger using a Style</h3>
+<p>Triggers can also be added to a <code>Style</code> declaration on a control, in a page, pr an applocation <code>ResourceDictionary</code>. This example declares an implicit style (ie. no <code>Key</code> is set) which means it will apply to all <code>Entry</code> controls on the page.</p>
+<pre><code class="xml">&lt;ContentPage.Resources&gt;
+    &lt;ResourceDictionary&gt;
+        &lt;Style TargetType=&quot;Entry&quot;&gt;
+                        &lt;Style.Triggers&gt;
+                &lt;Trigger TargetType=&quot;Entry&quot;
+                         Property=&quot;IsFocused&quot; Value=&quot;True&quot;&gt;
+                    &lt;Setter Property=&quot;BackgroundColor&quot; Value=&quot;Yellow&quot; /&gt;
+                &lt;/Trigger&gt;
+            &lt;/Style.Triggers&gt;
+        &lt;/Style&gt;
+    &lt;/ResourceDictionary&gt;
+&lt;/ContentPage.Resources&gt;
+</code></pre>
+
+<hr/>
+
+<h2 id="data-triggers">Data Triggers</h2>
+<p>Data triggers use data binding to monitor another to cause the Setters to get called. Instead of the Property attribute in property trigger, set the Binding attribute to monitoe for the specified value.</p>
+<p>The example below uses the data binding syntax <code>{Binding Source={x:Reference entry}, Path=Text.length}</code> which is how we refer to another control's properties. When the length of the <code>entry</code> is zero, the trigger is activated. In this sample the trigger disables the button whrn the input is empty.</p>
+<pre><code class="xml">&lt;!-- the x:Name is referenced below in DataTrigger--&gt;
+&lt;!-- tip: make sure to set the Text=&quot;&quot; (or some other default) --&gt;
+&lt;Entry x:Name=&quot;entry&quot;
+       Text=&quot;&quot;
+       Placeholder=&quot;required field&quot; /&gt;
+
+&lt;Button x:Name=&quot;button&quot; Text=&quot;Save&quot;
+        FontSize=&quot;Large&quot;
+        HorizontalOptions=&quot;Center&quot;&gt;
+    &lt;Button.Triggers&gt;
+        &lt;DataTrigger TargetType=&quot;Button&quot;
+                     Binding=&quot;{Binding Source={x:Reference entry},
+                                       Path=Text.Length}&quot;
+                     Value=&quot;0&quot;&gt;
+            &lt;Setter Property=&quot;IsEnabled&quot; Value=&quot;False&quot; /&gt;
+        &lt;/DataTrigger&gt;
+    &lt;/Button.Triggers&gt;
+&lt;/Button&gt;
+</code></pre>
+
+<p>Tip: when avaluating <code>Path=Text.Lenth</code> always provide a default value for the target property (eg. <code>Text=""</code> because otherwise it will be null and the trigger won't work like you expect.)</p>
+<p>In addition to specifying <code>Setter</code>s you can also provide <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/triggers#enterexit"><code>EnterActions</code></a> and <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/triggers#enterexit"><code>ExitActions</code></a></p>
+<hr/>
+
+<h2 id="event-triggers">Event Triggers</h2>
+<p>The <code>EventTrigger</code> element requires only an <code>Entry</code> property, such as <code>"Clicked"</code> ing the example below.</p>
+<pre><code class="xml">&lt;EventTrigger Event=&quot;Clicked&quot;&gt;
+    &lt;local:NumericValidationTriggerAction /&gt;
+&lt;/EventTrigger&gt;
+</code></pre>
+
+<p>Notice that there no <code>Setter</code> elements but rather a reference to a class defined by <code>local:NumbericValidationTriggerAction</code> which requires the <code>xmlns:local</code> to be declared in the page's XAML:</p>
+<pre><code class="xml">&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+             xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+             xmlns:local=&quot;clr-namespace:WorkingWithTriggers;assembly=WorkingWithTriggers&quot;
+</code></pre>
+
+<p>The class itself implements <code>TriggerAction</code> which means it should provide an override for the <code>Invoke</code> method that is called whenver the trigger event occurs.</p>
+<p>a Trigger action implementation should:</p>
+<ul>
+<li>Implement the generic <code>TriggerAction&lt;T&gt;</code> class, with the generic parameter corresponding with the type of control the trigger will be applied to. You can use supperclasses such as <code>VisualElement</code> to write trigger actions that work with a variety of controls, or specify a control type like <code>Entry</code>.</li>
+<li>Override the <code>Invoke</code> method - this is called whenever the trigger criteria are met.</li>
+<li>Optionally expose properties that can be set in the XAML when the trigger is declared (such as <code>Anchor</code>, <code>Scale</code>, and <code>Length</code> in this example).</li>
+</ul>
+<pre><code class="csharp">public class NumericValidationTriggerAction : TriggerAction&lt;Entry&gt;
+{
+    protected override void Invoke (Entry entry)
+    {
+        double result;
+        bool isValid = Double.TryParse (entry.Text, out result);
+        entry.TextColor = isValid ? Color.Default : Color.Red;
+    }
+}
+</code></pre>
+
+<p>The properties exposed by the trigger action can be set in the XAML declaration as follows:</p>
+<pre><code class="xml">&lt;EventTrigger Event=&quot;TextChanged&quot;&gt;
+    &lt;local:NumericValidationTriggerAction /&gt;
+&lt;/EventTrigger&gt;
+</code></pre>
+
+<p>Be careful whrn sharing triggers in a <code>ResourceDictionay</code>, one instance will be shared among controls so any state that is configured once will apply to them all.</p>
+<p>Note that event triggers do not support <code>Enteractions</code> and <code>ExitActions</code> <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/triggers#enterexit">decribed below</a>.</p>
+<hr/>
+
+<h2 id="multi-triggers">Multi Triggers</h2>
+<p>A <code>MultiTrigger</code> looks similar to a <code>Trigger</code> or <code>DataTrigger</code> except there can be more than one condition. All the conditions must be true before the <code>Setter</code>s are trigged.</p>
+<p>Here's an example of a trigger for a button that binds to two different inputs (<code>email</code> and <code>phone</code>):</p>
+<pre><code class="xml">&lt;MultiTrigger TargetType=&quot;Button&quot;&gt;
+    &lt;MultiTrigger.Conditions&gt;
+        &lt;BindingCondition Binding=&quot;{Binding Source={x:Reference email},
+                                   Path=Text.Length}&quot;
+                               Value=&quot;0&quot; /&gt;
+        &lt;BindingCondition Binding=&quot;{Binding Source={x:Reference phone},
+                                   Path=Text.Length}&quot;
+                               Value=&quot;0&quot; /&gt;
+    &lt;/MultiTrigger.Conditions&gt;
+
+  &lt;Setter Property=&quot;IsEnabled&quot; Value=&quot;False&quot; /&gt;
+    &lt;!-- multiple Setter elements are allowed --&gt;
+&lt;/MultiTrigger&gt;
+</code></pre>
+
+<p>The <code>Conditions</code> collection could also contain <code>PropertyCondition</code> elements like this:</p>
+<pre><code class="xml">&lt;PropertyCondition Property=&quot;Text&quot; Value=&quot;OK&quot; /&gt;
+</code></pre>
+
+<h3 id="building-a-require-all-multi-trigger">Building a "require all" multi trigger</h3>
+<p>The multi trigger only updates its control when all conditions are true. Testing for "all field lengths are zero" (such as a login page where all inputs must be complete) is tricky because you want a condition "where Text.Length &gt;0 " but this can't be expressed in XAML.</p>
+<p>This can be done with an <code>IValueConverter</code>. The converter code below trnsforms the <code>Text.Length</code> binding into a <code>bool</code> that indicates whether a field is empty or not:</p>
+<pre><code class="csharp">public class MultiTriggerConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType,
+        object parameter, CultureInfo culture)
+    {
+        if ((int)value &gt; 0) // length &gt; 0 ?
+            return true;            // some data has been entered
+        else
+            return false;            // input is empty
+    }
+
+    public object ConvertBack(object value, Type targetType,
+        object parameter, CultureInfo culture)
+    {
+        throw new NotSupportedException ();
+    }
+}
+</code></pre>
+
+<p>To use this converter in a multi trigger, first add it to the page's resource dictionary (along with a custom <code>xmls:local</code> namespace definition):</p>
+<pre><code class="csharp">&lt;ResourceDictionary&gt;
+   &lt;local:MultiTriggerConverter x:Key=&quot;dataHasBeenEntered&quot; /&gt;
+&lt;/ResourceDictionary&gt;
+</code></pre>
+
+<p>The XAML is shown below. Note the following differences from the first multi trigger example:</p>
+<ul>
+<li>The button has <code>IsEnable="false"</code> set by default.</li>
+<li>The multi trigger conditions use the converter to turn the <code>Text.Length</code> value into a <code>booleam</code>.</li>
+<li>When all the conditions are <code>true</code>, the setter makes the button's <code>IsEnabeld</code> property <code>true</code>.</li>
+</ul>
+<pre><code class="xml">&lt;Entry x:Name=&quot;user&quot; Text=&quot;&quot; Placeholder=&quot;user name&quot; /&gt;
+
+&lt;Entry x:Name=&quot;pwd&quot; Text=&quot;&quot; Placeholder=&quot;password&quot; /&gt;
+
+&lt;Button x:Name=&quot;loginButton&quot; Text=&quot;Login&quot;
+        FontSize=&quot;Large&quot;
+        HorizontalOptions=&quot;Center&quot;
+        IsEnabled=&quot;false&quot;&gt;
+  &lt;Button.Triggers&gt;
+    &lt;MultiTrigger TargetType=&quot;Button&quot;&gt;
+      &lt;MultiTrigger.Conditions&gt;
+        &lt;BindingCondition Binding=&quot;{Binding Source={x:Reference user},
+                              Path=Text.Length,
+                              Converter={StaticResource dataHasBeenEntered}}&quot;
+                          Value=&quot;true&quot; /&gt;
+        &lt;BindingCondition Binding=&quot;{Binding Source={x:Reference pwd},
+                              Path=Text.Length,
+                              Converter={StaticResource dataHasBeenEntered}}&quot;
+                          Value=&quot;true&quot; /&gt;
+      &lt;/MultiTrigger.Conditions&gt;
+      &lt;Setter Property=&quot;IsEnabled&quot; Value=&quot;True&quot; /&gt;
+    &lt;/MultiTrigger&gt;
+  &lt;/Button.Triggers&gt;
+&lt;/Button&gt;
+</code></pre>
+
+<p>These screenshots show the difference between the two multi trigger examples above. In the top part of the creens, text input in just one <code>Entry</code> is enough to enable the <strong>S.ave</strong> button. In the bottom part of the screens, the <strong>Login</strong> button remains inactive until both fields contain data.</p>
+<p><img alt="multi-triggers" src="../../../../img-root/multi-requireall-xamarin-triggers.png" /></p>
+<hr/>
+
+<h2 id="enteractions-and-exitactions">EnterActions and ExitActions</h2>
+<p>Another way to implement changes when a trigger occurs is by adding <code>EnterActions</code> and <code>ExitActions</code> collections and specifying <code>TriggerAction&lt;T&gt;</code> implementations.</p>
+<p>You can provide both <code>EnterActions</code> and <code>ExitActions</code> as well as <code>Setter</code>s in a trigger, but be aware that the <code>Setter</code> are called immediately (they do not wait for the <code>EnterAction</code> or <code>ExitAction</code> to complete). Alternatively you can perform everything in the code and not use <code>Setter</code>s at all.</p>
+<pre><code class="xml">
+&lt;Entry Placeholder=&quot;enter job title&quot;&gt;
+    &lt;Entry.Triggers&gt;
+        &lt;Trigger TargetType=&quot;Entry&quot;
+                 Property=&quot;Entry.IsFocused&quot; Value=&quot;True&quot;&gt;
+            &lt;Trigger.EnterActions&gt;
+                &lt;local:FadeTriggerAction StartsFrom=&quot;0&quot;&quot; /&gt;
+            &lt;/Trigger.EnterActions&gt;
+
+            &lt;Trigger.ExitActions&gt;
+                &lt;local:FadeTriggerAction StartsFrom=&quot;1&quot; /&gt;
+            &lt;/Trigger.ExitActions&gt;
+                        &lt;!-- You can use both Enter/Exit and Setter together if required --&gt;
+        &lt;/Trigger&gt;
+    &lt;/Entry.Triggers&gt;
+&lt;/Entry&gt;
+</code></pre>
+
+<p>As alaws, when a class is referenced in XAML you should declare a namespace such as <code>xmlns:local</code> as shown here:</p>
+<pre><code class="xml">&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+             xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+             xmlns:local=&quot;clr-namespace:WorkingWithTriggers;assembly=WorkingWithTriggers&quot;
+</code></pre>
+
+<p>The <code>FadetriggerAction</code> code is shown below:</p>
+<pre><code class="csharp">public class FadeTriggerAction : TriggerAction&lt;VisualElement&gt;
+{
+    public FadeTriggerAction() {}
+
+    public int StartsFrom { set; get; }
+
+    protected override void Invoke (VisualElement visual)
+    {
+            visual.Animate(&quot;&quot;, new Animation( (d)=&gt;{
+                var val = StartsFrom==1 ? d : 1-d;
+                visual.BackgroundColor = Color.FromRgb(1, val, 1);
+
+            }),
+            length:1000, // milliseconds
+            easing: Easing.Linear);
+    }
+}
+</code></pre>
+
+<p>Note: <code>EnterActions</code> and <code>ExitActions</code> are ignored on <strong>Envent Triggers</strong>.</p>
+<hr/>
+
+<p>Get more information at <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/triggers">here</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

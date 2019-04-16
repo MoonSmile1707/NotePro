@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Rails Form Expand - Note Pro</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/overview/">Overview</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../../dev-ops/circle-ci/writing-yaml/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../rails-active-record-callbacks/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/web-development/ruby-on-rails/rails-form-expand.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#rails-form_with-alternative-to-form_for-and-form_tag">Rails form_with - alternative to form_for and form_tag</a></li>
+            <li><a href="#before-rails-51">Before Rails 5.1</a></li>
+            <li><a href="#after-rails-51">After Rails 5.1</a></li>
+            <li><a href="#before-rails-51_1">Before Rails 5.1</a></li>
+            <li><a href="#after-rails-51_1">After Rails 5.1</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="rails-form_with-alternative-to-form_for-and-form_tag">Rails form_with - alternative to form_for and form_tag</h1>
+<p>Rails 5.1 added <code>form_with</code> form helper method that provides capabilities of <code>form_for</code> and <code>form_tag</code>. Rails unified <code>form_for</code> and <code>form_tag</code> that provide similar interfaces to generate forms with <code>form_with</code> helper.
+- <code>form_for</code> was being used to generate for a new/existing model object.
+- <code>form_tag</code> was used to create form withour a model object by passing a URL to submit the form.</p>
+<h2 id="before-rails-51">Before Rails 5.1</h2>
+<p><code>form_for</code> <b>with model object</b>
+- <code>form_for</code> was used when we had to create a form for a model object.</p>
+<pre><code class="erb">&lt;%= form_for User.new do |form| %&gt;
+    &lt;%= form.text_field :name%&gt;
+    &lt;%= form.text_field :email%&gt;
+    &lt;%= form.submit%&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<p>This generates DOM shown below.</p>
+<pre><code class="html">&lt;form class=&quot;new_user&quot; id=&quot;new_user&quot; actionn=&quot;/users&quot; accept-charset=&quot;UTF-8&quot; method=&quot;post&quot;&gt;
+    &lt;input name=&quot;utf8&quot; type=&quot;hidden&quot; value=&quot;&amp;#x2712;&quot; /&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;token_value&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;user[password]&quot; id=&quot;user_password&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;user[email]&quot; value=&quot;&quot; id=&quot;user_email&quot;/&gt;
+    &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;create User&quot; data-disable-with=&quot;Create User&quot; /&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h3 id="behavior">Behavior:</h3>
+<ul>
+<li>We can see Rails automatically assigns <code>id</code> attribute value to the <code>new_user</code> if record is new.</li>
+<li><code>id</code> attribute is set to <code>edit_user_&lt;id&gt;</code>, where <code>&lt;id&gt;</code> is the primary key of users table.</li>
+<li>It fills out the input values if the model object is not new.</li>
+</ul>
+<h2 id="after-rails-51">After Rails 5.1</h2>
+<p><code>form_with</code> with a model object</p>
+<pre><code class="erb">&lt;%= form_with model: @user do |form| %&gt;
+    &lt;%= form.text_field :email %&gt;
+    &lt;%= form.submit %&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<p>This generates DOM given below.</p>
+<pre><code class="html">&lt;form action=&quot;/users&quot; accept-charset=&quot;UTF-8&quot; data-remote=&quot;true&quot; method=&quot;post&quot;&gt;
+    &lt;input name=&quot;utf8&quot; type=&quot;hidden&quot; value=&quot;&amp;#x2713&quot;/&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;authenticaity_token&quot; value=&quot;token_value&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;email&quot; /&gt;
+    &lt;input type=&quot;submit&quot; name=&quot;commit&quot; value=&quot;Save &quot; data-disable-with=&quot;SAVE &quot;&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h3 id="behavior_1">Behavior:</h3>
+<ul>
+<li>Automatic IDs for the form are gone.</li>
+<li>The above way of creating form works for both new and existing records.</li>
+<li>It fills out the input values if the model object is not new.</li>
+</ul>
+<h2 id="before-rails-51_1">Before Rails 5.1</h2>
+<p><code>form_tag</code> <b>Without model object</b>
+- <code>form_tag</code> was used whrn we had to create to form without any model object providing URL endpoint to submit the form.</p>
+<pre><code class="erb">&lt;%= form_tag users_path do %&gt;
+    &lt;%= text_field_tag :name %&gt;
+    &lt;%= text_field_tag :email %&gt;
+    &lt;%= submit_tag %&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<p>Both helper methods used to create DOM of the form tag with necessary DOM content.</p>
+<pre><code class="html">&lt;form action=&quot;/users&quot; accept-charset=&quot;UTF-8&quot; method=&quot;post&quot;&gt;
+    &lt;input name=&quot;utf8&quot; type=&quot;hidden&quot; value=&quot;&amp;#x2713&quot;/&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;token_value&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot;/&gt;
+    &lt;input type=&quot;submit&quot; name=&quot;commit&quot; value=&quot;Save Changes&quot; data-disable-with=&quot;Save Changes&quot;/&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h2 id="after-rails-51_1">After Rails 5.1</h2>
+<p><code>form_with</code> <b>withour a model object</b>
+<code>form_with</code> provides an option to pass a URL to be used for the submit action.</p>
+<pre><code class="erb">&lt;%= form_with url: users_path do |form| %&gt;
+    &lt;%= form.text_field :email%&gt;
+    &lt;%= form.submit %&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<p>This generates DOM given below.</p>
+<pre><code class="html">&lt;form action=&quot;/users&quot; accept-charset=&quot;UTF-8&quot; data-remote=&quot;true&quot; method=&quot;post&quot;&gt;
+    &lt;input name=&quot;utf8&quot; type=&quot;hidden&quot; value=&quot;&amp;#x2713;&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;token_value&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;
+    &lt;input type=&quot;submit&quot; name=&quot;commit&quot; value=&quot;Save &quot; data-disable-with=&quot;Save &quot; /&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p><code>form_with</code> with a scope (prefix)
+new, we can see that above code, does not prefix input fields as it does when generated with model object.
+to generate input fields with some prefix, Rails provides <code>scope</code> option.</p>
+<pre><code class="erb">&lt;%= form_with url: users_path, scope: :user do |form| %&gt;
+    &lt;%= form.text_field :name %&gt;
+    &lt;%= form.text_field :email %&gt;
+    &lt;%= form.submit %&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<p>This generates DOM given below.</p>
+<pre><code class="html">&lt;form action=&quot;/users&quot; accept-charset=&quot;UTF-8&quot; data-remote=&quot;true&quot; method=&quot;post&quot;/&gt;
+    &lt;input name=&quot;utf8&quot; type=&quot;hidden&quot; value=&quot;&amp;#x2713&quot;/&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;token_value&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;user[name]&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;userp[email]&quot;/&gt;
+    &lt;input type=&quot;submit&quot; name=&quot;commit&quot; value=&quot;Save User&quot; data-disable-with=&quot;Save User&quot;/&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p><code>form_with</code> <b>ajax submit events</b>
+As we can see <code>form_with</code> adds <code>data-remote</code> attribute with value set to <code>true</code>. 
+This makes sure that form is submitted with AJAX if unobtrusive javascript driver like <code>rails-ujs</code> is used.
+if your application uses <code>rails-ujs</code>, the form will be submitted via ajax, and it listens on following events.
+- <code>ajax:success</code>: This event is called when Ajax response is success.
+- <code>ajax:error</code>: This event is called when Ajax response is failure.</p>
+<p>Event can be binded on form as given below.</p>
+<pre><code class="javascript">$(document).on('ajax:success','#new_user', functionn(e) {
+    console.log('form_with: succcessfully submitted form via ajax');
+});
+$(document).on('ajax:error', '#new_user', function(e){
+    console.log('form_with: error submitting form via ajax');
+})
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
