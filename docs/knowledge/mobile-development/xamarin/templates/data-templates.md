@@ -17,7 +17,7 @@ A [`DataTemplate`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.dat
 - [`ListView.HeaderTemplate`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.listview.headertemplate#Xamarin_Forms_ListView_HeaderTemplate)
 - [`ListView.FooterTemplate`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.listview.footertemplate#Xamarin_Forms_ListView_FooterTemplate)
 - [`ListView.GroupHeaderTemplate`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.listview.groupheadertemplate#Xamarin_Forms_ListView_GroupHeaderTemplate)
-- [`ItemsView.ItemTemplate`], which is in herited by [`ListView`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.listview).
+- [`ItemsView.ItemTemplate`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.itemsview-1), which is in herited by [`ListView`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.listview).
 - [`MultiPage.ItemTemplate`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.multipage-1), which is ingerited by [`CarouselPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.carouselpage), [`MasterDetailPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.masterdetailpage). and [`TabbedPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.tabbedpage).
 
 ### Creating an Inline DataTemplate

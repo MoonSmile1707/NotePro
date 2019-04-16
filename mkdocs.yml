@@ -48,6 +48,8 @@ nav:
               - Themes: knowledge/mobile-development/xamarin/xamarin-forms-theme.md
               - Template:
                   - Overview: knowledge/mobile-development/xamarin/templates/overview.md
+                  - Control Templates: knowledge/mobile-development/xamarin/templates/control-templates.md
+                  - Data Templates: knowledge/mobile-development/xamarin/templates/data-templates.md
 # configuration theme
 # extra_css:
 # extra_javascript:
