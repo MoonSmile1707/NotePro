@@ -63,12 +63,12 @@ Some payment channel solutions solve the problem of micro-payments. However, ope
 
 ### Poor usability
 
-The current system is inherently bad for normal users. 
+The current system is inherently bad for normal users.
 Asthe number of ICO increases, users may want to use DApps with different tokens as payment. Without on-chain trade, the convertibility of one crypto token to another represents a new challenge for both investors alive. It introduces complexity for managing multiple crypto tokens and exchanging tokens to pay on different platforms.
 
 ## Matic Network
 
-Matic Network solves these problems bu building a decentralized platform using an adated version of Plasma framework that provises a solution for faster and extremelu low cost transactions with finality on a main chain. 
+Matic Network solves these problems bu building a decentralized platform using an adated version of Plasma framework that provises a solution for faster and extremelu low cost transactions with finality on a main chain.
 
 Matic Network solves the low transaction throughout problem by using a Block Producer layer to produce the blocks. Block Producers enable the system to produce blocks at a very fast rate. The system ensures decentralization using PoS checkpoints which are pushed to the Ethereum mainchain. **This enables Matic to theoretically achieve `2^16` transation on a single side chain.**
 
@@ -102,20 +102,20 @@ To provide some context, the Matic ecosystem will have the following actor:
 
 The Matic Network uses a dual strategy of Proof of Stake at the checkpointing layer and Block Producers at the block producer layer to achieve faster blocktimes while ensuring a **high degree of decentralization by achieveing finality on the main chains using the checkpoints and fraid prood mechanisms**.
 
-![Blockchain Image](img/0*npekpGW4Z07EIXX0_blockchain.png)
+![Blockchain Image](img/0npekpGW4Z07EIXX0_blockchain.png)
 
 Bassically, anyone can stake their Matic tokens on root contract to become a Staker in the PoS checkpointing layer (contract deployed on Ethereum chain). This provides a high degree decentralized base layer for Matic chain.
 
 At the blockchain layer of the Matic Network, there are Block Producers, selected by PoS Stakers on the base layer, who will be creating the Matic Blocks. To achieve faster block generation times, these Block Producers will be low in number. **This layer is expexted to achieve ~ second block generation times at extremely low to negligible transaction fees.**
 
-![Blockchain Image Mainnet](img/0*oJtVseg6D-ry5fk8.png)
+![Blockchain Image Mainnet](img/0oJtVseg6D-ry5fk8.png)
 
 On Matic Network's chackpointing layer, the basis of Matic Network's PoS mechanism, for every few blocks on the block layer of the Matic Network, a proposer will be chosen among the stakeholders to propose a checkpoint on the main chain. These checkpoints are created by the proposer after validating all the blocks on the block layer of the Matic Network and creating the Merkle tree of the block hashes since the last checkpoint. The Merkle root is the broadcasted to the Staker Network for their signatures. The order stakeholders also verify the proof. They will approve the proposed blocks, if it is valid, by providing their signatures.
 
 The system needs the approval of `2/3` of the stakeholders to propose a "header block" to the root contract. Once the checkpoint is proposed on the mainchain, anyone on the Ethereum mainchain can challenge the proposed checkpoint within a specified prrod of time. if no one challenges it and the challenge period ends, the checkpoint if formally included as a valid checkpoint on the main chain.
 
 Following is a illustration of the "Header block":
-![header block image](img/1*uQzQjDW8ImGsPQjSfR0Zkw.png)
+![header block image](img/1uQzQjDW8ImGsPQjSfR0Zkw.png)
 
 More on header block AKA checkpoint at [here](https://ethresear.ch/t/plasma-checkpoint-cost-and-block-time/2016).
 
@@ -130,7 +130,7 @@ The Matic Network public checkpointing layer supports multiple side chains by de
 Key factors influencing the design of this sharding process are expected to be:
 
 1. Scheduling of checkpointing layer to periodically propose checkpoints for different side chains.
-2. Movement of assets across multiple side chains     <br/>
+2. Movement of assets across multiple side chains <br/>
    2.1 User will be able to send assets across side chains using chain ids and receipts.
    <br/>
    2.2 Users will be provided with an intuitive wallet interface to perform interchain transactions.
@@ -141,7 +141,7 @@ Movement of the assets from one chain to another will be managed at the checkpoi
 
 ### Potential Use Cases
 
-Matic Foundation is committed to provide a scalable and user friendly ecosystem for third party Decentralized applications to thrive on. Matic Foundation like Ethereum and other platform foundations will promote various Base chain DApps(like DApps built Ethereum currently, and NEO, EOS in the future) to build and migrate their user facing applications/ transactions on  Matic Network. It will also award grants and funding to third party app developers to buld various user cases on top of Matic Network like:
+Matic Foundation is committed to provide a scalable and user friendly ecosystem for third party Decentralized applications to thrive on. Matic Foundation like Ethereum and other platform foundations will promote various Base chain DApps(like DApps built Ethereum currently, and NEO, EOS in the future) to build and migrate their user facing applications/ transactions on Matic Network. It will also award grants and funding to third party app developers to buld various user cases on top of Matic Network like:
 
 #### Payments
 
@@ -153,9 +153,47 @@ Matic smart contracts will allow users to pay with any crypto token thay prefer 
 
 #### Liquidity providers
 
+Third parties can use the Matic Network to exchange any tokens for other tokens by leveraging 0x liquidity pool or other liquidity providers while transferring crypto assets. In the case of fiat, the Matic Development Team is planning to collaborate with fiat liquidity providers in currencies of major countries.
 
+#### Decentralized Exchange (DEX) and Marketplace support
+
+The Matic Network is expected to have all characteristics which an exchange platform should have - faster and cheapers trades. The Matic Network is capable of supporting decentralized exchanges and enabling trust-less, reliable and easy crypto trades. The decentralized exchange is the future for digital assets and provides better security or solvency than the centralized exchanges.
+
+#### Lending platform
+
+The Matic Network will enable platforms for merchants to assess the creditworthiness of connected users via their transaction history. This enables merchants to len tokens to users on the network when transacting with users that fon not have sufficient funds. The Matic Network expects to use the Dharma protocol to provide tokenized debt to users.
+
+#### Identity
+
+Users need utilitarian yet user-friendly interface where MetaMask or web3 enabled browsers are not required. Thay do not need to understand how Ethereum works under the hood.
+
+Decentralized apps need a way to sign transactions, but that must happen without submitting private keys on each DApp on wen browser or mobile apps. The Matic Development Team believes that users must have control over their private keys withour worrying about the security. The Matic Network will solve that with Open-Identity system and will deliver a seamless experience to users.
+
+This system will also provide a way to auto-approve certain kind of transactions depending upon the criteria chosen by the users. This will drive the recurring payments on the Matic Network.
+
+#### Games
+
+We expect games to be a big part of the Matic Network. In-game assets represented as NFTs (ERC721) are expected to be bought, sold and traded in huge numbers on our sidechains. Developers will also be able to save game state on the sidechains, if they choose to. Along with the NFT marketplace that we will enable,developers and users will truly have a fast, efficient and secure sidechain to build and play games on.
+
+#### Infrastructure
+
+The Matic Development Team will act on the simple mantra - make it simple and seamless. For that, the team will provide new infrastructure around the Matic Network including user-friendly wallets for individual users and merchants, payroll dashboards, payment SDKs and other open source tools.
+
+#### Dagger
+
+[Dagger](https://matic.network/dagger) is a tool or engine to track Ethereum accounts and events in real-time. We can learn more about Dagger [here](https://medium.com/matic-network/ethereum-in-realtime-dagger-98ee2d717c76) and check how it works at [here](https://medium.com/matic-network/understanding-dagger-453d90480c51).
+
+Developers can use Dagger to track their own smart contracts, accounts and transactions. They can create custom service or integrate with third-party services through IFTTT or Zapier.
+
+#### Partners (partial list)
+
+- [Decentraland](https://decentraland.org/): Decentraland is a virtual reality platform powered by the Ethereum blockchain. Users can create, experience, and monetize content and applications using a developer toolkit that works on any platform (all VR headsets and web browsers) and is designed to create virtual environments an applications.
+- [Quarkchain](https://quarkchain.io/): QuarkChain is an innovative permissionless blockchain architecture that aims to provide a secure, decentralized and scalable blockchain solution.
+- [Ankr Network](https://www.ankr.com/): Ankr is a distributed computing platform that aims to leverage idle computing resources in data centres and edge devices.
+- [Portis](https://developers.portis.io/): Portis is a technology company that wants to make sure any person in the world can use decentralized application, just as easily as they use "regular" apps.
+- [Maker DAO](https://makerdao.com/en/): Maker is the organization behind the DAI stablecoin.
+- [Ripio Credit Network](https://ripiocredit.network/): Ripio Credit Network is a peer to peer credit network that connects lenders and borrowsers located anywhere in the world.
 
 <hr/>
 
-To be continue <br/>
 Get more information at [here](https://medium.com/matic-network/what-is-matic-network-466a2c493ae1).

@@ -21,7 +21,8 @@ copyright: "Moon Smile 2019"
 nav:
   - Home: index.md
   - Daily Plans:
-      - Version 1: daily-plans/plans-version-1.md
+      - Version 1: daily-plans/plans-version-1.1.md
+      - Soft Skills for Learning: daily-plans/soft-skills-for-learning.md
   - KnowLedge:
       - DevOps:
           - Circle CI:
@@ -42,6 +43,19 @@ nav:
           - Xamarin:
               - Getting Started WorkManager: knowledge/stories/xamarin-blog/getting-started-workmanager.md
               - Sharing Files and Email Attachment: knowledge/stories/xamarin-blog/sharing-files-and-email-attachments.md
+      - Mobile Development:
+          - Overview: knowledge/mobile-development/overview.md
+          - Xamarin:
+              - Controls Reference: knowledge/mobile-development/xamarin/controls-reference.md
+              - Customizing ListView cell Appearence: knowledge/mobile-development/xamarin/customizing-listview-cell-appearance.md
+              - Data Pages: knowledge/mobile-development/xamarin/data-pages.md
+              - Data Pages Controls: knowledge/mobile-development/xamarin/data-pages-controls.md
+              - Triggers: knowledge/mobile-development/xamarin/triggers.md
+              - Themes: knowledge/mobile-development/xamarin/xamarin-forms-theme.md
+              - Template:
+                  - Overview: knowledge/mobile-development/xamarin/templates/overview.md
+                  - Control Templates: knowledge/mobile-development/xamarin/templates/control-templates.md
+                  - Data Templates: knowledge/mobile-development/xamarin/templates/data-templates.md
 # configuration theme
 # extra_css:
 # extra_javascript:
