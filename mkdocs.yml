@@ -26,6 +26,8 @@ nav:
       - DevOps:
           - Circle CI:
               - Writing YAML: knowledge/dev-ops/circle-ci/writing-yaml.md
+          - Docker:
+              - Docker Network: knowledge/dev-ops/docker/docker-network.md
       - Web Development:
           - Ruby On Rails:
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
@@ -37,6 +39,9 @@ nav:
               - Plasma: knowledge/stories/blockchain-blog/plasma.md
           - Thinking In Art:
               - You Could Have Today Intead You Choose Tomorrow: knowledge/stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow.md
+          - Xamarin:
+              - Getting Started WorkManager: knowledge/stories/xamarin-blog/getting-started-workmanager.md
+              - Sharing Files and Email Attachment: knowledge/stories/xamarin-blog/sharing-files-and-email-attachments.md
 # configuration theme
 # extra_css:
 # extra_javascript:
