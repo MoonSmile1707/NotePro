@@ -34,15 +34,19 @@ nav:
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
               - Active Record Callbacks: knowledge/web-development/ruby-on-rails/rails-active-record-callbacks.md
       - Stories:
+          - Dev Ops:
+              - What is DevOps? Why do we need it?: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
           - Blockchain:
               - Matic Developer Support Program: knowledge/stories/blockchain-blog/matic-developer-support-program.md
               - What Is Matic Network: knowledge/stories/blockchain-blog/what-is-matic-network.md
               - Plasma: knowledge/stories/blockchain-blog/plasma.md
           - Thinking In Art:
               - You Could Have Today Intead You Choose Tomorrow: knowledge/stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow.md
-          - Xamarin:
+          - Xamarin Blog:
               - Getting Started WorkManager: knowledge/stories/xamarin-blog/getting-started-workmanager.md
               - Sharing Files and Email Attachment: knowledge/stories/xamarin-blog/sharing-files-and-email-attachments.md
+              - Add a Backend to Your App in 10 minutes: knowledge/stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes.md
+              - Behavior In Xamarin Forms: knowledge/stories/xamarin-blog/behavior-xamarin.md
       - Mobile Development:
           - Overview: knowledge/mobile-development/overview.md
           - Xamarin:
