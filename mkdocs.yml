@@ -34,6 +34,8 @@ nav:
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
               - Active Record Callbacks: knowledge/web-development/ruby-on-rails/rails-active-record-callbacks.md
       - Stories:
+          - Skill Blog:
+              - How to be a great programmer: knowledge/stories/skill-blog/how-to-be-a-great-programmer.md
           - Dev Ops:
               - What is DevOps? Why do we need it?: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
           - Blockchain:
@@ -42,6 +44,9 @@ nav:
               - Plasma: knowledge/stories/blockchain-blog/plasma.md
           - Thinking In Art:
               - You Could Have Today Intead You Choose Tomorrow: knowledge/stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow.md
+              - How to quit your job and live your startup dream: knowledge/stories/thinking-in-art/how-to-quit-your-job-and-live-your-startup-dream.md
+              - How two words can change your life: knowledge/stories/thinking-in-art/how-two-words-can-change-your-life.md
+              - 4 Practical Things I do to stay positive: knowledge/stories/thinking-in-art/4-practical-things-i-do-to-stay-positive.md
           - Xamarin Blog:
               - Getting Started WorkManager: knowledge/stories/xamarin-blog/getting-started-workmanager.md
               - Sharing Files and Email Attachment: knowledge/stories/xamarin-blog/sharing-files-and-email-attachments.md
