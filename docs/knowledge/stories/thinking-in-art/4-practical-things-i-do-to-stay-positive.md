@@ -36,7 +36,7 @@ You can even do those things while you're feeling bad.
 
 The author of the famous self-help book. [Think And Grow Rich](https://www.amazon.com/gp/product/1906465592/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dariusforoux-20&creative=9325&linkCode=as2&creativeASIN=1906465592&linkId=f894c855fe9dfdf4b614225804df3307), put it:
 
-    "*If you cannot do great things, do small things in a great way.*"
+    If you cannot do great things, do small things in a great way.
 
 It's unquestionable: Doing small things will make you feel better. But you don't need to believe me. Just go and do small thing now and see it for yourself.
 
