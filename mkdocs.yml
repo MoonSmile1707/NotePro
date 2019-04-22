@@ -30,6 +30,7 @@ nav:
           - Docker:
               - Overview: knowledge/dev-ops/docker/overview.md
               - Docker Network: knowledge/dev-ops/docker/docker-network.md
+              - Docker File: knowledge/dev-ops/docker/docker-file.md
       - Web Development:
           - Ruby On Rails:
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
@@ -52,6 +53,9 @@ nav:
           - Xamarin:
               - Getting Started WorkManager: knowledge/stories/xamarin-blog/getting-started-workmanager.md
               - Sharing Files and Email Attachment: knowledge/stories/xamarin-blog/sharing-files-and-email-attachments.md
+          - Dev Ops:
+              - Finding a Technical Founder: knowledge/stories/devops-blog/finding-a-technical-founder.md
+              - What is DevOps and Why do we need it: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
       - Mobile Development:
           - Overview: knowledge/mobile-development/overview.md
           - Xamarin:
@@ -61,6 +65,9 @@ nav:
               - Data Pages Controls: knowledge/mobile-development/xamarin/data-pages-controls.md
               - Triggers: knowledge/mobile-development/xamarin/triggers.md
               - Themes: knowledge/mobile-development/xamarin/xamarin-forms-theme.md
+              - Deep Dive into SkiaSharp With Xamarin Form: knowledge/mobile-development/xamarin/deep-dive-into-skiasharp-with-xamarin-forms.md
+              - Cross Platform 2D Graphics with SkiaSharp: knowledge/mobile-development/xamarin/cross-platform-2d-graphics-with-skiasharp.md
+              - Cross Platform Drawing with SkaSharp: knowledge/mobile-development/xamarin/cross-platform-drawing-with-skiasharp.md
               - Template:
                   - Overview: knowledge/mobile-development/xamarin/templates/overview.md
                   - Control Templates: knowledge/mobile-development/xamarin/templates/control-templates.md
