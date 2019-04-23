@@ -52,6 +52,7 @@ nav:
               - Sharing Files and Email Attachment: knowledge/stories/xamarin-blog/sharing-files-and-email-attachments.md
               - Add a Backend to Your App in 10 minutes: knowledge/stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes.md
               - Behavior In Xamarin Forms: knowledge/stories/xamarin-blog/behavior-xamarin.md
+              - Shrinking Your Android App Size: knowledge/stories/xamarin-blog/shrinking-your-android-app-size.md
       - Mobile Development:
           - Overview: knowledge/mobile-development/overview.md
           - Xamarin:
