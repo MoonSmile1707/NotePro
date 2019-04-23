@@ -45,18 +45,28 @@ nav:
                   - Utilities:
                       - Display: knowledge/web-development/ui-ux/bootstrap/ultilities/display.md
       - Stories:
+          - Skill Blog:
+              - How to be a great programmer: knowledge/stories/skill-blog/how-to-be-a-great-programmer.md
+          - Dev Ops:
+              - What is DevOps? Why do we need it?: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
           - Blockchain:
               - Matic Developer Support Program: knowledge/stories/blockchain-blog/matic-developer-support-program.md
               - What Is Matic Network: knowledge/stories/blockchain-blog/what-is-matic-network.md
               - Plasma: knowledge/stories/blockchain-blog/plasma.md
           - Thinking In Art:
               - You Could Have Today Intead You Choose Tomorrow: knowledge/stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow.md
-          - Xamarin:
+              - How to quit your job and live your startup dream: knowledge/stories/thinking-in-art/how-to-quit-your-job-and-live-your-startup-dream.md
+              - How two words can change your life: knowledge/stories/thinking-in-art/how-two-words-can-change-your-life.md
+              - 4 Practical Things I do to stay positive: knowledge/stories/thinking-in-art/4-practical-things-i-do-to-stay-positive.md
+          - Xamarin Blog:
               - Getting Started WorkManager: knowledge/stories/xamarin-blog/getting-started-workmanager.md
               - Sharing Files and Email Attachment: knowledge/stories/xamarin-blog/sharing-files-and-email-attachments.md
           - Dev Ops:
               - Finding a Technical Founder: knowledge/stories/devops-blog/finding-a-technical-founder.md
               - What is DevOps and Why do we need it: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
+              - Add a Backend to Your App in 10 minutes: knowledge/stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes.md
+              - Behavior In Xamarin Forms: knowledge/stories/xamarin-blog/behavior-xamarin.md
+              - Shrinking Your Android App Size: knowledge/stories/xamarin-blog/shrinking-your-android-app-size.md
       - Mobile Development:
           - Overview: knowledge/mobile-development/overview.md
           - Xamarin:
