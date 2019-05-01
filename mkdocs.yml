@@ -22,6 +22,7 @@ nav:
   - Home: index.md
   - Daily Plans:
       - Version 1: daily-plans/plans-version-1.1.md
+      - Version 2: daily-plans/plans-version-2.md
       - Soft Skills for Learning: daily-plans/soft-skills-for-learning.md
   - KnowLedge:
       - DevOps:
@@ -36,8 +37,12 @@ nav:
       - Stories:
           - Skill Blog:
               - How to be a great programmer: knowledge/stories/skill-blog/how-to-be-a-great-programmer.md
+              - What Javascript Developers can learn from C++: knowledge/stories/skill-blog/what-javascript-developers-learn-from-c++.md
+              - What I learn from lauching a freelance writing business: knowledge/stories/skill-blog/what-i-learn-from-lauching-a-freelance-writing-bussiess.md
           - Dev Ops:
               - What is DevOps? Why do we need it?: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
+          - Computer Science:
+              - What is between machine learning and AI: knowledge/stories/computer-science/what-is-different-between-machine-learning-and-ai.md
           - Blockchain:
               - Matic Developer Support Program: knowledge/stories/blockchain-blog/matic-developer-support-program.md
               - What Is Matic Network: knowledge/stories/blockchain-blog/what-is-matic-network.md
@@ -53,6 +58,7 @@ nav:
               - Add a Backend to Your App in 10 minutes: knowledge/stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes.md
               - Behavior In Xamarin Forms: knowledge/stories/xamarin-blog/behavior-xamarin.md
               - Shrinking Your Android App Size: knowledge/stories/xamarin-blog/shrinking-your-android-app-size.md
+              - Mobile Tools for Designer: knowledge/stories/xamarin-blog/mobile-tools-for-designers.md
       - Mobile Development:
           - Overview: knowledge/mobile-development/overview.md
           - Xamarin:
