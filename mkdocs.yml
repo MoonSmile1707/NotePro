@@ -39,6 +39,8 @@ nav:
               - How to be a great programmer: knowledge/stories/skill-blog/how-to-be-a-great-programmer.md
               - What Javascript Developers can learn from C++: knowledge/stories/skill-blog/what-javascript-developers-learn-from-c++.md
               - What I learn from lauching a freelance writing business: knowledge/stories/skill-blog/what-i-learn-from-lauching-a-freelance-writing-bussiess.md
+              - How code reviews work at Microsoft: knowledge/stories/skill-blog/how-code-reviews-work-at-microsoft.md
+              - How to debug web apps with Firefox developer tools: knowledge/stories/skill-blog/how-to-debug-with-firefox.md
           - Dev Ops:
               - What is DevOps? Why do we need it?: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
           - Computer Science:

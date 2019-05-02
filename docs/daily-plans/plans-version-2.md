@@ -58,11 +58,11 @@
 
 ## Ranking Coding Website
 
+- [LeetCode](https://leetcode.com/)
+- [LintCode](https://www.lintcode.com/)
 - [Hackerrank](https://www.hackerrank.com/)
 - [Codingforces](https://codeforces.com/)
 - [Topcoder](https://www.topcoder.com/)
-- [LeetCode](https://leetcode.com/)
-- [LintCode](https://www.lintcode.com/)
 
 <hr/>
 
