@@ -36,6 +36,8 @@ nav:
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
               - Active Record Callbacks: knowledge/web-development/ruby-on-rails/rails-active-record-callbacks.md
               - Rails i18n: knowledge/web-development/ruby-on-rails/rails-i18n.md
+              - I18n Enumerize: knowledge/web-development/ruby-on-rails/i18n-enumerize.md
+              - Rails Cookies: knowledge/web-developemnt/ruby-on-rails/rails-cookies.md
           - UI/UX:
               - Bootstrap:
                   - Overview: knowledge/web-development/ui-ux/bootstrap/overview.md
