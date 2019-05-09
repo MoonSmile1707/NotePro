@@ -1,6 +1,7 @@
 version: "3.5"
 services:
   notepro:
+    image: python:3.6.8-alpine3.9
     container_name: note_web_application
     build: ./docker
     volumes:

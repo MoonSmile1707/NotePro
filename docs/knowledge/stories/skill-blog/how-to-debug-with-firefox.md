@@ -1,6 +1,7 @@
 # How to debug web apps with firefox developer tools
 
 <hr/>
+
 ![firefox dev image](../../../img-root/firefox_LmBD9OaRAJPnBYBoZwyZMw.jpeg)
 
 By knowing how to debug your web app, you can leverage developer tools to hack your productivity. After reading this article, you'll be able to:

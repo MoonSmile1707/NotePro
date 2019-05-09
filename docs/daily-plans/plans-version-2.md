@@ -70,8 +70,9 @@
 
 - [Edx](https://www.edx.org/)
 - [Geeks For Geeks](https://www.geeksforgeeks.org/)
-- [.NET Foundation](https://presentations.dotnetfoundation.org/)
 - [Microsoft Courses](https://developer.microsoft.com/en-us/collective/learning/courses)
+- [SoloLearn](https://www.sololearn.com)
+- [.NET Foundation](https://presentations.dotnetfoundation.org/)
 
 <hr/>
 
