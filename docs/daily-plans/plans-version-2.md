@@ -17,15 +17,14 @@
 
 ## Time planning
 
-- **7 a.m**: Starting a day and thinking about dreams (not girls).
+- **7 a.m**: Starting a day with 15 minutes about foreign languages and thinking about dreams (not girls).
 - **7.30 a.m**: Go to school with highspeed (the first lesson starts at **7.30 a.m**).
 - **8 -> 9.45 a.m**: Learning at school. Get knowledge (not sleeping).
 - **10 a.m**: Go to Youthdev Company. It take me 30 - minutes and I come company at 10.45 a.m
-- **11 a.m**: Get list of stories (medium) to read. View Odoo for my daily mission. View pm.youthdev.net to find my tasks. Have a daily standup with dat.hoang.
-- **11 -> 12.30 a.m**:Reading one of stories which is pinned. I will update my document with overview abour stories (markdown + pin link to web story) and my [Odoo's task](https://moonsmile1.odoo.com/). Learn cources online on [Edx](edx.org). Reading a story from some books of Trung Nguyen Cafe.
-- **12.35 -> 1 p.m**: Go out company to have a lunch. Connect to twitter network social.
-- **1 -> 1.15 p.m**: Get a cup of milk cafe and go back campany to work.
-- **1.20 -> 2 p.m**: Improving skills coding in languages (C#, Typescript, python) over [website coding](#ranking-coding-website).
+- **11 a.m -> 12.30 a.m**: View Odoo for my daily mission. View pm.youthdev.net to find my tasks. Have a daily standup with dat.hoang. Learn cources online on [Edx](edx.org). Get documents for works.
+- **12.35 -> 1 p.m**: Go out company to have a lunch. Connect to twitter network social and Reading one of stories which is pinned.
+- **1 -> 1.15 p.m**: Get a cup of milk-cafe and go back campany to work.
+- **1.20 -> 2 p.m**: Improving skills coding in languages (C#, Typescript, python) over [website coding](#ranking-coding-website).Reading a story from some books of Trung Nguyen Cafe. I will update my document with overview about stories (markdown + pin link to web story) and my [Odoo's task](https://moonsmile1.odoo.com/).
 - **2 p.m -> 6 p.m**: Crazy and Work with high spirits. After I learn a new knowledge,I will pin web's link to my docs as same as some of stories.
 - **6 -> 8 p.m**: Reading technique news on Twitter network social.Note summary and update to my docs over pages.
 - **8 -> 11 p.m**: Working on Own Project(freelancer, schedules).
