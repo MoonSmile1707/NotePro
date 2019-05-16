@@ -46,6 +46,7 @@
 - [Medium](https://medium.com/)
 - [Twitter](https://twitter.com/)
 - [Microsoft Dev Blogs + Xamarin Developers](https://devblogs.microsoft.com/)
+- [Windows Blog](https://blogs.windows.com/)
 - [Channel 9](https://channel9.msdn.com/)
 - [Dev.to](https://dev.to/)
 - [Stackoverflow](https://stackoverflow.com/)
