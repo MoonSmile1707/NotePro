@@ -25,6 +25,8 @@ nav:
       - Version 2: daily-plans/plans-version-2.md
       - Soft Skills for Learning: daily-plans/soft-skills-for-learning.md
   - KnowLedge:
+      - Algorithms:
+          - Analysis of Algorithms: knowledge/algorithms/analysis-of-algorithms.md
       - DevOps:
           - Circle CI:
               - Writing YAML: knowledge/dev-ops/circle-ci/writing-yaml.md
