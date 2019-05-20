@@ -21,13 +21,13 @@
 - **7.30 a.m**: Go to school with highspeed (the first lesson starts at **7.30 a.m**).
 - **8 -> 9.45 a.m**: Learning at school. Get knowledge (not sleeping).
 - **10 a.m**: Go to Youthdev Company. It take me 30 - minutes and I come company at 10.45 a.m
-- **11 a.m -> 12.30 a.m**: View Odoo for my daily mission. View pm.youthdev.net to find my tasks. Have a daily standup with dat.hoang. Learn cources online on [Edx](edx.org). Get documents for works.
+- **11 a.m -> 12.30 a.m**: View Odoo for my daily mission. View pm.youthdev.net to find my tasks. Have a daily standup with dat.hoang. Learning for algorithms at Geeksforgeeks. Get documents for working.
 - **12.35 -> 1 p.m**: Go out company to have a lunch. Connect to twitter network social and Reading one of stories which is pinned.
 - **1 -> 1.15 p.m**: Get a cup of milk-cafe and go back campany to work.
 - **1.20 -> 2 p.m**: Improving skills coding in languages (C#, Typescript, python) over [website coding](#ranking-coding-website).Reading a story from some books of Trung Nguyen Cafe. I will update my document with overview about stories (markdown + pin link to web story) and my [Odoo's task](https://moonsmile1.odoo.com/).
 - **2 p.m -> 6 p.m**: Crazy and Work with high spirits. After I learn a new knowledge,I will pin web's link to my docs as same as some of stories.
-- **6 -> 8 p.m**: Reading technique news on Twitter network social.Note summary and update to my docs over pages.
-- **8 -> 11 p.m**: Working on Own Project(freelancer, schedules).
+- **6 -> 8 p.m**: Reading technique news on Twitter network social.Note summary and update to my docs over pages. Learn cources online on [Edx](edx.org).
+- **8 -> 11 p.m**: Working on own Project(freelancer, schedules).
 - **11 -> 12 p.m**: Get a cup of milk cafe to think about the future. Find values of mine to get things better for new day.
 - **0 -> 3 a.m**: Learn Foreign Languages (English and Japanese).
 
