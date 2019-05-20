@@ -1,17 +1,17 @@
 version: "3.5"
 services:
   notepro:
-    image: python:3.6.8-alpine3.9
-    container_name: note_web_application
+    image: kakavip198kaka/smart_note
+    container_name: note_web_app
     build: ./docker
     volumes:
-      - .:/usr/docs
-    # networks:
-    #   - default
+      - .:/usr/src/docs
+    networks:
+      - default
     ports:
       - "9091:9091"
     entrypoint: ["mkdocs", "serve", "--dev-addr=0.0.0.0:9091"]
-# networks:
-#   default:
-#     attachable: true
-#     driver: overlay
+networks:
+  default:
+    attachable: true
+    driver: overlay
