@@ -96,6 +96,28 @@ In mathematical relation, if f(n) ∈ ω(g(n)) then lim **_f(n)/g(n) = ∞_**
 
 ![little o](../../img-root/Analysis-of-Algorithms-little-o-omega.png)
 
+## Lower and Upper Bound Theory
+
+The Lower and Upper Bound Theory provides a way to find the lowest complexity algorithm to solve a problem. What actually Lower and Upper bounds are.
+
+- **_Lower Bound_** - Let L(n) be the running time of an algorithm A(n), then g(n) is the **_Lower Bound_** of A if there exist two constants C and N such that L(n) <= C\*g(n) for n > N. Lower bound of an algorithm is shown by the asymtotic notation called [Big Omega](https://www.geeksforgeeks.org/analysis-of-algorithms-set-3asymptotic-notations/)
+- **_Upper Bound_** - Let U(n) be the running time of an algorithm A, then g(n) is the **_Upper Bound_** of A if there exist two constants C and N such that U(n) >= C\*g(n) for n > N. Upper bound of an algorithm is shown by the asymtotic notation called Big Oh(O)
+
+### 1. Lower Bound Theory
+
+According to the lower bound theory, for a lower bound L(n) of an algorithm, it is not possible to have any other algorithm (for a common problem) whose time complexity is less than L(n) for random input. Also every algorithm must take at least L(n) time in worst case. **_Note_** that L(n) here is the minimum of all the possible algorithm, of maximum complexity.
+
+**_Note_** that our main motive is to get an optimal algorithm, which is the one having its Upper Bound Same as its Lower Bound (U(n)=L(n)).
+
+***Trivial Lower Bound*** - It is the easiest method to find the lower bound. The Lower bounds which can be easily observed on the basis of the number of input taken and the number of output produces are called trivial Lower Bound.
+
+Multiplication of nxn matrix, where,
+
+    Input: For 2 matrix we will have 2n2 inputs
+    Output: 1 matrix of order n x n, i.e.,  n2 outputs
+
+***Computational Model***- The method is for all those alforithms that are comparison based. For example in sorting we have to compare the elements of the list among themselces and then sort them accordingly. Similar is the case with searching and thus we can implement the same in this case.
+
 <hr/>
 
 To be continued.
