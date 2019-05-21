@@ -74,6 +74,28 @@ For a given function g(n), we denote by Ω(g(n)) the set of functions.
 - [Analysis of Algorithm| Set 4 (Analysis of Loops)](https://www.geeksforgeeks.org/analysis-of-algorithms-set-4-analysis-of-loops/)
 - [Recent Aritcles on analysis of algorithm](https://www.geeksforgeeks.org/category/algorithm/analysis/).
 
+## Little o and little omega notations
+
+The main idea of **_asymptotic analysis_** is to have a measure of efficiency of algorithms that doesn't depend on machine specific constants, mainly because this analysis doesn't require algorithms to be implemeneted nad time taken by programs to be compared.
+
+### Little o asymptotic notation
+
+**_Definition_**: Let f(n) and g(n) be functions that map positive integers to positive real numbers. we say that f(n) is o(g(n)) (of f(n) E o(g(n))) if for **_any real_** constant c>0, there exists an integer constant n0>= 1 such that 0 <= f(n) < c\*g(n).
+
+In mathematical relation, f(n) = o(g(n)) means lim f(n)/g(n) = 0
+
+### Little omega asymptotic notation
+
+**_Definition_**: Let f(n) and g(n) ne functions that map positive integers to positive real numbers. We say that f(n) is ω(g(n)) (or f(n) ∈ ω(g(n))) if for any real constant c > 0, there exists an integer constant n0 >= 1 such that f(n) > c\*g(n) >= 0 for every integer n >= n0
+
+f(n) has a higher growth rate than g(n) so main difference between Big Omega(Ω) and little omega (ω) lies in their definitions. In the case of Big Omega f(n)=Ω(g(n)) and the bound is 0<=cg(n)<=f(n), but in case of little omega, it is true for 0 <= c\*g(n) < f(n).
+
+We use ω notation to denote a lower bound that is not asymptotically tight. and, f(n) ∈ ω(g(n)) if and only if g(n) ∈ ο((f(n))
+
+In mathematical relation, if f(n) ∈ ω(g(n)) then lim **_f(n)/g(n) = ∞_**
+
+![little o](../../img-root/Analysis-of-Algorithms-little-o-omega.png)
+
 <hr/>
 
 To be continued.
