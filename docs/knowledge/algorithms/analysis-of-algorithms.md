@@ -109,14 +109,152 @@ According to the lower bound theory, for a lower bound L(n) of an algorithm, it 
 
 **_Note_** that our main motive is to get an optimal algorithm, which is the one having its Upper Bound Same as its Lower Bound (U(n)=L(n)).
 
-***Trivial Lower Bound*** - It is the easiest method to find the lower bound. The Lower bounds which can be easily observed on the basis of the number of input taken and the number of output produces are called trivial Lower Bound.
+**_Trivial Lower Bound_** - It is the easiest method to find the lower bound. The Lower bounds which can be easily observed on the basis of the number of input taken and the number of output produces are called trivial Lower Bound.
 
 Multiplication of nxn matrix, where,
 
     Input: For 2 matrix we will have 2n2 inputs
     Output: 1 matrix of order n x n, i.e.,  n2 outputs
 
-***Computational Model***- The method is for all those alforithms that are comparison based. For example in sorting we have to compare the elements of the list among themselces and then sort them accordingly. Similar is the case with searching and thus we can implement the same in this case.
+**_Computational Model_**- The method is for all those alforithms that are comparison based. For example in sorting we have to compare the elements of the list among themselces and then sort them accordingly. Similar is the case with searching and thus we can implement the same in this case.
+
+## Analysis of Loops
+
+**_O(1)_**: Time complexity of a function (or set of statements) is considered as O(1) if it doesn't contain loop, recursion and call to any other non-constant time function.
+
+    // Here c is a constant
+    for (int i = 1; i <= c; i++) {
+        // some O(1) expressions
+    }
+
+**_O(n)_**: Time Complexity of a loop is considered as O(n) if the loop variables is incremented/decremented by a constant amount.
+
+    // Here c is a positive integer constant
+    for (int i = 1; i <= n; i += c) {
+        // some O(1) expressions
+    }
+
+    for (int i = n; i > 0; i -= c) {
+        // some O(1) expressions
+    }
+
+**_O(nc)_**: Time complexity of nested loops is equal to the number of times the innermost statement is executed.
+
+    for (int i = 1; i <=n; i += c) {
+        for (int j = 1; j <=n; j += c) {
+            // some O(1) expressions
+        }
+    }
+
+    for (int i = n; i > 0; i -= c) {
+        for (int j = i+1; j <=n; j += c) {
+            // some O(1) expressions
+    }
+
+**_O(Logn)_**: Time Complexity of a loop is considered as O(Logn) if the loop variables is devidedd / multiplied by a constant amount.
+
+    for (int i = 1; i <=n; i *= c) {
+        // some O(1) expressions
+    }
+    for (int i = n; i > 0; i /= c) {
+        // some O(1) expressions
+    }
+
+**_O(LogLogn)_**: Time complexity of a loop is consider as O(LogLogn) f the loop variables is reduced / increased exponentially by a constant amount.
+
+    // Here c is a constant greater than 1
+    for (int i = 2; i <=n; i = pow(i, c)) {
+        // some O(1) expressions
+    }
+    //Here fun is sqrt or cuberoot or any other constant root
+    for (int i = n; i > 1; i = fun(i)) {
+        // some O(1) expressions
+    }
+
+**_How to combine time complexities of consecutive loops?_**
+
+When there are consecutive loops, we calclate time complexity as sum f time complexities of individual loops
+
+    for (int i = 1; i <=m; i += c) {
+        // some O(1) expressions
+    }
+    for (int i = 1; i <=n; i += c) {
+        // some O(1) expressions
+    }
+    Time complexity of above code is O(m) + O(n) which is O(m+n)
+    If m == n, the time complexity becomes O(2n) which is O(n).
+
+## Solving Recurrences
+
+**_Substitution Method_**: We make a guess for the solution and then we use mathematical induction to prove the guess is correct or incorrect.
+
+    For example consider the recurrence T(n) = 2T(n/2) + n
+
+    We guess the solution as T(n) = O(nLogn). Now we use induction
+    to prove our guess.
+
+    We need to prove that T(n) <= cnLogn. We can assume that it is true
+    for values smaller than n.
+
+    T(n) = 2T(n/2) + n
+        <= cn/2Log(n/2) + n
+        =  cnLogn - cnLog2 + n
+        =  cnLogn - cn + n
+        <= cnLogn
+
+**_Recurrence Tree Method_**: In this method, we draw a recurrence tree and calculate the time taken by everu level of tree. Finnaly, we sum the work done at all levels. To draw the recurrence tree, we start from the given recurrence and keep drawing till we find pattern among levels. The pattern is typically a arithmetic or geometric series.
+
+    For example consider the recurrence relation
+    T(n) = T(n/4) + T(n/2) + cn2
+
+            cn2
+            /      \
+        T(n/4)     T(n/2)
+
+    If we further break down the expression T(n/4) and T(n/2),
+    we get following recursion tree.
+
+                    cn2
+            /           \
+        c(n2)/16      c(n2)/4
+        /      \          /     \
+    T(n/16)     T(n/8)  T(n/8)    T(n/4)
+    Breaking down further gives us following
+                    cn2
+                /            \
+        c(n2)/16          c(n2)/4
+        /      \            /      \
+    c(n2)/256   c(n2)/64  c(n2)/64    c(n2)/16
+    /    \      /    \    /    \       /    \
+
+    To know the value of T(n), we need to calculate sum of tree
+    nodes level by level. If we sum the above tree level by level,
+    we get the following series
+    T(n)  = c(n^2 + 5(n^2)/16 + 25(n^2)/256) + ....
+    The above series is geometrical progression with ratio 5/16.
+
+    To get an upper bound, we can sum the infinite series.
+    We get the sum as (n2)/(1 - 5/16) which is O(n2)
+
+**_Master Method_**:
+
+Master Method is a direct way to get the solution. The maser method works only for following type of recurrences or for recurrences that can be transformed to follwoing type.
+
+    T(n) = aT(n/b) + f(n) where a >= 1 and b > 1
+
+There are following three cases:
+
+1. If f(n) = Θ(nc) where c < c < Logba then T(b) = Θ(nLogba)
+2. If f(n) = Θ(nc) where c = Logba then T(n) = Θ(ncLog n)
+3. If f(n) = Θ(nc) where c > Logba then T(n) = Θ(f(n))
+
+**_How does this work?_**
+
+Master methd is mainly derived from recurrence tree method. If we draw recurrence tree of T(n) = aT(n/b) + f(n), we can see that the work done at root is f(n) and work done at all leaves is Θ(nc) where c is Logba. And the height of recurrence tree is Logbn.
+
+![alogi](../../img-root/AlgoAnalysis.png)
+
+In recurrence tree method, we calculate total work done. If the work done at leaves is polynomially, then leaves are the dominant part, and our result becomes the work done leaves (Case 1). If work done at leaves and root is asymptotically same, then our result becomes height multiplied by work done at any level (Case 2). If work done at root is asymptotically more, then our result becomes work done at root(Case 3).
 
 <hr/>
 
