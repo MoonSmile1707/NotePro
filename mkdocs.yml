@@ -37,6 +37,7 @@ nav:
               - CSS HandBook: knowledge/web-development/basics/css-handbook.md
           - ASP.NET:
               - Introduction: knowledge/web-development/asp.net/introduction.md
+              - NSwag: knowledge/web-development/asp.net/nswag.md
           - NodeJS:
               - Libuv: knowledge/web-development/nodejs/libuv.md
           - Ruby On Rails:
