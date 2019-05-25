@@ -256,6 +256,38 @@ Master methd is mainly derived from recurrence tree method. If we draw recurrenc
 
 In recurrence tree method, we calculate total work done. If the work done at leaves is polynomially, then leaves are the dominant part, and our result becomes the work done leaves (Case 1). If work done at leaves and root is asymptotically same, then our result becomes height multiplied by work done at any level (Case 2). If work done at root is asymptotically more, then our result becomes work done at root(Case 3).
 
+## Amortized Analysis Introduction
+
+Amortized Analysis is used for algorithms where an occasional operation is very slow, but most of the other operations are faster. In Amortized Analysis, we analyze a sequence of oprations and guarantee a worst case average time which is lower than the worst case time of a particular expensive operation.
+
+The solution to this trade off problem is to use Dynamic Table (or Arrays). The idea is to increase size of table whenever it becomes full. Following are the steps to follow when table becomes full.
+
+1. Allocate memory for a larger table of size.
+2. Copy the contents of old table to new value.
+3. Free the old table.
+
+If the table has space available, we simply insert new item in available space.
+
+![Dynamic Table](../../img-root/Dynamic-Table.png)
+
+**_What is the time complexity of n insertions using the above scheme?_**
+
+If use simple analysis, the worst case cost of an insertion is O(n). Therefore, worst case cost of n inserts is n \* O(n2). This analysis gives an upper bound, nit not a tight upper bound for n insertions as all insertions don't take Θ(n) time.
+
+![Amoritized Cost](../../img-root/AmortizedAnalysis.png)
+
+Folowing are few important notes.
+
+1. Amoritized cost of a sequence of operations can be seen as expenses of a salaried person. The average monthly expense of the person is less than or equal to the salary, but the person can spend more money in a particular month by buying a car or something. In other months, he or she saves money for the expensive month.
+2. The above Amoritized Analysis done for Dynamic Array example is called **_Aggregate Method_**. We will be discussing the other two methods in separate posts.
+3. The amoritized analysis doesn't involve probability. There is also another different notion of average case running time where algorithms use randomization to make them faster and expected running time is faster than worst case running time. These algorithms are analyzed using Randomized Analysis.
+
+**_Sources:_**:
+
+[Berkeley Lecture 35: Amoritized Analysis](https://www.youtube.com/watch?v=UYcWpldlX-o).
+[MIT Lecture 13: Amoritized Algorithms, Table Doubling, Potential Method](https://www.youtube.com/watch?v=b733mo4CxAQ)
+[amoritzed](http://www.cs.cornell.edu/courses/cs3110/2011sp/lectures/lec20-amortized/amortized.htm)
+
 <hr/>
 
 To be continued.
