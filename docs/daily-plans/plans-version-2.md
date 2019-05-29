@@ -69,9 +69,10 @@
 
 ## Ranking Learning Knowledge
 
-- [Edx](https://www.edx.org/)
 - [Geeks For Geeks](https://www.geeksforgeeks.org/)
 - [Microsoft Courses](https://developer.microsoft.com/en-us/collective/learning/courses)
+- [Hackr.io](https://hackr.io)
+- [Edx](https://www.edx.org/)
 - [SoloLearn](https://www.sololearn.com)
 - [.NET Foundation](https://presentations.dotnetfoundation.org/)
 
