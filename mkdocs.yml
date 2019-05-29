@@ -42,6 +42,7 @@ nav:
               - Libuv: knowledge/web-development/nodejs/libuv.md
               - Overview of Blocking and Non-Blocking: knowledge/web-development/nodejs/overview-of-blocking-and-non-blocking.md
               - The Node.js Event Loop: knowledge/web-development/nodejs/what-is-the-event-loop.md
+              - Get Started: knowledge/web-development/nodejs/get-started.md
           - Ruby On Rails:
               - Overview: knowledge/web-development/ruby-on-rails/overview.md
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
@@ -59,6 +60,7 @@ nav:
               - .NET Core is Future of .NET: knowledge/stories/skill-blog/net-core-is-future-of-net.md
               - Introducing .NET 5: knowledge/stories/skill-blog/introducing-net-5.md
               - Scraping Web With Nodejs: knowledge/stories/skill-blog/scraping-the-web-with-nodejs.md
+              - Roadmap Web Developer 2019: knowledge/stories/skill-blog/roadmap-web-developer-2019.md
           - Dev Ops:
               - What is DevOps? Why do we need it?: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
           - Computer Science:
@@ -82,6 +84,7 @@ nav:
       - Mobile Development:
           - Overview: knowledge/mobile-development/overview.md
           - Xamarin:
+              - Xamarin Forms Shell: knowledge/mobile-development/xamarin/xamarin-forms-shell.md
               - Controls Reference: knowledge/mobile-development/xamarin/controls-reference.md
               - Customizing ListView cell Appearence: knowledge/mobile-development/xamarin/customizing-listview-cell-appearance.md
               - Data Pages: knowledge/mobile-development/xamarin/data-pages.md
