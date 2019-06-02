@@ -31,7 +31,9 @@ nav:
           - Circle CI:
               - Writing YAML: knowledge/dev-ops/circle-ci/writing-yaml.md
           - Docker:
+              - Overview: knowledge/dev-ops/docker/overview.md
               - Docker Network: knowledge/dev-ops/docker/docker-network.md
+              - Docker File: knowledge/dev-ops/docker/docker-file.md
       - Web Development:
           - Basics:
               - CSS HandBook: knowledge/web-development/basics/css-handbook.md
@@ -48,6 +50,17 @@ nav:
               - Rails Form Expand: knowledge/web-development/ruby-on-rails/rails-form-expand.md
               - Active Record Callbacks: knowledge/web-development/ruby-on-rails/rails-active-record-callbacks.md
               - Action View Form Helpers: knowledge/web-development/ruby-on-rails/action-view-form-helpers.md
+              - Rails i18n: knowledge/web-development/ruby-on-rails/rails-i18n.md
+              - I18n Enumerize: knowledge/web-development/ruby-on-rails/i18n-enumerize.md
+              - Rails Cookies: knowledge/web-developemnt/ruby-on-rails/rails-cookies.md
+          - UI/UX:
+              - Bootstrap:
+                  - Overview: knowledge/web-development/ui-ux/bootstrap/overview.md
+                  - Layout:
+                      - Overview: knowledge/web-development/ui-ux/bootstrap/layout/overview.md
+                      - Grid System: knowledge/web-development/ui-ux/bootstrap/layout/grid-system.md
+                  - Utilities:
+                      - Display: knowledge/web-development/ui-ux/bootstrap/ultilities/display.md
       - Stories:
           - Skill Blog:
               - How to be a great programmer: knowledge/stories/skill-blog/how-to-be-a-great-programmer.md
@@ -81,6 +94,9 @@ nav:
               - Behavior In Xamarin Forms: knowledge/stories/xamarin-blog/behavior-xamarin.md
               - Shrinking Your Android App Size: knowledge/stories/xamarin-blog/shrinking-your-android-app-size.md
               - Mobile Tools for Designer: knowledge/stories/xamarin-blog/mobile-tools-for-designers.md
+          - Dev Ops:
+              - Finding a Technical Founder: knowledge/stories/devops-blog/finding-a-technical-founder.md
+              - What is DevOps and Why do we need it: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
       - Mobile Development:
           - Overview: knowledge/mobile-development/overview.md
           - Xamarin:
@@ -91,6 +107,9 @@ nav:
               - Data Pages Controls: knowledge/mobile-development/xamarin/data-pages-controls.md
               - Triggers: knowledge/mobile-development/xamarin/triggers.md
               - Themes: knowledge/mobile-development/xamarin/xamarin-forms-theme.md
+              - Deep Dive into SkiaSharp With Xamarin Form: knowledge/mobile-development/xamarin/deep-dive-into-skiasharp-with-xamarin-forms.md
+              - Cross Platform 2D Graphics with SkiaSharp: knowledge/mobile-development/xamarin/cross-platform-2d-graphics-with-skiasharp.md
+              - Cross Platform Drawing with SkaSharp: knowledge/mobile-development/xamarin/cross-platform-drawing-with-skiasharp.md
               - Template:
                   - Overview: knowledge/mobile-development/xamarin/templates/overview.md
                   - Control Templates: knowledge/mobile-development/xamarin/templates/control-templates.md
