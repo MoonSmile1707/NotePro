@@ -110,6 +110,7 @@ nav:
               - Deep Dive into SkiaSharp With Xamarin Form: knowledge/mobile-development/xamarin/deep-dive-into-skiasharp-with-xamarin-forms.md
               - Cross Platform 2D Graphics with SkiaSharp: knowledge/mobile-development/xamarin/cross-platform-2d-graphics-with-skiasharp.md
               - Cross Platform Drawing with SkaSharp: knowledge/mobile-development/xamarin/cross-platform-drawing-with-skiasharp.md
+              - Xamarin.Forms Performace Playground: knowledge/mobile-development/xamarin/xamarin-forms-performance-playground.md
               - Template:
                   - Overview: knowledge/mobile-development/xamarin/templates/overview.md
                   - Control Templates: knowledge/mobile-development/xamarin/templates/control-templates.md
