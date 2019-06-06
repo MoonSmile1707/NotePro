@@ -34,6 +34,7 @@ nav:
               - Overview: knowledge/dev-ops/docker/overview.md
               - Docker Network: knowledge/dev-ops/docker/docker-network.md
               - Docker File: knowledge/dev-ops/docker/docker-file.md
+              - Docker Demystified: knowledge/dev-ops/docker/docker-demystified.md
       - Web Development:
           - Basics:
               - CSS HandBook: knowledge/web-development/basics/css-handbook.md
@@ -74,8 +75,6 @@ nav:
               - Introducing .NET 5: knowledge/stories/skill-blog/introducing-net-5.md
               - Scraping Web With Nodejs: knowledge/stories/skill-blog/scraping-the-web-with-nodejs.md
               - Roadmap Web Developer 2019: knowledge/stories/skill-blog/roadmap-web-developer-2019.md
-          - Dev Ops:
-              - What is DevOps? Why do we need it?: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
           - Computer Science:
               - What is between machine learning and AI: knowledge/stories/computer-science/what-is-different-between-machine-learning-and-ai.md
           - Blockchain:
@@ -97,6 +96,7 @@ nav:
           - Dev Ops:
               - Finding a Technical Founder: knowledge/stories/devops-blog/finding-a-technical-founder.md
               - What is DevOps and Why do we need it: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
+              - Why DevOps Is Useful: knowledge/stories/devops-blog/why-devops-is-useful.md
       - Mobile Development:
           - Overview: knowledge/mobile-development/overview.md
           - Xamarin:
