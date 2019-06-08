@@ -288,6 +288,34 @@ Folowing are few important notes.
 [MIT Lecture 13: Amoritized Algorithms, Table Doubling, Potential Method](https://www.youtube.com/watch?v=b733mo4CxAQ)
 [amoritzed](http://www.cs.cornell.edu/courses/cs3110/2011sp/lectures/lec20-amortized/amortized.htm)
 
+## What does 'Space Complexity' mean?
+
+### Space Complexity:
+
+The term Space Complexity is misused for Auxiliary Space at many places. Following are the correct definitions of Auxiliary Space and Space Complexity.
+
+*Auxiliary* Space is the extra space or temporary space used by an alogorithm.
+
+Space Complexity of an algorithm is total space taken by the algorithm with respect to the input size. Space complexity includes both Auxiliary space and space used by input.
+
+For example, if we want to compare standard sorting algorithms on the basis of space, then Auxiliary Space would be a better criteria than Space Complexity. Merge Sort uses O(n) auxiliary space, Insertion sort and Heap Sort use O(1) auxiliary space. Space complexity of all these sorting algorithms is O(n) though.
+
+## Pseudo-polynomial Algorithms
+
+### What is Pseudo-polynomial?
+
+An algorithm whose worst case time complexity depends on numeric value of input (not number of inputs) is called Pseudo-polynomial algorithm.
+
+On the other hand, an algorithm whose time complexity is only based on number of elements in array (not value) is considered as polynomial time algorithm.
+
+### Pseudo-polynomial and NP-Completeness
+
+Some NP-Complete problems have Pseudo Polynomial time solutions. For example, Dynamic Programming Solutions of [0-1 Knapsack](https://www.geeksforgeeks.org/dynamic-programming-set-10-0-1-knapsack-problem/), [Subset-Sum](https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/) and [Partition](https://www.geeksforgeeks.org/dynamic-programming-set-18-partition-problem/) problems are Pseudo-Polynomial. NP complete problems that can be solved using a pseudo-polynomial time algorithms are called weakly NP-complete.
+
+### Reference:
+
+[Pseudo-polynomial_time wiki](https://en.wikipedia.org/wiki/Pseudo-polynomial_time)
+
 ## NP-Completeness | Set 1()
 
 **_Can all computational problems be solved by a computer?_** There are computational problems that can not be solved by algorithms even with unlimited time. For example Turing Halting problem (Given a program and an input,whether the program will eventually hailt when run with that input or will run forever). Alan Turing proved that general algorithm to solve the halting problem for all possible program-input pairs cannot exist. A key part of the proof is, Turing machine was used as a mathematical definition of a computer and program(Source [Halting Problem](http://en.wikipedia.org/wiki/Halting_problem))
