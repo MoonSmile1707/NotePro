@@ -97,6 +97,7 @@ nav:
               - Finding a Technical Founder: knowledge/stories/devops-blog/finding-a-technical-founder.md
               - What is DevOps and Why do we need it: knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it.md
               - Why DevOps Is Useful: knowledge/stories/devops-blog/why-devops-is-useful.md
+              - A Recipe for Continuous Integration Using Kubernetes: knowledge/stories/devops-blog/a-recipe-for-continuous-integration-using-kubernetes.md
       - Mobile Development:
           - Overview: knowledge/mobile-development/overview.md
           - Xamarin:
