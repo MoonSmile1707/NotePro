@@ -288,6 +288,12 @@ Folowing are few important notes.
 [MIT Lecture 13: Amoritized Algorithms, Table Doubling, Potential Method](https://www.youtube.com/watch?v=b733mo4CxAQ)
 [amoritzed](http://www.cs.cornell.edu/courses/cs3110/2011sp/lectures/lec20-amortized/amortized.htm)
 
+## NP-Completeness | Set 1()
+
+**_Can all computational problems be solved by a computer?_** There are computational problems that can not be solved by algorithms even with unlimited time. For example Turing Halting problem (Given a program and an input,whether the program will eventually hailt when run with that input or will run forever). Alan Turing proved that general algorithm to solve the halting problem for all possible program-input pairs cannot exist. A key part of the proof is, Turing machine was used as a mathematical definition of a computer and program(Source [Halting Problem](http://en.wikipedia.org/wiki/Halting_problem))
+
+Status of NP Complete problems is another failure story, NP complete problems are problems whose status is unknown. No polynomial time algorithm has yet been discovered for any NP complete problem, nor has anybody yet beent able to prove that no polynomial-time algorithm exist for any of them. The interesting part is, if any one of the NP complete problems can be solved in polynomial time, then al of them can be solved.
+
 <hr/>
 
 To be continued.
