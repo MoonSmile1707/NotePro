@@ -111,6 +111,9 @@ nav:
               - Cross Platform 2D Graphics with SkiaSharp: knowledge/mobile-development/xamarin/cross-platform-2d-graphics-with-skiasharp.md
               - Cross Platform Drawing with SkaSharp: knowledge/mobile-development/xamarin/cross-platform-drawing-with-skiasharp.md
               - Xamarin.Forms Performace Playground: knowledge/mobile-development/xamarin/xamarin-forms-performance-playground.md
+              - Cross platform Tech:
+                  - Factory Pattern: knowledge/mobile-development/xamarin/cross-platform-tech/locate-dependencies-by-using-the-factory-pattern.md
+                  - Service Locator: knowledge/mobile-development/xamarin/cross-platform-tech/use-a-service-locator-to-register-and-retrieve-dependencies.md
               - Template:
                   - Overview: knowledge/mobile-development/xamarin/templates/overview.md
                   - Control Templates: knowledge/mobile-development/xamarin/templates/control-templates.md
