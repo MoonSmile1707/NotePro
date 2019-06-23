@@ -1,0 +1,1 @@
+set STACK_NAME_NOTE_PRO=Note_PRO
