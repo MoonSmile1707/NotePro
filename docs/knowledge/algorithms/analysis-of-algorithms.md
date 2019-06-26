@@ -316,6 +316,14 @@ Some NP-Complete problems have Pseudo Polynomial time solutions. For example, Dy
 
 [Pseudo-polynomial_time wiki](https://en.wikipedia.org/wiki/Pseudo-polynomial_time)
 
+## Polynomial Time Approximation Scheme
+
+It is a very well know fact that there is no known polynomial time solution for [NP Complete problems](https://www.geeksforgeeks.org/np-completeness-set-1/) and these problems occur a lot in real world. So there must be a way to handle them. We have seen algotithms to these problems which are approximate.
+
+**P**olynomial **T**ime **A**pproximation **S**cheme(PTAS) is a type of approximate algorithms that provide user to control over accuracy which is a desirable feature. These algorithms take an additional parameter e > 0 and provide a solution that is (1 + e) approximate for minimization and (1 - e) for maximization.
+
+In PTAS algorithms, the exponent of the polynomial can increase dramatically as e reduces.
+
 <hr/>
 
 To be continued.
