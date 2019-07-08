@@ -36,6 +36,7 @@ nav:
       - Web Development:
           - Basics:
               - CSS HandBook: knowledge/web-development/basics/css-handbook.md
+              - Introducing WebSockets: knowledge/web-development/basics/introducing-websockets.md
           - ASP.NET:
               - Introduction: knowledge/web-development/asp.net/introduction.md
               - NSwag: knowledge/web-development/asp.net/nswag.md
