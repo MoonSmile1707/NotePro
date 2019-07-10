@@ -26,6 +26,8 @@ nav:
       - Version 3: daily-plans/plans-version-3.md
       - Soft Skills for Learning: daily-plans/soft-skills-for-learning.md
   - KnowLedge:
+      - Pattern:
+          - Aggregate Pattern: knowledge/pattern/aggregate-pattern.md
       - Algorithms:
           - Analysis of Algorithms: knowledge/algorithms/analysis-of-algorithms.md
       - DevOps:
