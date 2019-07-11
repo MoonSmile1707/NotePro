@@ -37,6 +37,7 @@ nav:
               - Docker Network: knowledge/dev-ops/docker/docker-network.md
       - Web Development:
           - Basics:
+              - Regression Testing: knowledge/web-development/basics/regression-testing.md
               - Functional Testing: knowledge/web-development/basics/functional-testing.md
               - Integration Testing: knowledge/web-development/basics/integration-testing.md
               - Unit Testing: knowledge/web-development/basics/unit-testing.md
