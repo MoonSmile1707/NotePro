@@ -60,6 +60,14 @@ In State pattern, we create objects which represent various states and a context
 
 ![statepattern](../../img-root/state_pattern_uml_diagram.jpg)
 
+## Strategy Pattern
+
+In Strategy pattern, a class behavior or its algoirithm can be changed at run time. This type of design pattern comes under behavior pattern.
+
+In Strategy pattern, we create objects which represent various strategies and a context object whose behavior varies as per its strategy object. The strategy object changes the executing algorithm of the context object.
+
+![strategypattern](../../img-root/strategy_pattern_uml_diagram.jpg)
+
 <hr/>
 
 Get more information at [here](https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm).
