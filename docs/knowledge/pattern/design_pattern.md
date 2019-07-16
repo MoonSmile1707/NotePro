@@ -34,6 +34,17 @@ We have considered a business case of fast-food restaurant where a typical meal 
 
 ![builderpatter](../../img-root/builder_pattern_uml_diagram.jpg)
 
+## Prototype Pattern
+
+Prototype pattern refers to crating duplicate object while keeping performance in mind. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
+
+This pattern involves implementing a prototype interface which tells to create a clone of the current object. Thist pattern is used when creation of object directly is costly.
+
+We're going to create an abstract class *Shape* and concrete classes extending the *Shape* class. A class *ShapeCache* is defined as a next step which stores shape objects in a *Hashtable* and returns their clone when requested.
+
+![prototypepattern](../../img-root/prototype_pattern_uml_diagram.jpg)
+
+
 <hr/>
 
 Get more information at [here](https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm).
