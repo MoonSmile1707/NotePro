@@ -29,6 +29,7 @@ nav:
       - Pattern:
           - Design Pattern: knowledge/pattern/design_pattern.md
           - Aggregate Pattern: knowledge/pattern/aggregate-pattern.md
+          - The 7 mose important software design pattern: knowledge/pattern/the-7-most-important-software-design-patterns.md
       - Algorithms:
           - Analysis of Algorithms: knowledge/algorithms/analysis-of-algorithms.md
       - DevOps:
