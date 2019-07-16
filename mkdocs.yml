@@ -27,6 +27,7 @@ nav:
       - Soft Skills for Learning: daily-plans/soft-skills-for-learning.md
   - KnowLedge:
       - Pattern:
+          - Design Pattern: knowledge/pattern/design_pattern.md
           - Aggregate Pattern: knowledge/pattern/aggregate-pattern.md
       - Algorithms:
           - Analysis of Algorithms: knowledge/algorithms/analysis-of-algorithms.md
