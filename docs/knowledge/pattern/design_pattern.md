@@ -68,6 +68,12 @@ In Strategy pattern, we create objects which represent various strategies and a 
 
 ![strategypattern](../../img-root/strategy_pattern_uml_diagram.jpg)
 
+## Observer Pattern
+
+Observer pattern is used when there is one-to-many relationship between objects such as if one object is modified, its dependent objects are to notified automatically. Observer pattern falls under behavioral pattern category.
+
+![observerpattern](../../img-root/observer_pattern_uml_diagram.jpg)
+
 <hr/>
 
 Get more information at [here](https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm).
