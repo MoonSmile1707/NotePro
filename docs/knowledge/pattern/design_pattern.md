@@ -52,6 +52,14 @@ This pattern involves a single class which is responsible to join functionalitie
 
 ![adapterpatter](../../img-root/adapter_pattern_uml_diagram.jpg)
 
+## State Pattern
+
+In State pattern a class behavior changes based on its state. This type of design pattern comes under behavaior pattern.
+
+In State pattern, we create objects which represent various states and a context object whose behavior varies as its state object changes.
+
+![statepattern](../../img-root/state_pattern_uml_diagram.jpg)
+
 <hr/>
 
 Get more information at [here](https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm).
