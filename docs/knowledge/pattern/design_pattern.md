@@ -96,6 +96,12 @@ We are demonstrating use of Bridge pattern via following example in which a circ
 
 ![bridgepattern](../../img-root/bridge_pattern_uml_diagram.jpg)
 
+## Filter Pattern
+
+Filter pattern or Criteria pattern is a design pattern that enables developers to filter a set of objects using different criteria and chaining them in a decoupled way through logical operations. This type of design pattern comes under strcutural pattern as this pattern combines multiple criteria to obtain single criteria.
+
+![filterpattern](../../img-root/filter_pattern_uml_diagram.jpg)
+
 <hr/>
 
 Get more information at [here](https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm).
