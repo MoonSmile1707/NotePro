@@ -54,6 +54,7 @@
 
 - [Geeks For Geeks](https://www.geeksforgeeks.org/)
 - [Microsoft Courses](https://developer.microsoft.com/en-us/collective/learning/courses)
+- [Scotch.io](https://scotch.io)
 - [DevIQ](https://deviq.com)
 - [Hackr.io](https://hackr.io)
 - [Edx](https://www.edx.org/)
