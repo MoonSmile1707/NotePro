@@ -37,6 +37,8 @@ nav:
           - Specification Pattern: knowledge/pattern/specification-pattern.md
       - Algorithms:
           - Analysis of Algorithms: knowledge/algorithms/analysis-of-algorithms.md
+      - Architectures:
+          - Three tier: knowledge/architectures/three-tier.md
       - DevOps:
           - Circle CI:
               - Writing YAML: knowledge/dev-ops/circle-ci/writing-yaml.md
