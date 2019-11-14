@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Repository Pattern - Note Pro</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../daily-plans/plans-version-2/">Version 2</a>
+</li>
+                                    
+<li >
+    <a href="../../../daily-plans/plans-version-3/">Version 3</a>
+</li>
+                                    
+<li >
+    <a href="../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Principles</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../principles/s-o-l-i-d/">S.O.L.I.D</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pattern</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../dependency-injection/">Dependency Injection</a>
+</li>
+            
+<li >
+    <a href="../design_pattern/">Design Pattern</a>
+</li>
+            
+<li >
+    <a href="../aggregate-pattern/">Aggregate Pattern</a>
+</li>
+            
+<li >
+    <a href="../the-7-most-important-software-design-patterns/">The 7 mose important software design pattern</a>
+</li>
+            
+<li class="active">
+    <a href="./">Repository Pattern</a>
+</li>
+            
+<li >
+    <a href="../specification-pattern/">Specification Pattern</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Algorithms</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../algorithms/analysis-of-algorithms/">Analysis of Algorithms</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Architectures</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../architectures/three-tier/">Three tier</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Docker</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../dev-ops/docker/docker-network/">Docker Network</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Basics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../web-development/basics/code-coverage/">Code Coverage</a>
+</li>
+            
+<li >
+    <a href="../../web-development/basics/regression-testing/">Regression Testing</a>
+</li>
+            
+<li >
+    <a href="../../web-development/basics/functional-testing/">Functional Testing</a>
+</li>
+            
+<li >
+    <a href="../../web-development/basics/integration-testing/">Integration Testing</a>
+</li>
+            
+<li >
+    <a href="../../web-development/basics/unit-testing/">Unit Testing</a>
+</li>
+            
+<li >
+    <a href="../../web-development/basics/css-handbook/">CSS HandBook</a>
+</li>
+            
+<li >
+    <a href="../../web-development/basics/introducing-websockets/">Introducing WebSockets</a>
+</li>
+            
+<li >
+    <a href="../../web-development/basics/graphql/">GraphQL</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASP.NET</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../web-development/asp.net/introduction/">Introduction</a>
+</li>
+            
+<li >
+    <a href="../../web-development/asp.net/nswag/">NSwag</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">NodeJS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../web-development/nodejs/libuv/">Libuv</a>
+</li>
+            
+<li >
+    <a href="../../web-development/nodejs/overview-of-blocking-and-non-blocking/">Overview of Blocking and Non-Blocking</a>
+</li>
+            
+<li >
+    <a href="../../web-development/nodejs/what-is-the-event-loop/">The Node.js Event Loop</a>
+</li>
+            
+<li >
+    <a href="../../web-development/nodejs/get-started.md">Get Started</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../web-development/ruby-on-rails/overview.md">Overview</a>
+</li>
+            
+<li >
+    <a href="../../web-development/ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../web-development/ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+            
+<li >
+    <a href="../../web-development/ruby-on-rails/action-view-form-helpers.md">Action View Form Helpers</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Skill Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../stories/skill-blog/how-to-be-a-great-programmer/">How to be a great programmer</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/what-javascript-developers-learn-from-c++/">What Javascript Developers can learn from C++</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/what-i-learn-from-lauching-a-freelance-writing-bussiess.md">What I learn from lauching a freelance writing business</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/how-code-reviews-work-at-microsoft/">How code reviews work at Microsoft</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/how-to-debug-with-firefox/">How to debug web apps with Firefox developer tools</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/beyond-coding-soft-skill-to-avoid-projects-fails/">Beyond Coding - Soft skill to avoid projects failures</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/3-things-to-do-when-you-dont-have-computers-science-degree/">3 Things to do when you don't have computer science degree</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/net-core-is-future-of-net/">.NET Core is Future of .NET</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/introducing-net-5/">Introducing .NET 5</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/scraping-the-web-with-nodejs/">Scraping Web With Nodejs</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/roadmap-web-developer-2019/">Roadmap Web Developer 2019</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/tinygo/">Tiny Go</a>
+</li>
+            
+<li >
+    <a href="../../stories/skill-blog/net-stacks/">.NET stacks</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Dev Ops</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../stories/devops-blog/what-is-devops-and-why-do-we-need-it/">What is DevOps? Why do we need it?</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Computer Science</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../stories/computer-science/what-is-different-between-machine-learning-and-ai/">What is between machine learning and AI</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../stories/thinking-in-art/how-to-quit-your-job-and-live-your-startup-dream/">How to quit your job and live your startup dream</a>
+</li>
+            
+<li >
+    <a href="../../stories/thinking-in-art/how-two-words-can-change-your-life/">How two words can change your life</a>
+</li>
+            
+<li >
+    <a href="../../stories/thinking-in-art/4-practical-things-i-do-to-stay-positive/">4 Practical Things I do to stay positive</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../stories/xamarin-blog/getting-started-workmanager/">Getting Started WorkManager</a>
+</li>
+            
+<li >
+    <a href="../../stories/xamarin-blog/sharing-files-and-email-attachments/">Sharing Files and Email Attachment</a>
+</li>
+            
+<li >
+    <a href="../../stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes/">Add a Backend to Your App in 10 minutes</a>
+</li>
+            
+<li >
+    <a href="../../stories/xamarin-blog/behavior-xamarin/">Behavior In Xamarin Forms</a>
+</li>
+            
+<li >
+    <a href="../../stories/xamarin-blog/shrinking-your-android-app-size/">Shrinking Your Android App Size</a>
+</li>
+            
+<li >
+    <a href="../../stories/xamarin-blog/mobile-tools-for-designers/">Mobile Tools for Designer</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../mobile-development/overview/">Overview</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../mobile-development/xamarin/xamarin-forms-shell/">Xamarin Forms Shell</a>
+</li>
+            
+<li >
+    <a href="../../mobile-development/xamarin/controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../../mobile-development/xamarin/customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../../mobile-development/xamarin/data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../../mobile-development/xamarin/data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../../mobile-development/xamarin/triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../../mobile-development/xamarin/xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../mobile-development/xamarin/templates/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../mobile-development/xamarin/templates/control-templates/">Control Templates</a>
+</li>
+            
+<li >
+    <a href="../../mobile-development/xamarin/templates/data-templates/">Data Templates</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../the-7-most-important-software-design-patterns/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../specification-pattern/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/pattern/repository-pattern.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#repository-pattern-a-data-persistence-abstraction">Repository Pattern: A data persistence abstraction</a></li>
+            <li><a href="#repository-per-entity-or-business-object">Repository Per Entity or Business Object</a></li>
+            <li><a href="#generic-repository-interface">Generic Repository Interface</a></li>
+            <li><a href="#generic-repository-implementation">Generic Repository Implementation</a></li>
+            <li><a href="#iqueryable">IQueryable?</a></li>
+            <li><a href="#specification">Specification</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="repository-pattern-a-data-persistence-abstraction">Repository Pattern: A data persistence abstraction</h1>
+<hr/>
+
+<p>The Repository Pattern has gained quite a bit of popularity since it was first introduced as a part of <a href="http://bit.ly/PS-DDD">Domain-Driven-Design</a> in 2004. Essentially, it provides an abstraction of data, so that application can work with a simple abstraction that has an interface approximating that of a collection. Adding, removing, updating, and selecting items from this collection is done through a series of straightforward methods, without the need to deal with database concerns like connections, commands, cursors, or readers. Using this pattern can help achieve loose coupling and can keep domain objects <a href="http://deviq.com/persistence-ignorance/">persistence ignorant</a>. Althogh the pattern is very popular (or perhaps because of this), it is also frewuently misunderstood and misused. Ther are many different ways to implement the Repository patter. Let's consider a few of them, and their merits and drawbacks.</p>
+<h2 id="repository-per-entity-or-business-object">Repository Per Entity or Business Object</h2>
+<p>The simplest approach, especially with an existing system, is to create a new Repository implementation for each business object you need to store to or retreve from your persistence layer. Further, you should only implement the specifc methds you are calling in your application. Avoid the trap of creating a "standard" repository class, base class, or default interface that you must implement for all repositories. Yes, if you need to have an Update or a Delete method, you should strive to make its interface consisten, but don't implement a Delete method on your LokkupTableRepository that your're only ever going to be calling List() on. The biggest benefit of this approach is <a href="http://deviq.com/yagni">YAGNI</a> - you won't waste any time implementing methods that never get called.</p>
+<h2 id="generic-repository-interface">Generic Repository Interface</h2>
+<pre><code class="csharp">public interface IRepository&lt;T&gt; where T : EntityBase
+{
+    T GetById(int id);
+    IEnumerable&lt;T&gt; List();
+    IEnumerable&lt;T&gt; List(Expression&lt;Func&lt;T, bool&gt;&gt; predicate);
+    void Add(T entity);
+    void Delete(T entity);
+    void Edit(T entity);
+}
+
+public abstract class EntityBase
+{
+   public int Id { get; protected set; }
+}
+</code></pre>
+
+<p>Note that taking in a predicate elimicates the need to return an IQueryable, since any filter details can be passed into the repository. This can still lead to leaking of data access details into calling code through. Consider using the Specification pattern to alleviate this issue if you encounter it.</p>
+<h2 id="generic-repository-implementation">Generic Repository Implementation</h2>
+<pre><code class="csharp">public class Repository&lt;T&gt; : IRepository&lt;T&gt; where T : EntityBase
+{
+    private readonly ApplicationDbContext _dbContext;
+
+    public Repository(ApplicationDbContext dbContext)
+    {
+        _dbContext = dbContext;
+    }
+
+    public virtual T GetById(int id)
+    {
+        return _dbContext.Set&lt;T&gt;().Find(id);
+    }
+
+    public virtual IEnumerable&lt;T&gt; List()
+    {
+        return _dbContext.Set&lt;T&gt;().AsEnumerable();
+    }
+
+    public virtual IEnumerable&lt;T&gt; List(System.Linq.Expressions.Expression&lt;Func&lt;T, bool&gt;&gt; predicate)
+    {
+        return _dbContext.Set&lt;T&gt;()
+               .Where(predicate)
+               .AsEnumerable();
+    }
+
+    public void Insert(T entity)
+    {
+        _dbContext.Set&lt;T&gt;().Add(entity);
+        _dbContext.SaveChanges();
+    }
+
+    public void Update(T entity)
+    {
+        _dbContext.Entry(entity).State = EntityState.Modified;
+        _dbContext.SaveChanges();
+    }
+
+    public void Delete(T entity)
+    {
+        _dbContext.Set&lt;T&gt;().Remove(entity);
+        _dbContext.SaveChanges();
+    }
+}
+</code></pre>
+
+<p>Note that in this implementation, all operations are saved as they are performed; there is no Unit of Work being applied. There are a variety of ways in which Unit of Work behavior can be added to this implementation, the simplest of which being to add an explicit Save() method to the IRepository<T> method, and to only call the underlying SaveChanges() method from this method.</p>
+<h2 id="iqueryable">IQueryable?</h2>
+<p>Another common question with Repositories has to do with what they return. SHould they return data, or should they return quries that can be further refined before execution (IQueryable)? The former is safer, but the latter offers a great deal of flexibility. In fact, you can simplify your interface to only offer a single method for reading data if you go the IQueryable route, since from there any number of items can be reutrned.</p>
+<h2 id="specification">Specification</h2>
+<p>Repositories that follow the advice of not exposing IQueryable can often become bloated with many custom query methods. The solution to this is to separate queries into their own types, using the <a href="https://deviq.com/specification-pattern/">Specification Design Pattern</a>. The Specification can include the expression used to filter the query, any parameters associated with this expression, as well as how much data the query should return. Combining the Repository and Specification patterns can be a great way to ensure you follow the <a href="https://deviq.com/single-responsibility-principle/">Single Repository Principle</a> in your data access code.</p>
+<hr/>
+
+<p>Get more information at <a href="https://deviq.com/repository-pattern/">here</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

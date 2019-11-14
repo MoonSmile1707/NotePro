@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Version 2 - Note Pro</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Version 2</a>
+</li>
+                                    
+<li >
+    <a href="../plans-version-3/">Version 3</a>
+</li>
+                                    
+<li >
+    <a href="../soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Principles</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/principles/s-o-l-i-d/">S.O.L.I.D</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pattern</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/pattern/dependency-injection/">Dependency Injection</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/pattern/design_pattern/">Design Pattern</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/pattern/aggregate-pattern/">Aggregate Pattern</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/pattern/the-7-most-important-software-design-patterns/">The 7 mose important software design pattern</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/pattern/repository-pattern/">Repository Pattern</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/pattern/specification-pattern/">Specification Pattern</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Algorithms</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/algorithms/analysis-of-algorithms/">Analysis of Algorithms</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Architectures</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/architectures/three-tier/">Three tier</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Docker</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/dev-ops/docker/docker-network/">Docker Network</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Basics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/web-development/basics/code-coverage/">Code Coverage</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/basics/regression-testing/">Regression Testing</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/basics/functional-testing/">Functional Testing</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/basics/integration-testing/">Integration Testing</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/basics/unit-testing/">Unit Testing</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/basics/css-handbook/">CSS HandBook</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/basics/introducing-websockets/">Introducing WebSockets</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/basics/graphql/">GraphQL</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASP.NET</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/web-development/asp.net/introduction/">Introduction</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/asp.net/nswag/">NSwag</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">NodeJS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/web-development/nodejs/libuv/">Libuv</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/nodejs/overview-of-blocking-and-non-blocking/">Overview of Blocking and Non-Blocking</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/nodejs/what-is-the-event-loop/">The Node.js Event Loop</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/nodejs/get-started.md">Get Started</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/web-development/ruby-on-rails/overview.md">Overview</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/web-development/ruby-on-rails/action-view-form-helpers.md">Action View Form Helpers</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Skill Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/how-to-be-a-great-programmer/">How to be a great programmer</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/what-javascript-developers-learn-from-c++/">What Javascript Developers can learn from C++</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/what-i-learn-from-lauching-a-freelance-writing-bussiess.md">What I learn from lauching a freelance writing business</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/how-code-reviews-work-at-microsoft/">How code reviews work at Microsoft</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/how-to-debug-with-firefox/">How to debug web apps with Firefox developer tools</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/beyond-coding-soft-skill-to-avoid-projects-fails/">Beyond Coding - Soft skill to avoid projects failures</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/3-things-to-do-when-you-dont-have-computers-science-degree/">3 Things to do when you don't have computer science degree</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/net-core-is-future-of-net/">.NET Core is Future of .NET</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/introducing-net-5/">Introducing .NET 5</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/scraping-the-web-with-nodejs/">Scraping Web With Nodejs</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/roadmap-web-developer-2019/">Roadmap Web Developer 2019</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/tinygo/">Tiny Go</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/skill-blog/net-stacks/">.NET stacks</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Dev Ops</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/stories/devops-blog/what-is-devops-and-why-do-we-need-it/">What is DevOps? Why do we need it?</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Computer Science</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/stories/computer-science/what-is-different-between-machine-learning-and-ai/">What is between machine learning and AI</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/thinking-in-art/how-to-quit-your-job-and-live-your-startup-dream/">How to quit your job and live your startup dream</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/thinking-in-art/how-two-words-can-change-your-life/">How two words can change your life</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/thinking-in-art/4-practical-things-i-do-to-stay-positive/">4 Practical Things I do to stay positive</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/stories/xamarin-blog/getting-started-workmanager/">Getting Started WorkManager</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/xamarin-blog/sharing-files-and-email-attachments/">Sharing Files and Email Attachment</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes/">Add a Backend to Your App in 10 minutes</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/xamarin-blog/behavior-xamarin/">Behavior In Xamarin Forms</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/xamarin-blog/shrinking-your-android-app-size/">Shrinking Your Android App Size</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/stories/xamarin-blog/mobile-tools-for-designers/">Mobile Tools for Designer</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/mobile-development/overview/">Overview</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/xamarin-forms-shell/">Xamarin Forms Shell</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/templates/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/templates/control-templates/">Control Templates</a>
+</li>
+            
+<li >
+    <a href="../../knowledge/mobile-development/xamarin/templates/data-templates/">Data Templates</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../plans-version-1.1/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../plans-version-3/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/daily-plans/plans-version-2.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#plans-for-a-wonderful-day-version-2">Plans for a wonderful day (version 2)</a></li>
+            <li><a href="#list-view-items">List View Items</a></li>
+            <li><a href="#time-planning">Time planning</a></li>
+            <li><a href="#courses-online-on-edx">Courses Online on Edx</a></li>
+            <li><a href="#ranking-social-network">Ranking Social Network</a></li>
+            <li><a href="#ranking-coding-website">Ranking Coding Website</a></li>
+            <li><a href="#ranking-learning-knowledge">Ranking Learning Knowledge</a></li>
+            <li><a href="#story-about-improving-skill">Story about improving skill</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="plans-for-a-wonderful-day-version-2">Plans for a wonderful day (version 2)</h1>
+<hr/>
+
+<h2 id="list-view-items">List View Items</h2>
+<ul>
+<li><a href="#plans-for-a-wonderful-day-version-2">Plans for a wonderful day (version 2)</a></li>
+<li><a href="#list-view-items">List View Items</a></li>
+<li><a href="#time-planning">Time planning</a></li>
+<li><a href="#courses-online-on-edx">Courses Online on Edx</a></li>
+<li><a href="#ranking-social-network">Ranking Social Network</a></li>
+<li><a href="#ranking-coding-website">Ranking Coding Website</a></li>
+<li><a href="#ranking-learning-knowledge">Ranking Learning Knowledge</a></li>
+<li><a href="#story-about-improving-skill">Story about improving skill</a></li>
+</ul>
+<hr/>
+
+<h2 id="time-planning">Time planning</h2>
+<ul>
+<li><strong>7 a.m</strong>: Starting a day with 15 minutes about foreign languages and thinking about dreams (not girls).</li>
+<li><strong>7.30 a.m</strong>: Go to school with highspeed (the first lesson starts at <strong>7.30 a.m</strong>).</li>
+<li><strong>8 -&gt; 9.45 a.m</strong>: Learning at school. Get knowledge (not sleeping).</li>
+<li><strong>10 a.m</strong>: Go to Youthdev Company. It take me 30 - minutes and I come company at 10.45 a.m</li>
+<li><strong>11 a.m -&gt; 12.30 a.m</strong>: View Odoo for my daily mission. View pm.youthdev.net to find my tasks. Have a daily standup with dat.hoang. Learning for algorithms at Geeksforgeeks. Get documents for working.</li>
+<li><strong>12.35 -&gt; 1 p.m</strong>: Go out company to have a lunch. Connect to twitter network social and Reading one of stories which is pinned.</li>
+<li><strong>1 -&gt; 1.15 p.m</strong>: Get a cup of milk-cafe and go back campany to work.</li>
+<li><strong>1.20 -&gt; 2 p.m</strong>: Improving skills coding in languages (C#, Typescript, python) over <a href="#ranking-coding-website">website coding</a>.Reading a story from some books of Trung Nguyen Cafe. I will update my document with overview about stories (markdown + pin link to web story) and my <a href="https://moonsmile1.odoo.com/">Odoo's task</a>.</li>
+<li><strong>2 p.m -&gt; 6 p.m</strong>: Crazy and Work with high spirits. After I learn a new knowledge,I will pin web's link to my docs as same as some of stories.</li>
+<li><strong>6 -&gt; 8 p.m</strong>: Reading technique news on Twitter network social.Note summary and update to my docs over pages. Learn cources online on <a href="edx.org">Edx</a>.</li>
+<li><strong>8 -&gt; 11 p.m</strong>: Working on own Project(freelancer, schedules).</li>
+<li><strong>11 -&gt; 12 p.m</strong>: Get a cup of milk cafe to think about the future. Find values of mine to get things better for new day.</li>
+<li><strong>0 -&gt; 3 a.m</strong>: Learn Foreign Languages (English and Japanese).</li>
+</ul>
+<hr/>
+
+<h2 id="courses-online-on-edx">Courses Online on Edx</h2>
+<ul>
+<li><a href="https://www.edx.org/microsoft-professional-program-devops#edx-product-discovery-cards">Mirosoft Professional Program in DevOps</a></li>
+<li><a href="https://courses.edx.org/courses/course-v1:BerkeleyX+CS198.1x+3T2018/course/">Bitcoin and Cryptocurrencies</a></li>
+<li><a href="https://courses.edx.org/courses/course-v1:BerkeleyX+CS198.2x+1T2019/course/">Blockchain Technology</a></li>
+<li><a href="https://courses.edx.org/courses/course-v1:Dartmouth_IMTx+DART.IMT.C.06+2T2018/course/">Linux Basics: The Command line interface</a></li>
+<li><a href="https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS101x+3T2018/course/">Introduction to Linux</a></li>
+</ul>
+<h2 id="ranking-social-network">Ranking Social Network</h2>
+<ul>
+<li><a href="https://medium.com/">Medium</a></li>
+<li><a href="https://twitter.com/">Twitter</a></li>
+<li><a href="https://devblogs.microsoft.com/">Microsoft Dev Blogs + Xamarin Developers</a></li>
+<li><a href="https://blogs.windows.com/">Windows Blog</a></li>
+<li><a href="https://channel9.msdn.com/">Channel 9</a></li>
+<li><a href="https://dev.to/">Dev.to</a></li>
+<li><a href="https://stackoverflow.com/">Stackoverflow</a></li>
+<li><a href="https://xamgirl.com/">XamGirl</a></li>
+<li><a href="https://www.xamboy.com/">XamBoy</a></li>
+<li><a href="https://xamarininsider.com/">XamarinInsiders</a></li>
+</ul>
+<hr/>
+
+<h2 id="ranking-coding-website">Ranking Coding Website</h2>
+<ul>
+<li><a href="https://leetcode.com/">LeetCode</a></li>
+<li><a href="https://www.lintcode.com/">LintCode</a></li>
+<li><a href="https://www.hackerrank.com/">Hackerrank</a></li>
+<li><a href="https://codeforces.com/">Codingforces</a></li>
+<li><a href="https://www.topcoder.com/">Topcoder</a></li>
+<li><a href="https://stackblitz.com/">Stackblitz</a></li>
+</ul>
+<hr/>
+
+<h2 id="ranking-learning-knowledge">Ranking Learning Knowledge</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/">Geeks For Geeks</a></li>
+<li><a href="https://developer.microsoft.com/en-us/collective/learning/courses">Microsoft Courses</a></li>
+<li><a href="https://hackr.io">Hackr.io</a></li>
+<li><a href="https://www.edx.org/">Edx</a></li>
+<li><a href="https://www.sololearn.com">SoloLearn</a></li>
+<li><a href="https://presentations.dotnetfoundation.org/">.NET Foundation</a></li>
+</ul>
+<hr/>
+
+<h2 id="story-about-improving-skill">Story about improving skill</h2>
+<ul>
+<li>Learning deep for improving code. Learning document and coding some lines cool</li>
+<li>After reading a story, create template of markdown file, and give link to content (pin link and not commit). Go home reading some stories again and note sumay to my docs. Commit and push docs to github and vsts.</li>
+<li>Improve power of my docs, help it run automatic and async with more enviroment.</li>
+<li>Manage task at <a href="https://moonsmile1.odoo.com/">Odoo's task</a>.</li>
+</ul>
+<hr/></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

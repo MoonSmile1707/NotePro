@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>The Node.js Event Loop - Note Pro</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-2/">Version 2</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-3/">Version 3</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Principles</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../principles/s-o-l-i-d/">S.O.L.I.D</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pattern</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../pattern/dependency-injection/">Dependency Injection</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/design_pattern/">Design Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/aggregate-pattern/">Aggregate Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/the-7-most-important-software-design-patterns/">The 7 mose important software design pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/repository-pattern/">Repository Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/specification-pattern/">Specification Pattern</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Algorithms</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../algorithms/analysis-of-algorithms/">Analysis of Algorithms</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Architectures</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../architectures/three-tier/">Three tier</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Docker</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/docker/docker-network/">Docker Network</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Basics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../basics/code-coverage/">Code Coverage</a>
+</li>
+            
+<li >
+    <a href="../../basics/regression-testing/">Regression Testing</a>
+</li>
+            
+<li >
+    <a href="../../basics/functional-testing/">Functional Testing</a>
+</li>
+            
+<li >
+    <a href="../../basics/integration-testing/">Integration Testing</a>
+</li>
+            
+<li >
+    <a href="../../basics/unit-testing/">Unit Testing</a>
+</li>
+            
+<li >
+    <a href="../../basics/css-handbook/">CSS HandBook</a>
+</li>
+            
+<li >
+    <a href="../../basics/introducing-websockets/">Introducing WebSockets</a>
+</li>
+            
+<li >
+    <a href="../../basics/graphql/">GraphQL</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASP.NET</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../asp.net/introduction/">Introduction</a>
+</li>
+            
+<li >
+    <a href="../../asp.net/nswag/">NSwag</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">NodeJS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../libuv/">Libuv</a>
+</li>
+            
+<li >
+    <a href="../overview-of-blocking-and-non-blocking/">Overview of Blocking and Non-Blocking</a>
+</li>
+            
+<li class="active">
+    <a href="./">The Node.js Event Loop</a>
+</li>
+            
+<li >
+    <a href="../get-started.md">Get Started</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ruby-on-rails/overview.md">Overview</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/action-view-form-helpers.md">Action View Form Helpers</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Skill Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-be-a-great-programmer/">How to be a great programmer</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-javascript-developers-learn-from-c++/">What Javascript Developers can learn from C++</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-i-learn-from-lauching-a-freelance-writing-bussiess.md">What I learn from lauching a freelance writing business</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-code-reviews-work-at-microsoft/">How code reviews work at Microsoft</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-debug-with-firefox/">How to debug web apps with Firefox developer tools</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/beyond-coding-soft-skill-to-avoid-projects-fails/">Beyond Coding - Soft skill to avoid projects failures</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/3-things-to-do-when-you-dont-have-computers-science-degree/">3 Things to do when you don't have computer science degree</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-core-is-future-of-net/">.NET Core is Future of .NET</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/introducing-net-5/">Introducing .NET 5</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/scraping-the-web-with-nodejs/">Scraping Web With Nodejs</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/roadmap-web-developer-2019/">Roadmap Web Developer 2019</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/tinygo/">Tiny Go</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-stacks/">.NET stacks</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Dev Ops</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/devops-blog/what-is-devops-and-why-do-we-need-it/">What is DevOps? Why do we need it?</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Computer Science</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/computer-science/what-is-different-between-machine-learning-and-ai/">What is between machine learning and AI</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-to-quit-your-job-and-live-your-startup-dream/">How to quit your job and live your startup dream</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-two-words-can-change-your-life/">How two words can change your life</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/4-practical-things-i-do-to-stay-positive/">4 Practical Things I do to stay positive</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/xamarin-blog/getting-started-workmanager/">Getting Started WorkManager</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/sharing-files-and-email-attachments/">Sharing Files and Email Attachment</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes/">Add a Backend to Your App in 10 minutes</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/behavior-xamarin/">Behavior In Xamarin Forms</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/shrinking-your-android-app-size/">Shrinking Your Android App Size</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/mobile-tools-for-designers/">Mobile Tools for Designer</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/overview/">Overview</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-shell/">Xamarin Forms Shell</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/control-templates/">Control Templates</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/data-templates/">Data Templates</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../overview-of-blocking-and-non-blocking/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../ruby-on-rails/rails-form-expand/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/web-development/nodejs/what-is-the-event-loop.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#the-nodejs-event-loop-timers-and-processnexttick">The Node.js Event Loop, Timers, and process.nextTick()</a></li>
+            <li><a href="#what-is-the-event-loop">What is the Event Loop?</a></li>
+            <li><a href="#event-loop-explained">Event Loop Explained</a></li>
+            <li><a href="#phases-overview">Phases Overview</a></li>
+            <li><a href="#phases-in-detail">Phases in Detail</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="the-nodejs-event-loop-timers-and-processnexttick">The Node.js Event Loop, Timers, and <code>process.nextTick()</code></h1>
+<hr/>
+
+<h2 id="what-is-the-event-loop">What is the Event Loop?</h2>
+<p>The event loop is what allows Node.js to perform non-blocking I/O operations - despite the fact that JavaScript is single-threaded - by offloading operations to the system kernel whenever possible.</p>
+<p>Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background. When on of these operations completes, the kernel tells Node.js so that the appropriate callback may be added to the <strong><em>poll</em></strong> queue to eventually be executed.</p>
+<h2 id="event-loop-explained">Event Loop Explained</h2>
+<p>When Node.js starts, it initializes the event loop, processes the provided input script (or drops into the <a href="https://nodejs.org/api/repl.html#repl_repl">REPL</a>, which is not covered in this document) which may make async API calls, schedule timers, or call <code>process.nextTick()</code>, then begins processing the event loop.</p>
+<p>The following diagram shows a simplified overview of the event loop's order of operations.</p>
+<pre><code>┌───────────────────────────┐
+┌─&gt;│ timers │
+│ └─────────────┬─────────────┘
+│ ┌─────────────┴─────────────┐
+│ │ pending callbacks │
+│ └─────────────┬─────────────┘
+│ ┌─────────────┴─────────────┐
+│ │ idle, prepare │
+│ └─────────────┬─────────────┘ ┌───────────────┐
+│ ┌─────────────┴─────────────┐ │ incoming: │
+│ │ poll │&lt;─────┤ connections, │
+│ └─────────────┬─────────────┘ │ data, etc. │
+│ ┌─────────────┴─────────────┐ └───────────────┘
+│ │ check │
+│ └─────────────┬─────────────┘
+│ ┌─────────────┴─────────────┐
+└──┤ close callbacks │
+└───────────────────────────┘
+</code></pre>
+<p><em>note: each box will be referred to as a "phase" of the event loop.</em></p>
+<p>Each phase has a FIFO queuse of callbacks to execte. While each phase is special in its own way, generally, when the event loop enters a given phase, it will perform any operations specific to that phase, then execute callbacks in that phase's quese until the queue has been exhausted or the maximum number of callbacks has executed. When the queue has been exhausted or the callback limit is reached, the event loop will move to the next phase, and so on.</p>
+<p>Since any of these operations may schedule more operations and new events processed in the <strong><em>poll</em></strong> phase are queued by the kernel, poll events can be queued while polling events are being processed. As a result, long running callbacks can allow the poll phase to run much longer than timers's threshold. See the <strong><em>timers</em></strong> and <strong><em>poll</em></strong> sections for more details.</p>
+<p><strong><em>NOTE</em></strong>: There is a slight discrepency between the Windows and the Unix/Linux implementation, but that's not important for this demonstration. There are actually seven or eight steps, but the ones we care about - ones that Node.js actuall uses - are those above.</p>
+<h2 id="phases-overview">Phases Overview</h2>
+<ul>
+<li><strong><em>timers</em></strong>: this phase executes callbacks scheduled by <code>setTimeout()</code> and <code>setInterval()</code>.</li>
+<li><strong><em>pending callbacks</em></strong>: executes I/O callbacks deferred to the next loop iteration.</li>
+<li><strong><em>idle, prepare</em></strong>: only used internally.</li>
+<li><strong><em>poll</em></strong>: retrieve new I/O events; execute I/O related callbacks(almost all with the exception of close callbacks, the ones scheduled by timers, and <code>setImmediate()</code>); node will block here when appropriate.</li>
+<li><strong><em>check</em></strong>: <code>setImmediate()</code> callbacks are invoked here.</li>
+<li><strong><em>close callbacks</em></strong>: some close callbacks, e.g <code>socket.on('close', ...)</code>.</li>
+</ul>
+<h2 id="phases-in-detail">Phases in Detail</h2>
+<h3 id="timers">timers</h3>
+<p>A timers specifies the <strong><em>threshold</em></strong> after which a provided callback my be executed rather than the <strong><em>exact</em></strong> time a person wants it to be executed. Timers callbacks will run as early as they can be scheduled after the specified amount of time has passed; however, Operating System scheduling or the running of other callbacks may delay them.</p>
+<p><strong><em>Note</em></strong>: *Technically, the <strong><em>poll</em></strong> phase controls when timers are executed.*</p>
+<p>Note: To prevent the <strong><em>poll</em></strong> phase from starving the event loop, <a href="http://libuv.org/">libuv</a> (the C library that implements the Node.js event loop and all of the asynchronous behaviors of the platform) also has a hard maximum (system dependent) before it stops polling for more events.</p>
+<h3 id="pending-callbacks">pending callbacks</h3>
+<p>This phase executes callbacks for some system operations such as types of TCP errors. For example if a TCP socket receives <code>ECONNREFUSED</code> when attempting to connect, some *nix systems want to wait to report the error. This will be queused to execute the <strong><em>pending callbacks</em></strong> phase.</p>
+<h3 id="poll">poll</h3>
+<p>The <strong><em>poll</em></strong> phase has two main functions:</p>
+<ol>
+<li>Calculating how long it should block and poll for I/O, then</li>
+<li>Processing events in the <strong><em>poll</em></strong> queue.</li>
+</ol>
+<p>Once the <strong><em>poll</em></strong> queue is empty the event loop will check for timers whose time thresholds have been reached. If one or more timers are ready, the event loop will wrap back to the <strong><em>timers</em></strong> phase to execute those timers's callbacks.</p>
+<h3 id="check">check</h3>
+<p>This phase allows a person to execute callbacks immediately after the <strong><em>poll</em></strong> phase has completed. If the <strong><em>poll</em></strong> phase becomes idle and scripts have been queued with <code>setImmediate()</code>, the event loop may contimue to the <strong><em>check</em></strong> phase rether than waiting.</p>
+<p><code>setImmediate()</code> is actually a special timer that runs in a separate phase of the event loop. It uses a libuv API that schedules callbacks to execute after the <strong><em>poll</em></strong> phase has completed.</p>
+<h3 id="close-callbacks">close callbacks</h3>
+<p>if a socket or handle is closed abruptly (e.g <code>socket.destroy()</code>), the <code>'close'</code> event will be emitted in this phase. Otherwise it will be emitted via <code>process.nextTick()</code>.</p>
+<p>The main advantage to using <code>setImmediate()</code> over <code>setTimeout()</code> is <code>setImmediate()</code> will always be executed before any timers if scheduled within an I/O cycle, independently of how many timers are present.</p>
+<p><code>process.nextTick()</code> was not displayed in the diagram, even though it's a part of the asynchromous API. This is because <code>process.nextTick</code> is not technically part of the event loop. Instead, the <code>nextTickQueue</code> will be processed after the current operation is completed, regardless of the current phase of the event loop. Here, and operation is defined as a transition from the underlying C/C++ handler, and handing the JavaScript that needs to be executed.</p>
+<h3 id="why-use-processnexttick">Why use <code>process.nextTick()</code>?</h3>
+<p>There are two main reasons:</p>
+<ol>
+<li>Allow users to handle errors, cleanup any then unneeded resources, or perhaps try the request again before the event loop continues.</li>
+<li>At times it's necessay to allow a callback to run after the call stack has unwound but before the event loop continues.</li>
+</ol>
+<hr/>
+
+<p>Get more information at <a href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/">here</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

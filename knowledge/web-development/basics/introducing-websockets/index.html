@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Introducing WebSockets - Note Pro</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-2/">Version 2</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-3/">Version 3</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Principles</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../principles/s-o-l-i-d/">S.O.L.I.D</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pattern</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../pattern/dependency-injection/">Dependency Injection</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/design_pattern/">Design Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/aggregate-pattern/">Aggregate Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/the-7-most-important-software-design-patterns/">The 7 mose important software design pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/repository-pattern/">Repository Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/specification-pattern/">Specification Pattern</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Algorithms</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../algorithms/analysis-of-algorithms/">Analysis of Algorithms</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Architectures</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../architectures/three-tier/">Three tier</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Docker</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/docker/docker-network/">Docker Network</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Basics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../code-coverage/">Code Coverage</a>
+</li>
+            
+<li >
+    <a href="../regression-testing/">Regression Testing</a>
+</li>
+            
+<li >
+    <a href="../functional-testing/">Functional Testing</a>
+</li>
+            
+<li >
+    <a href="../integration-testing/">Integration Testing</a>
+</li>
+            
+<li >
+    <a href="../unit-testing/">Unit Testing</a>
+</li>
+            
+<li >
+    <a href="../css-handbook/">CSS HandBook</a>
+</li>
+            
+<li class="active">
+    <a href="./">Introducing WebSockets</a>
+</li>
+            
+<li >
+    <a href="../graphql/">GraphQL</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASP.NET</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../asp.net/introduction/">Introduction</a>
+</li>
+            
+<li >
+    <a href="../../asp.net/nswag/">NSwag</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">NodeJS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../nodejs/libuv/">Libuv</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/overview-of-blocking-and-non-blocking/">Overview of Blocking and Non-Blocking</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/what-is-the-event-loop/">The Node.js Event Loop</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/get-started.md">Get Started</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ruby-on-rails/overview.md">Overview</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/action-view-form-helpers.md">Action View Form Helpers</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Skill Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-be-a-great-programmer/">How to be a great programmer</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-javascript-developers-learn-from-c++/">What Javascript Developers can learn from C++</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-i-learn-from-lauching-a-freelance-writing-bussiess.md">What I learn from lauching a freelance writing business</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-code-reviews-work-at-microsoft/">How code reviews work at Microsoft</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-debug-with-firefox/">How to debug web apps with Firefox developer tools</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/beyond-coding-soft-skill-to-avoid-projects-fails/">Beyond Coding - Soft skill to avoid projects failures</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/3-things-to-do-when-you-dont-have-computers-science-degree/">3 Things to do when you don't have computer science degree</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-core-is-future-of-net/">.NET Core is Future of .NET</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/introducing-net-5/">Introducing .NET 5</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/scraping-the-web-with-nodejs/">Scraping Web With Nodejs</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/roadmap-web-developer-2019/">Roadmap Web Developer 2019</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/tinygo/">Tiny Go</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-stacks/">.NET stacks</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Dev Ops</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/devops-blog/what-is-devops-and-why-do-we-need-it/">What is DevOps? Why do we need it?</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Computer Science</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/computer-science/what-is-different-between-machine-learning-and-ai/">What is between machine learning and AI</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-to-quit-your-job-and-live-your-startup-dream/">How to quit your job and live your startup dream</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-two-words-can-change-your-life/">How two words can change your life</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/4-practical-things-i-do-to-stay-positive/">4 Practical Things I do to stay positive</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/xamarin-blog/getting-started-workmanager/">Getting Started WorkManager</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/sharing-files-and-email-attachments/">Sharing Files and Email Attachment</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes/">Add a Backend to Your App in 10 minutes</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/behavior-xamarin/">Behavior In Xamarin Forms</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/shrinking-your-android-app-size/">Shrinking Your Android App Size</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/mobile-tools-for-designers/">Mobile Tools for Designer</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/overview/">Overview</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-shell/">Xamarin Forms Shell</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/control-templates/">Control Templates</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/data-templates/">Data Templates</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../css-handbook/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../graphql/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/web-development/basics/introducing-websockets.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#introducing-websockets-bringing-sockets-to-the-web">Introducing WebSockets: Bringing Sockets to the Web</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#communicating-with-the-server">Communicating with the Server</a></li>
+            <li><a href="#cross-origin-communication">Cross Origin Communication</a></li>
+            <li><a href="#proxy-servers">Proxy Servers</a></li>
+            <li><a href="#use-websockets-today">Use WebSockets Today</a></li>
+            <li><a href="#the-server-side">The Server Side</a></li>
+            <li><a href="#server-side-implementations">Server Side Implementations</a></li>
+            <li><a href="#use-cases">Use Cases</a></li>
+            <li><a href="#references">References</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="introducing-websockets-bringing-sockets-to-the-web">Introducing WebSockets: Bringing Sockets to the Web</h1>
+<p>The <a href="http://dev.w3.org/html5/websockets/">WebSocket</a> specification defines and API establishing "socket" connections between a web browser and a server. In plain words: There is an persistent connection between the client and the server and both parties can start sending data at any time.</p>
+<hr/>
+
+<h2 id="getting-started">Getting Started</h2>
+<p>You open up a WebSocket connection simply by calling the WebSocket constructor:</p>
+<pre><code class="javascript">var connection = new WebSocket('ws://html5rocks.websocket.org/echo', ['soap', 'xmpp'])
+</code></pre>
+
+<p>Attaching some event handlers immediately to the connection allows you to know when the connection is opened, received incomimg messages, or there is an error.</p>
+<p>The second argument accepts optional subprotocols. It can be a string or array of strings. Each strng should represent a subprotocol name and server accepts only one of passes subprotocols in the array. Accepted subprotocol can be determined by accessing protocol property of WebSocket object.</p>
+<p>The subprotocol names must be one of registered subprotocol names in <a href="http://www.iana.org/assignments/websocket/websocket.xml">IANA registry</a>. There is currently only one subprotocol name (soap) registered as of February 2012.</p>
+<pre><code class="javascript">// When the connection is open, send some data to the server
+connection.onopen = function () {
+  connection.send('Ping'); // Send the message 'Ping' to the server
+};
+
+// Log errors
+connection.onerror = function (error) {
+  console.log('WebSocket Error ' + error);
+};
+
+// Log messages from the server
+connection.onmessage = function (e) {
+  console.log('Server: ' + e.data);
+};
+</code></pre>
+
+<h2 id="communicating-with-the-server">Communicating with the Server</h2>
+<p>As soon as we have a connection to the server (when the open event is fired) we can start sending data to the server using the <code>send('your mess')</code> method on the connection object. It used to support only strings, but in the latest spec it now can send binary messages too. To send binary data, you can use either <code>Blob</code> or <code>ArrayBuffer</code> object.</p>
+<pre><code class="javascript">// Sending String
+connection.send('your message');
+
+// Sending canvas ImageData as ArrayBuffer
+var img = canvas_context.getImageData(0, 0, 400, 320);
+var binary = new Uint8Array(img.data.length);
+for (var i = 0; i &lt; img.data.length; i++) {
+  binary[i] = img.data[i];
+}
+connection.send(binary.buffer);
+
+// Sending file as Blob
+var file = document.querySelector('input[type=&quot;file&quot;]').files[0];
+connection.send(file);
+</code></pre>
+
+<p>Equally the server might send us messages at any time. Whenever this happens the <code>onmessage</code> callback fires. The callback receives an event object and the actual message is accessible via the <code>data</code> property.</p>
+<p>WebSocket can also receive binary messages in the latest spec. Binary frames can be received in <code>Blob</code> or <code>ArrayBuffer</code> format. To specify the format of the received binary, set the binaryType property of WebSocket object to either 'blob' or 'arraybuffer'. The default format is 'blob'. (You don't have to align binaryType param on sending.)</p>
+<pre><code class="javascript">// Setting binaryType to accept received binary as either 'blob' or 'arraybuffer'
+connection.binaryType = 'arraybuffer';
+connection.onmessage = function(e) {
+  console.log(e.data.byteLength); // ArrayBuffer object if binary
+};
+</code></pre>
+
+<p>Another newly added feature of WebSocket is extensions. using extensions, it will be possible to send frames <a href="http://tools.ietf.org/html/draft-tyoshino-hybi-websocket-perframe-deflate-05">compressed</a>, <a href="http://tools.ietf.org/html/draft-tamplin-hybi-google-mux-02">multiplexed</a>, etc. You can find server accepted extensions by examining the extensions property of the WebSocket object after the open event. There is no officially published extentions spec just yet as of February 2012,</p>
+<pre><code class="javascript">// Determining accepted extensions
+console.log(connection.extensions);
+</code></pre>
+
+<h2 id="cross-origin-communication">Cross Origin Communication</h2>
+<p>Being a modern protocol, cross origin comminication is baked right into WebSOcket. While you should still make sure only to comunicate with clients and servers that you trust, WebSocket enables communication between parties on any domain. The server decides whether to make its service available to all clients or only those that reside on a set of well defined domains.</p>
+<h2 id="proxy-servers">Proxy Servers</h2>
+<p>Every new teachnology comes with a new set of problems. In the case of WebSocket it is the compatibility with proxe servers with meditate HTTP connections in most company networks. The WebSocket protocol uses the HTTP upgrade system (twhich is normally used for HTTP/SSL) to "upgrade" and HTTP connection to a WebSocket conneciton. Some proxy servers do not like this and will drop the connection. Thus, even if a given client uses the WebSocket protocol, it may not be possible to establist a connection. This makes the next section even more important.</p>
+<h2 id="use-websockets-today">Use WebSockets Today</h2>
+<p>WebSocket is still a young technology and not fully implemented in all browsers. However, you can use WebSocket today with libraries that use one of the <a href="https://www.html5rocks.com/en/tutorials/websockets/basics/#fallbacks">fallbacks</a> mentioned above whenever WebSocket is not available. A library that has become very popular in this domain is <a href="http://socket.io/">socket.io</a> which comes with a client and a server implementation of the protocol and includes fallbacks (socket.io doesn't support binary messaging yet as of Februrary 2012). There are also commercial solutions such as <a href="http://pusherapp.com/">PusherApp</a> which can be easily integrated into any web enviroment by providing a HTTP API to send WebSocket messages to clients. Due to the extra HTTP request there will always be extra overhead compared to pure WebSocket.</p>
+<h2 id="the-server-side">The Server Side</h2>
+<p>Using WebSocket creates a whole new usage pattern for server side applications. While traditional server stacks such LAMP are designed around the HTTP request/response cycle they often do not deal well with a large number of open WebSocket connections. Keeping a large number of connections open at the same time requires an architecture that receives high concurrency at a low performance cost. Such architectures are usually designed around either threading or so callled non-blocking IO.</p>
+<h2 id="server-side-implementations">Server Side Implementations</h2>
+<ul>
+<li>Node.js</li>
+<li><a href="http://socket.io/">Socket.IO</a></li>
+<li><a href="https://github.com/Worlize/WebSocket-Node">WebSocket-Node</a></li>
+<li><a href="https://github.com/einaros/ws">ws</a></li>
+<li>Java</li>
+<li><a href="http://www.eclipse.org/jetty/">Jetty</a></li>
+<li>Ruby</li>
+<li><a href="http://github.com/igrigorik/em-websocket">EventMachine</a></li>
+<li>Python</li>
+<li><a href="http://code.google.com/p/pywebsocket/">pywebsocket</a></li>
+<li><a href="https://github.com/facebook/tornado">Tornado</a></li>
+<li>Erlang</li>
+<li><a href="https://github.com/michilu/shirasu">Shirasu</a></li>
+<li>C++</li>
+<li><a href="http://git.warmcat.com/cgi-bin/cgit/libwebsockets/">libwebsockets</a></li>
+<li>.NET</li>
+<li><a href="http://superwebsocket.codeplex.com/">SuperWebSocket</a></li>
+</ul>
+<h2 id="use-cases">Use Cases</h2>
+<p>Use WebSocket whenever you need a truly low latency, near realtime connection between the client and the server. Keep in mind that this might involve rethinking ho you build your server side applications with a new foces on technologies such as event queues. Some example use cases are:</p>
+<ul>
+<li>Multiplayer online games</li>
+<li>Chat applications</li>
+<li>Live sports ticker</li>
+<li>Realtime updating social streams</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://dev.w3.org/html5/websockets/">The WebSocket API</a></li>
+<li><a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-03">The WebSocket Protocol</a></li>
+<li><a href="https://developer.mozilla.org/en/WebSockets">WebSockets-MDN</a></li>
+</ul>
+<hr/>
+
+<p>Get more information at <a href="https://www.html5rocks.com/en/tutorials/websockets/basics/">here</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

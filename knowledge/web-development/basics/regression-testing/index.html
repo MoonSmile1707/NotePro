@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Regression Testing - Note Pro</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-2/">Version 2</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-3/">Version 3</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Principles</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../principles/s-o-l-i-d/">S.O.L.I.D</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pattern</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../pattern/dependency-injection/">Dependency Injection</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/design_pattern/">Design Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/aggregate-pattern/">Aggregate Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/the-7-most-important-software-design-patterns/">The 7 mose important software design pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/repository-pattern/">Repository Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/specification-pattern/">Specification Pattern</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Algorithms</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../algorithms/analysis-of-algorithms/">Analysis of Algorithms</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Architectures</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../architectures/three-tier/">Three tier</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Docker</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/docker/docker-network/">Docker Network</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Basics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../code-coverage/">Code Coverage</a>
+</li>
+            
+<li class="active">
+    <a href="./">Regression Testing</a>
+</li>
+            
+<li >
+    <a href="../functional-testing/">Functional Testing</a>
+</li>
+            
+<li >
+    <a href="../integration-testing/">Integration Testing</a>
+</li>
+            
+<li >
+    <a href="../unit-testing/">Unit Testing</a>
+</li>
+            
+<li >
+    <a href="../css-handbook/">CSS HandBook</a>
+</li>
+            
+<li >
+    <a href="../introducing-websockets/">Introducing WebSockets</a>
+</li>
+            
+<li >
+    <a href="../graphql/">GraphQL</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASP.NET</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../asp.net/introduction/">Introduction</a>
+</li>
+            
+<li >
+    <a href="../../asp.net/nswag/">NSwag</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">NodeJS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../nodejs/libuv/">Libuv</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/overview-of-blocking-and-non-blocking/">Overview of Blocking and Non-Blocking</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/what-is-the-event-loop/">The Node.js Event Loop</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/get-started.md">Get Started</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ruby-on-rails/overview.md">Overview</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/action-view-form-helpers.md">Action View Form Helpers</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Skill Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-be-a-great-programmer/">How to be a great programmer</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-javascript-developers-learn-from-c++/">What Javascript Developers can learn from C++</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-i-learn-from-lauching-a-freelance-writing-bussiess.md">What I learn from lauching a freelance writing business</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-code-reviews-work-at-microsoft/">How code reviews work at Microsoft</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-debug-with-firefox/">How to debug web apps with Firefox developer tools</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/beyond-coding-soft-skill-to-avoid-projects-fails/">Beyond Coding - Soft skill to avoid projects failures</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/3-things-to-do-when-you-dont-have-computers-science-degree/">3 Things to do when you don't have computer science degree</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-core-is-future-of-net/">.NET Core is Future of .NET</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/introducing-net-5/">Introducing .NET 5</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/scraping-the-web-with-nodejs/">Scraping Web With Nodejs</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/roadmap-web-developer-2019/">Roadmap Web Developer 2019</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/tinygo/">Tiny Go</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-stacks/">.NET stacks</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Dev Ops</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/devops-blog/what-is-devops-and-why-do-we-need-it/">What is DevOps? Why do we need it?</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Computer Science</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/computer-science/what-is-different-between-machine-learning-and-ai/">What is between machine learning and AI</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-to-quit-your-job-and-live-your-startup-dream/">How to quit your job and live your startup dream</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-two-words-can-change-your-life/">How two words can change your life</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/4-practical-things-i-do-to-stay-positive/">4 Practical Things I do to stay positive</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/xamarin-blog/getting-started-workmanager/">Getting Started WorkManager</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/sharing-files-and-email-attachments/">Sharing Files and Email Attachment</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes/">Add a Backend to Your App in 10 minutes</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/behavior-xamarin/">Behavior In Xamarin Forms</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/shrinking-your-android-app-size/">Shrinking Your Android App Size</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/mobile-tools-for-designers/">Mobile Tools for Designer</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/overview/">Overview</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-shell/">Xamarin Forms Shell</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/control-templates/">Control Templates</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/data-templates/">Data Templates</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../code-coverage/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../functional-testing/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/web-development/basics/regression-testing.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#regression-testing">Regression Testing</a></li>
+            <li><a href="#what-is-regression-testing">What is Regression Testing?</a></li>
+            <li><a href="#need-of-regression-testing">Need of Regression Testing</a></li>
+            <li><a href="#how-to-do-regression-testing">How to do Regression Testing</a></li>
+            <li><a href="#selecting-test-cases-for-regression-testing">Selecting test cases for regression testing</a></li>
+            <li><a href="#regression-testing-and-configuration-management">Regression Testing and Configuration Management</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="regression-testing">Regression Testing</h1>
+<hr/>
+
+<h2 id="what-is-regression-testing">What is Regression Testing?</h2>
+<p>Regression Testing is defuned as a type of software testing to confirm that a recent program or code change has not adversely affected existing features.</p>
+<p>Regression Testing is nothing of already executed test cases which are re-excuted to ensure existing functionalities work find.</p>
+<p>This testing is done to make sure that new code changes should not have side effects on the existing functinalities. It ensures that the old code still works once the new code changes are done.</p>
+<h2 id="need-of-regression-testing">Need of Regression Testing</h2>
+<p>Regression Testing is requred when there is a</p>
+<ul>
+<li>Change in requirements and code is modified according to the requirement.</li>
+<li>New feature is added to the software.</li>
+<li>Defect fixing.</li>
+<li>Performance issue fix.</li>
+</ul>
+<h2 id="how-to-do-regression-testing">How to do Regression Testing</h2>
+<p>Software maintence is an activity which includes enhancements, error corrections, optimization and deletion of existing features. These modifications may cause the system to work incorrectly. Therefore, Regression Testing becomes necessary. Regression Testing can be carried out using the follwoing techniques:</p>
+<p><img alt="regressiontesting" src="../../../../img-root/regressiontestingtypes.png" /></p>
+<h3 id="retest-all">Retest All</h3>
+<ul>
+<li>This is one of themethods for Regression Testing in which all the tests in the existing test bucket or suite should be re-executed. This is very expensive as it requires huge time and resources.</li>
+</ul>
+<h3 id="regression-test-selection">Regression Test Selection</h3>
+<ul>
+<li>Instead of re-executing the entire test suite, it is better to select part of the test suite to be run.</li>
+<li>Test cases selected can be categorized as 1) Reusable Test Cases 2) Obsolete Test Cases.</li>
+<li>Re-usable Test cases can be used in succeeding regression cycles.</li>
+<li>Obsolete Test Cases can't be used in succeeding cycles.</li>
+</ul>
+<h3 id="prioritization-of-test-cases">Prioritization of Test Cases</h3>
+<ul>
+<li>Prioritize the test cases depending on business impact, critical &amp; frequently used functionalities. Selection of test cases based on priority will greatly reduce the regression test suite.</li>
+</ul>
+<h2 id="selecting-test-cases-for-regression-testing">Selecting test cases for regression testing</h2>
+<p>Effective Regression Tests can be done by selecting the following test cases:</p>
+<ul>
+<li>Test cases which have frequent defects.</li>
+<li>Functionalities which are more visible to the users.</li>
+<li>Test cases which verify core features of the product.</li>
+<li>Test cases of Functionalities which has undergone more and recent changes.</li>
+<li>All Integration Test Cases.</li>
+<li>All Complex Test Cases.</li>
+<li>Boundary value test cases.</li>
+<li>A sample of Successful test cases.</li>
+<li>A sample of Failure test cases.</li>
+</ul>
+<h2 id="regression-testing-and-configuration-management">Regression Testing and Configuration Management</h2>
+<p>Configuration Management during Regression Testing becomes imperative in Agile Enviroments where a code is being continuously modified. To ensure effective regression tests, observe the following:</p>
+<ul>
+<li>Code being regression tested should be under a configuration management tool.</li>
+<li>No changes must be allowed to coe during the regression test phase. Regression test code must be kept immune to developer changes.</li>
+<li>The database used for regression testing must be isolated. No databse changes must be allowed.</li>
+</ul>
+<hr/>
+
+<p>Get more information at <a href="https://www.guru99.com/regression-testing.html">here</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

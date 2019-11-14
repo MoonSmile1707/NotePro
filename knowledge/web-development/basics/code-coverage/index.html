@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Code Coverage - Note Pro</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-2/">Version 2</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-3/">Version 3</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Principles</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../principles/s-o-l-i-d/">S.O.L.I.D</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pattern</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../pattern/dependency-injection/">Dependency Injection</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/design_pattern/">Design Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/aggregate-pattern/">Aggregate Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/the-7-most-important-software-design-patterns/">The 7 mose important software design pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/repository-pattern/">Repository Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/specification-pattern/">Specification Pattern</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Algorithms</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../algorithms/analysis-of-algorithms/">Analysis of Algorithms</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Architectures</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../architectures/three-tier/">Three tier</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Docker</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/docker/docker-network/">Docker Network</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Basics</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Code Coverage</a>
+</li>
+            
+<li >
+    <a href="../regression-testing/">Regression Testing</a>
+</li>
+            
+<li >
+    <a href="../functional-testing/">Functional Testing</a>
+</li>
+            
+<li >
+    <a href="../integration-testing/">Integration Testing</a>
+</li>
+            
+<li >
+    <a href="../unit-testing/">Unit Testing</a>
+</li>
+            
+<li >
+    <a href="../css-handbook/">CSS HandBook</a>
+</li>
+            
+<li >
+    <a href="../introducing-websockets/">Introducing WebSockets</a>
+</li>
+            
+<li >
+    <a href="../graphql/">GraphQL</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASP.NET</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../asp.net/introduction/">Introduction</a>
+</li>
+            
+<li >
+    <a href="../../asp.net/nswag/">NSwag</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">NodeJS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../nodejs/libuv/">Libuv</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/overview-of-blocking-and-non-blocking/">Overview of Blocking and Non-Blocking</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/what-is-the-event-loop/">The Node.js Event Loop</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/get-started.md">Get Started</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ruby-on-rails/overview.md">Overview</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/action-view-form-helpers.md">Action View Form Helpers</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Skill Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-be-a-great-programmer/">How to be a great programmer</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-javascript-developers-learn-from-c++/">What Javascript Developers can learn from C++</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-i-learn-from-lauching-a-freelance-writing-bussiess.md">What I learn from lauching a freelance writing business</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-code-reviews-work-at-microsoft/">How code reviews work at Microsoft</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-debug-with-firefox/">How to debug web apps with Firefox developer tools</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/beyond-coding-soft-skill-to-avoid-projects-fails/">Beyond Coding - Soft skill to avoid projects failures</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/3-things-to-do-when-you-dont-have-computers-science-degree/">3 Things to do when you don't have computer science degree</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-core-is-future-of-net/">.NET Core is Future of .NET</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/introducing-net-5/">Introducing .NET 5</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/scraping-the-web-with-nodejs/">Scraping Web With Nodejs</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/roadmap-web-developer-2019/">Roadmap Web Developer 2019</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/tinygo/">Tiny Go</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-stacks/">.NET stacks</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Dev Ops</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/devops-blog/what-is-devops-and-why-do-we-need-it/">What is DevOps? Why do we need it?</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Computer Science</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/computer-science/what-is-different-between-machine-learning-and-ai/">What is between machine learning and AI</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-to-quit-your-job-and-live-your-startup-dream/">How to quit your job and live your startup dream</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-two-words-can-change-your-life/">How two words can change your life</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/4-practical-things-i-do-to-stay-positive/">4 Practical Things I do to stay positive</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/xamarin-blog/getting-started-workmanager/">Getting Started WorkManager</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/sharing-files-and-email-attachments/">Sharing Files and Email Attachment</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes/">Add a Backend to Your App in 10 minutes</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/behavior-xamarin/">Behavior In Xamarin Forms</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/shrinking-your-android-app-size/">Shrinking Your Android App Size</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/mobile-tools-for-designers/">Mobile Tools for Designer</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/overview/">Overview</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-shell/">Xamarin Forms Shell</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/control-templates/">Control Templates</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/data-templates/">Data Templates</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../../dev-ops/docker/docker-network/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../regression-testing/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/web-development/basics/code-coverage.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#code-coverage">Code coverage</a></li>
+            <li><a href="#what-is-code-coverage">What is Code coverage</a></li>
+            <li><a href="#why-use-code-coverage">Why use Code Coverage</a></li>
+            <li><a href="#code-coverage-methods">Code Coverage Methods</a></li>
+            <li><a href="#finite-state-machine-coverage">Finite State Machine Coverage</a></li>
+            <li><a href="#which-type-of-code-coverage-to-choose">Which Type of Code Coverage to Choose</a></li>
+            <li><a href="#advantages-of-using-code-coverage">Advantages of Using Code Coverage</a></li>
+            <li><a href="#disadvantages-of-using-code-coverage">Disadvantages of Using Code Coverage</a></li>
+            <li><a href="#summary">Summary</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="code-coverage">Code coverage</h1>
+<hr/>
+
+<h2 id="what-is-code-coverage">What is Code coverage</h2>
+<p>Code coverage is a measure which describes the degree of which the source code o the program has been tested. It one form of white box testing which finds the areas of the set of test cases. It also creates some test cases to increase coverage and determining a quantitative measure of code coverage.</p>
+<h2 id="why-use-code-coverage">Why use Code Coverage</h2>
+<p>Here, are some prime reasons for using code coverage:</p>
+<ul>
+<li>It helps you to measure the efficiency of test implementation.</li>
+<li>It offer a quantitative measurement.</li>
+<li>It defines the degree to which the source code has been tested.</li>
+</ul>
+<h2 id="code-coverage-methods">Code Coverage Methods</h2>
+<h3 id="statement-coverage">Statement Coverage</h3>
+<p>Statement coverage is a white box test design technique which involves execution of all the executable statements in the source code at least once. It is used to calculate and measure the number of statements in the source code which can be executed given the requirements.</p>
+<p>Statement coverage is used to derive scenario based upon the structure of the code under test.</p>
+<pre><code>Statement Coverage = (Number of excuted statements / Total number of statements) * 100
+</code></pre>
+<p><strong>What is covered by Statement Coverage?</strong></p>
+<ol>
+<li>Unused Statements</li>
+<li>Dead Code</li>
+<li>Unused Branches</li>
+</ol>
+<h3 id="decision-coverage">Decision Coverage</h3>
+<p>Decision coverage reports the true or false outcomes of each Boolean expression. In this coverage, expressions can sometimes get complicated. Therefore, it is very hard to achieve 100% coverage.</p>
+<p>That's why there are many different methods of reporting this metric. All these methods focus on covering the most important combinations. It is very much similar to decision coverage, but it offers better sensitivity to control flow.</p>
+<pre><code>Decision Coverage = (Number of Decision Outcomes Exercised/Tootal Number of Decision Outcomes) * 100
+</code></pre>
+<h3 id="branch-coverage">Branch Coverage</h3>
+<p>In the branch coverage, every outcome from a code module is tested. if the outcomes are binary, you need to test both True and False outcomes.</p>
+<p>By using Branch coverage method, you can also measure the fraction of independent code segments. it also helps you to find out which is sections of code don't have any branches.</p>
+<pre><code>Branch Coverage = (Number of Executed Branched/Total Number of Branches) * 100
+</code></pre>
+<p>Branch coverage Testing offers the following advantages:</p>
+<ul>
+<li>Allows you to validate-all the branches in the code.</li>
+<li>Helps you to ensure that no branched lead to any abnormality of the program's operation.</li>
+<li>Branch coverage method removes issues which happen because of statement coverage testing.</li>
+<li>Allows you to find those areas which are not tested by other testing methods.</li>
+<li>It allows you to find a quantitative measure of code coverage.</li>
+<li>Branch coverage ignores branches inside the Boolean expressions.</li>
+</ul>
+<h3 id="condition-coverage">Condition Coverage</h3>
+<p>Conditional coverage or expression coverage will reveal how the variables or subexpressions in the coditional statement are evaluated. In this coverage expressions with logical operands are only considered.</p>
+<p>Conditional coverage offers better sensitivity to the control flow thatn decision coverage. Condition coverage does not give a guarantee about full decision coverage.</p>
+<pre><code>Condition Coverage = (Number of Executed Operands/ Total Number of Operands) * 100
+</code></pre>
+<h2 id="finite-state-machine-coverage">Finite State Machine Coverage</h2>
+<p>Finite state machine coverage is certainly the most complex type of code coverage method. This is because it works on the behavior of the design. In this coverage method, you need to look for how many time-specific states are visited, transited. It also checks how many sequences are included in a finite state machine.</p>
+<h2 id="which-type-of-code-coverage-to-choose">Which Type of Code Coverage to Choose</h2>
+<p>This is certainly the most difficult answer to give. In order to select a coverage method, the tester needs to check that the</p>
+<ul>
+<li>code under test has single or multiple undiscovered defects.</li>
+<li>cost of the potential penalty.</li>
+<li>cost of lost reputation.</li>
+<li>cost of lost sale, etc.</li>
+</ul>
+<h2 id="advantages-of-using-code-coverage">Advantages of Using Code Coverage</h2>
+<ul>
+<li>Helpful to evaluate a quantitative measure of code coverage.</li>
+<li>It allows you to create extra test cased to increase coverage.</li>
+<li>It allows you to find the areas of a program which is not exercised by a set of test cases.</li>
+</ul>
+<h2 id="disadvantages-of-using-code-coverage">Disadvantages of Using Code Coverage</h2>
+<ul>
+<li>Even when any specifc feature is not implemented in design, code coverage still report 100% coverage.</li>
+<li>It is not possible to determine whetger we tested all possible values of a feature with the help of code coverage.</li>
+<li>Code coverage is also not telling how much and how well you have covered your logic.</li>
+<li>In the case when the specified function hasn't implemented, or a not incluced from the specification, then structure-based techniques cannot find that issue.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Code coverage is a measure which describes the degree of which the source code of the program has been tested.</li>
+<li>It helps you to measure the efficiency of test implementation.</li>
+<li>Five Code Coverage methods are 1.) Statement Coverage 2.) Condition Coverage 3.) Branch Coverage 4) Toggle Coverage 5) FSM Coverage.</li>
+<li>Statement coverage involves execution of all the executable statements in the source code at least once.</li>
+<li>Decision coverage reports the true or false outcomes of each Boolean expression.</li>
+<li>In the branch coverage, every outcome from a code module is tested.</li>
+<li>Conditional will reveal how the variables or subexpressions in the conditional statement are evaluated.</li>
+<li>Finite state machine coverage is certainly the most complext type of code coverage method.</li>
+<li>In order to select a coverage method, the tester needs to check the cost of the potential penalty, lost reputation, lost sale, etc.</li>
+<li>Code coverage tells you how well the source code has been exercised by your test bench while Functional coverage measures how well the functionality of the design has been covered.</li>
+<li>Covertura, JTest, Clover, Emma, Kalistick are few important code coverage tools.</li>
+<li>Code Coverage allows you to create extra test cases to increase coverage.</li>
+<li>Code Coverage does help you to determine whether we tested all possible value of a feature.</li>
+</ul>
+<hr/>
+
+<p>Get more information at <a href="https://www.guru99.com/code-coverage.html">here</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

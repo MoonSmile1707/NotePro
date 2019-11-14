@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Moon Smile">
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>CSS HandBook - Note Pro</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+	
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+	<script src="../../../../js/somelib.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-36723568-3', 'mkdocs.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Note Pro</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Daily Plans <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-1.1/">Version 1</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-2/">Version 2</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/plans-version-3/">Version 3</a>
+</li>
+                                    
+<li >
+    <a href="../../../../daily-plans/soft-skills-for-learning/">Soft Skills for Learning</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">KnowLedge <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Principles</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../principles/s-o-l-i-d/">S.O.L.I.D</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Pattern</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../pattern/dependency-injection/">Dependency Injection</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/design_pattern/">Design Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/aggregate-pattern/">Aggregate Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/the-7-most-important-software-design-patterns/">The 7 mose important software design pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/repository-pattern/">Repository Pattern</a>
+</li>
+            
+<li >
+    <a href="../../../pattern/specification-pattern/">Specification Pattern</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Algorithms</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../algorithms/analysis-of-algorithms/">Analysis of Algorithms</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Architectures</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../architectures/three-tier/">Three tier</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">DevOps</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Circle CI</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/circle-ci/writing-yaml/">Writing YAML</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Docker</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../dev-ops/docker/docker-network/">Docker Network</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Web Development</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Basics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../code-coverage/">Code Coverage</a>
+</li>
+            
+<li >
+    <a href="../regression-testing/">Regression Testing</a>
+</li>
+            
+<li >
+    <a href="../functional-testing/">Functional Testing</a>
+</li>
+            
+<li >
+    <a href="../integration-testing/">Integration Testing</a>
+</li>
+            
+<li >
+    <a href="../unit-testing/">Unit Testing</a>
+</li>
+            
+<li class="active">
+    <a href="./">CSS HandBook</a>
+</li>
+            
+<li >
+    <a href="../introducing-websockets/">Introducing WebSockets</a>
+</li>
+            
+<li >
+    <a href="../graphql/">GraphQL</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">ASP.NET</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../asp.net/introduction/">Introduction</a>
+</li>
+            
+<li >
+    <a href="../../asp.net/nswag/">NSwag</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">NodeJS</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../nodejs/libuv/">Libuv</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/overview-of-blocking-and-non-blocking/">Overview of Blocking and Non-Blocking</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/what-is-the-event-loop/">The Node.js Event Loop</a>
+</li>
+            
+<li >
+    <a href="../../nodejs/get-started.md">Get Started</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Ruby On Rails</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ruby-on-rails/overview.md">Overview</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-form-expand/">Rails Form Expand</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/rails-active-record-callbacks/">Active Record Callbacks</a>
+</li>
+            
+<li >
+    <a href="../../ruby-on-rails/action-view-form-helpers.md">Action View Form Helpers</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Stories</a>
+    <ul class="dropdown-menu">
+            
+  <li class="dropdown-submenu">
+    <a href="#">Skill Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-be-a-great-programmer/">How to be a great programmer</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-javascript-developers-learn-from-c++/">What Javascript Developers can learn from C++</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/what-i-learn-from-lauching-a-freelance-writing-bussiess.md">What I learn from lauching a freelance writing business</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-code-reviews-work-at-microsoft/">How code reviews work at Microsoft</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/how-to-debug-with-firefox/">How to debug web apps with Firefox developer tools</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/beyond-coding-soft-skill-to-avoid-projects-fails/">Beyond Coding - Soft skill to avoid projects failures</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/3-things-to-do-when-you-dont-have-computers-science-degree/">3 Things to do when you don't have computer science degree</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-core-is-future-of-net/">.NET Core is Future of .NET</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/introducing-net-5/">Introducing .NET 5</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/scraping-the-web-with-nodejs/">Scraping Web With Nodejs</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/roadmap-web-developer-2019/">Roadmap Web Developer 2019</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/tinygo/">Tiny Go</a>
+</li>
+            
+<li >
+    <a href="../../../stories/skill-blog/net-stacks/">.NET stacks</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Dev Ops</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/devops-blog/what-is-devops-and-why-do-we-need-it/">What is DevOps? Why do we need it?</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Computer Science</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/computer-science/what-is-different-between-machine-learning-and-ai/">What is between machine learning and AI</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Blockchain</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/blockchain-blog/matic-developer-support-program/">Matic Developer Support Program</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/what-is-matic-network/">What Is Matic Network</a>
+</li>
+            
+<li >
+    <a href="../../../stories/blockchain-blog/plasma/">Plasma</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Thinking In Art</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/thinking-in-art/you-could-have-today-instead-you-choose-tomorrow/">You Could Have Today Intead You Choose Tomorrow</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-to-quit-your-job-and-live-your-startup-dream/">How to quit your job and live your startup dream</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/how-two-words-can-change-your-life/">How two words can change your life</a>
+</li>
+            
+<li >
+    <a href="../../../stories/thinking-in-art/4-practical-things-i-do-to-stay-positive/">4 Practical Things I do to stay positive</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin Blog</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../stories/xamarin-blog/getting-started-workmanager/">Getting Started WorkManager</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/sharing-files-and-email-attachments/">Sharing Files and Email Attachment</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/add-a-backend-to-your-app-in-10-minutes/">Add a Backend to Your App in 10 minutes</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/behavior-xamarin/">Behavior In Xamarin Forms</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/shrinking-your-android-app-size/">Shrinking Your Android App Size</a>
+</li>
+            
+<li >
+    <a href="../../../stories/xamarin-blog/mobile-tools-for-designers/">Mobile Tools for Designer</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Mobile Development</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/overview/">Overview</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Xamarin</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-shell/">Xamarin Forms Shell</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/controls-reference/">Controls Reference</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/customizing-listview-cell-appearance/">Customizing ListView cell Appearence</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages/">Data Pages</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/data-pages-controls/">Data Pages Controls</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/triggers/">Triggers</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/xamarin-forms-theme/">Themes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Template</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/control-templates/">Control Templates</a>
+</li>
+            
+<li >
+    <a href="../../../mobile-development/xamarin/templates/data-templates/">Data Templates</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../unit-testing/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../introducing-websockets/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/MoonSmile1707/NotePro/blob/master/docs/knowledge/web-development/basics/css-handbook.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#the-css-handbook-a-handy-guide-to-css-for-developers">The CSS Handbook: a handy guide to CSS for developers</a></li>
+            <li><a href="#adding-css-to-an-html-page">Adding css to an html page</a></li>
+            <li><a href="#selectors">SELECTORS</a></li>
+            <li><a href="#cascade">CASCADE</a></li>
+            <li><a href="#specificity">SPECIFICITY</a></li>
+            <li><a href="#inheritance">INHERITANCE</a></li>
+            <li><a href="#import">IMPORT</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="the-css-handbook-a-handy-guide-to-css-for-developers">The CSS Handbook: a handy guide to CSS for developers</h1>
+<hr/>
+
+<h2 id="adding-css-to-an-html-page">Adding css to an html page</h2>
+<h3 id="1using-the-link-tag">1:Using the link tag</h3>
+<p>The <code>link</code> tag is the way to include a CSS file.</p>
+<pre><code class="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;myfile.css&quot; /&gt;
+</code></pre>
+
+<h3 id="2using-the-style-tag">2:using the style tag</h3>
+<p>Instead of using the <code>link</code> tag to point to separate stylesheet containing our CSS, we can add the CSS directly inside a <code>style</code> tag. THis is the syntax:</p>
+<pre><code class="html">&lt;style&gt;
+  ...our CSS...;
+&lt;/style&gt;
+</code></pre>
+
+<h3 id="3inline-styles">3:Inline styles</h3>
+<p>Inline styles are the third way to add CSS to a page. We can add a <code>style</code> attribute to an HTML tag, and add CSS into it.</p>
+<pre><code class="html">&lt;div style=&quot;&quot;&gt;...&lt;/div&gt;
+</code></pre>
+
+<h2 id="selectors">SELECTORS</h2>
+<p>we can <strong><em>target</em></strong> that element using this selector <code>p</code>:</p>
+<pre><code class="css">p {
+  color: yellow;
+}
+</code></pre>
+
+<p>Classes are identified using the <code>.</code> symbol, while ids using the <code>#</code> symbol.</p>
+<p>Example using a class:</p>
+<pre><code class="html">&lt;p class=&quot;dog-name&quot;&gt;
+  Roger
+&lt;/p&gt;
+.dog-name { color: yellow; }
+</code></pre>
+
+<p>Example using an id:</p>
+<pre><code class="html">&lt;p id=&quot;dog-name&quot;&gt;
+  Roger
+&lt;/p&gt;
+#dog-name { color: yellow; }
+</code></pre>
+
+<h3 id="cobining-selectors">Cobining selectors</h3>
+<p>So far we've seen how to target an element, aclass or an id. Let's introduce more powerful selectors.</p>
+<h3 id="follow-the-doument-tree-with-selectors">Follow the doument tree with selectors</h3>
+<p>If you have a <code>span</code> tag nested inside a <code>p</code> tag, you can target that one without applying the style to a <code>span</code> tag not included in a <code>p</code> tag:</p>
+<pre><code class="html">&lt;span&gt;
+  Hello!
+&lt;/span&gt;
+&lt;p&gt;
+  My dog name is:
+  &lt;span class=&quot;dog-name&quot;&gt;
+    Roger
+  &lt;/span&gt;
+&lt;/p&gt;
+p span { color: yellow; }
+</code></pre>
+
+<p>To make the dependency strict on the first level, you can use the <code>&gt;</code> symbol between the two tokens:</p>
+<pre><code class="css">p &gt; span {
+  color: yellow;
+}
+</code></pre>
+
+<p>Direct children will have the style applied:</p>
+<pre><code class="html">&lt;p&gt;
+  &lt;span&gt;
+    This is yellow
+  &lt;/span&gt;
+  &lt;strong&gt;
+    &lt;span&gt;
+      This is not yellow
+    &lt;/span&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
+</code></pre>
+
+<p>Adjacent sibling selectors let us style an element only if preceded by a specific element. We do so using the <code>+</code> operator:</p>
+<pre><code class="css">p + span {
+  color: yellow;
+}
+</code></pre>
+
+<p>We have a lot more selectors we can use:</p>
+<ul>
+<li>attribute selectors</li>
+<li>pseudo class selectors</li>
+<li>pseudo element selectors</li>
+</ul>
+<h2 id="cascade">CASCADE</h2>
+<p>Cascade is the process, or algotihm, that determines the properties applied to each element on the page. Trying to converge from a list of CSS rules that are defined in various places.</p>
+<p>It does so taking in condiseration:</p>
+<ul>
+<li>specificity</li>
+<li>importance</li>
+<li>inheritance</li>
+<li>order in the file</li>
+</ul>
+<p>It also takes care of resolving conflicts.</p>
+<p>Two or more competing CSS rules for the same property applied to the same element need t be elaborated according to the CSS spec, to determine which one needs to be applied.</p>
+<p>Even if you just have one CSS file loaded by your page, there is other CSS that is going to be part of the process. We have the browser(user agent) CSS. Browsers come with a defaults set of rules, all different between browsers.</p>
+<h2 id="specificity">SPECIFICITY</h2>
+<p>Enter specificity. <strong><em>The more specfific rule will win.</em></strong> If two or more rules have the <strong><em>same specificity, the one that appears last wins.</em></strong></p>
+<h3 id="how-to-calculate-specificity">How to calculate specificity</h3>
+<p>Specificity is calculated using a convention.</p>
+<p>We have 4 slots, and each one of them starts at 0:<code>0 0 0 0</code>. The slot at the left is the most important, and the rightmost one is the least important.</p>
+<h4 id="slot-1">Slot 1</h4>
+<p>The first slot, the rightmost one, is the least important.</p>
+<p>We increase this value when we have an <strong><em>element slector</em></strong>. An element is a tag name.</p>
+<pre><code class="css">p {
+} /* 0 0 0 1 */
+span {
+} /* 0 0 0 1 */
+p span {
+} /* 0 0 0 2 */
+p &gt; span {
+} /* 0 0 0 2 */
+div p &gt; span {
+} /* 0 0 0 3 */
+</code></pre>
+
+<h4 id="slot-2">Slot 2</h4>
+<p>The second slot is incremented by 3 things:</p>
+<ul>
+<li>class selectors</li>
+<li>pseudo-class selectors</li>
+<li>attribute selectors</li>
+</ul>
+<p>Every time a rule meets one of those, we increment the value of the sencond column from the right.</p>
+<pre><code class="css">.name {
+} /* 0 0 1 0 */
+.users .name {
+} /* 0 0 2 0 */
+[href$=&quot;.pdf&quot;] {
+} /* 0 0 1 0 */
+:hover {
+} /* 0 0 1 0 */
+</code></pre>
+
+<p>Of course slot 2 selectors can be combined with slot 1 selectors:</p>
+<pre><code class="css">div .name {
+} /* 0 0 1 1 */
+a[href$=&quot;.pdf&quot;] {
+} /* 0 0 1 1 */
+.pictures img:hover {
+} /* 0 0 2 1 */
+</code></pre>
+
+<p>one nice trick with classes is that you can repeat the same class and increse the specificity.</p>
+<pre><code class="css">.name {
+} /* 0 0 1 0 */
+.name.name {
+} /* 0 0 2 0 */
+.name.name.name {
+} /* 0 0 3 0 */
+</code></pre>
+
+<h4 id="slot-3">Slot 3</h4>
+<p>Slot 3 holds the most important thing that can affet your CSS specificity in a CSS file: the <code>id</code>.</p>
+<p>Every element can have an <code>id</code> attribute assigned, and we can use that in our stylesheet to target the element.</p>
+<pre><code class="css">#name {
+} /* 0 1 0 0 */
+.user #name {
+} /* 0 1 1 0 */
+#name span {
+} /* 0 1 0 1 */
+</code></pre>
+
+<h4 id="slot-4">Slot 4</h4>
+<p>Slot 3 is affected by inline styles. Any inline style will have precedence over any rule defined in an external CSS file, or inside the <code>style</code> tag in the page header.</p>
+<pre><code class="html">&lt;p style=&quot;color: red&quot;&gt;Test&lt;/p&gt;
+/* 1 0 0 0 */
+</code></pre>
+
+<h3 id="importance">Importance</h3>
+<p>Specificity does not matter if a rule ends with <code>!important</code>:</p>
+<pre><code class="css">p {
+  font-size: 20px !important;
+}
+</code></pre>
+
+<p>That rule will take precedence over any rule with more specificity.</p>
+<h3 id="tips">Tips</h3>
+<p>Generally, <code>!important</code> should have no place in your CSS files.</p>
+<p>using the <code>id</code> attribute to style CSS is also debated a lot, since it has a very high specificity. A good alternative is to use classes insted, which have less specificity, and so they are easier to work with, and they are more powerful (you can have multiple classes for an element, and a class can be reused multiple times).</p>
+<h3 id="tool-s-to-clculate-the-specificity">Tool s to clculate the specificity</h3>
+<p>You can use the site <a href="https://specificity.keegan.st/">https://specificity.keegan.st/</a> to perform the specificity calculation for you automatically.</p>
+<p>It's useful especially if you are trying to figure things out, as it can be a nice feedback tool.</p>
+<h2 id="inheritance">INHERITANCE</h2>
+<h3 id="properties-that-inherit">Properties that inherit</h3>
+<p>Here is a list of the properties that do inherit. This list is non-comprehensive, but those rules are just the most populer ones you'll likely use:</p>
+<ul>
+<li>border-collapse</li>
+<li>border-spacing</li>
+<li>caption-side</li>
+<li>color</li>
+<li>cursor</li>
+<li>direction</li>
+<li>empty-cells</li>
+<li>font-size</li>
+<li>font-family</li>
+<li>font-style</li>
+<li>font-variant</li>
+<li>font-weight</li>
+<li>font-size-adjust</li>
+<li>font-stretch</li>
+<li>font</li>
+<li>letter-spacing</li>
+<li>line-height</li>
+<li>list-style-image</li>
+<li>list-style-position</li>
+<li>list-style-type</li>
+<li>list-style</li>
+<li>orphans</li>
+<li>quotes</li>
+<li>tab-size</li>
+<li>text-align</li>
+<li>text-algn-last</li>
+<li>text-decoration-color</li>
+<li>text-indent</li>
+<li>text-justify</li>
+<li>text-shadow</li>
+<li>text-transform</li>
+<li>visibility</li>
+<li>white-space</li>
+<li>widows</li>
+<li>word-break</li>
+<li>word-spacing</li>
+</ul>
+<p>I got it from this <a href="https://www.sitepoint.com/css-inheritance-introduction/">nice Sitepoint article</a> on CSS inheritance.</p>
+<h3 id="forcing-properties-to-inherit">Forcing properties to inherit</h3>
+<p>What if you have a property that's not inherited by default, and you want it to, in a child?</p>
+<p>In the children, yout set the property value to the special keyword <code>inherit</code>.</p>
+<pre><code class="css">body {
+  background-color: yellow;
+}
+p {
+  background-color: inherit;
+}
+</code></pre>
+
+<h3 id="forcing-properties-to-not-inherit">Forcing properties to NOT inherit</h3>
+<p>On the contrary, you might have a property inherited and you want to avoid so.</p>
+<p>You can use the <code>revert</code> keyword to revert it. In this case, the value is reverted to the original value the browser gave it in its default stylesheet.</p>
+<h3 id="other-special-values">Other special values</h3>
+<p>you can also set any property to:</p>
+<ul>
+<li><code>initial</code>: use the default browser stylesheet if available. If not, and if the property inherits by default, inherit the value. Otherwise do nothing.</li>
+<li><code>unset</code>: if the property inherits by default, inherit. Otherwise do nothing.</li>
+</ul>
+<h2 id="import">IMPORT</h2>
+<p>From any CSS file you can import another CSS file using the <code>@import</code> directive.</p>
+<pre><code class="css">@import url(myfile.css);
+</code></pre>
+
+<p>url() can manage absolute or relative URLs.</p>
+<p>One important thing you need to know is that <code>@import</code> directives must be put before any other CSS in the file, or they will be ignored.</p>
+<p>You can use media descriptors to only load a CSS file on the specific media:</p>
+<pre><code class="css">@import url(myfile.css) all;
+@import url(myfile-screen.css) screen;
+@import url(myfile-print.css) print;
+</code></pre>
+
+<hr/>
+
+<p>To be continued.</p>
+<p>Get more information at <a href="https://medium.freecodecamp.org/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11">here</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Moon Smile 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
