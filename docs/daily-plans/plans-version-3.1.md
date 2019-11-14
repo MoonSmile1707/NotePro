@@ -2,7 +2,7 @@
 
 <hr/>
 
-## The Plan
+## The plan
 
 - All tasks which have to be gained in a day:
 
