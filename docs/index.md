@@ -22,19 +22,19 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
 
 The purpose of these roadmap is to give you an idea about the landscape and to guide you if you are confused about what to learn nexet and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would better be suited for some cases than the other and remember hip and trendy never means beast suited for the job.
 
-![intro](../../../img-root/intro.png)
+![intro](./img-root/intro.png)
 
 ## FRONT-END Roadmap
 
-![frontend](../../../img-root/frontend.png)
+![frontend](./img-root/frontend.png)
 
 ## BACK-END Roadmap
 
-![backend](../../../img-root/backend.png)
+![backend](./img-root/backend.png)
 
 ## DEV-OPS Roadmap
 
-![devops](../../../img-root/devops.png)
+![devops](./img-root/devops.png)
 
 <hr/>
 
